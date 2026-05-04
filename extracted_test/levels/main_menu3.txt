@@ -1,0 +1,122 @@
+sprite_table {
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name noname
+offset 0 0
+cells_offset 0 0
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 0
+height 0
+no_cells
+no_sprite_cells
+decorations 0
+
+layer // layer 1
+name Main
+offset 0 0
+cells_offset 0 0
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 0
+height 0
+no_cells
+no_sprite_cells
+decorations 0
+
+} // layers
+
+entities { 
+Scroller 15 {
+sprite intro/sky1
+speed 120
+position_in_layer 180 160
+draw_order -2
+layer_index 0
+}
+Scroller 16 {
+sprite intro/sky2
+speed 120
+position_in_layer 180 320
+draw_order -2
+layer_index 0
+}
+Scroller 17 {
+sprite intro/sky3
+speed 120
+position_in_layer 180 480
+draw_order -2
+layer_index 0
+}
+Scroller 19 {
+sprite intro/grass1
+speed 120
+position_in_layer 180 680
+draw_order -2
+layer_index 0
+}
+Scroller 20 {
+sprite intro/grass1
+speed 120
+position_in_layer 180 720
+draw_order -2
+layer_index 0
+}
+Scroller 21 {
+sprite intro/grass1
+speed 120
+position_in_layer 180 760
+draw_order -2
+layer_index 0
+}
+Scroller 22 {
+sprite intro/hills
+length 256
+speed 40
+position_in_layer 180 620
+draw_order -2
+layer_index 0
+}
+SpriteShooter 6 {
+sprite1 intro/cloud1
+sprite2 intro/cloud2
+sprite3 intro/cloud3
+speed 40 60
+fire_delay 2000 4000
+height 380
+time_skip 40000
+position_in_layer 79 180
+draw_order -1
+layer_index 0
+}
+MapCursor 14 {
+position_in_layer 462 460
+layer_index 1
+}
+SpriteShooter 31 {
+sprite1 intro/ufo
+sprite2 intro/cloud2
+sprite3 intro/cloud3
+sprite4 intro/cloud2
+sprite5 intro/cloud3
+speed 40 60
+fire_delay 8000 10000
+height 380
+time_skip 40000
+position_in_layer 32 179
+draw_order -2
+layer_index 0
+}
+Scroller 33 {
+sprite intro/grass1
+speed 120
+position_in_layer 180 800
+draw_order -2
+layer_index 0
+}
+} // entities

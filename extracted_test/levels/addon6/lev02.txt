@@ -1,0 +1,470 @@
+sprite_table {
+ bluetech_02 1
+ bluetech_01 2
+ bluetech_15 3
+ bluetech_16 4
+ bluetech_12 5
+ bluetech_08 6
+ bluetech_09 7
+ bluetech_10 8
+ bgr/diode04 9
+ bgr/diode05H 10
+ bgr/diode05V 11
+ bgr/diode03 12
+ bgr/diode02 13
+ bgr/diode01 14
+ wall_yellow_05 15
+ shadow_fix_02 16
+ shadow_fix_01 17
+ redwall_07 18
+ redwall_06 19
+ wall_noidea_11 20
+ wall_noidea_10 21
+ redwall_05 22
+ wall_noidea_12 23
+ wall_noidea_13 24
+ redwall_03 25
+ wall_stoneA_03 26
+ wall_metalA_02 27
+ comp04a 28
+ comp04b 29
+ redwall_04 30
+ comp03 31
+ comp02 32
+ metal_grate 33
+ redwall_02 34
+ redwall_01 35
+ redwall_00 36
+ comp_rocket 37
+ comp_text1 38
+ comp_text2 39
+ monitorlineA 40
+ sign/number1 41
+ sign/number2 42
+ sign/number5 43
+ sign/number6 44
+ sign/lab 45
+ sign/arrow2 46
+ sign/stripe4 47
+ sign/number3 48
+ sign/number4 49
+ sign/stripe2 50
+ wire_2E 51
+ wire_2H 52
+ wire_3S 53
+ wire_2S 54
+ wall_metalA_01 55
+ wire_2V 56
+ wire_1S 57
+ halfplate_11 58
+ wire_3N 59
+ wire_1N 60
+ wire_2N 61
+ wire_2W 62
+ sign/acid1 63
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name noname
+offset 0 0
+cells_offset 0 0
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 0
+height 0
+no_cells
+no_sprite_cells
+decorations 0
+
+layer // layer 1
+name noname
+offset 0 0
+cells_offset 560 40
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 17
+height 11
+no_cells
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 
+2 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 1 0 3 0 1 0 3 0 1 0 1 0 
+2 0 0 0 2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 
+0 0 0 0 0 0 0 0 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 1 0 
+2 0 0 0 2 0 0 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+0 0 0 0 0 0 0 0 6 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 1 0 
+0 0 0 0 0 0 0 0 7 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 
+0 0 0 0 0 0 0 0 8 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 1 0 
+0 0 0 0 0 0 0 0 1 0 3 0 1 0 3 0 1 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 16
+734 214 9 0
+920 179 9 0
+1215 281 9 0
+1213 320 10 0
+890 453 10 0
+891 458 10 0
+730 259 10 0
+730 446 11 0
+730 375 12 0
+1114 370 13 0
+1011 456 14 0
+1016 456 14 0
+1022 456 14 0
+608 215 11 0
+596 125 11 0
+725 97 11 0
+
+layer // layer 2
+name noname
+offset 15 15
+cells_offset 520 0
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 17
+height 12
+shadow
+no_cells
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 15 0 0 0 0 0 
+1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 1 0 15 0 1 0 15 0 1 0 15 0 1 0 15 0 
+1 0 0 0 0 0 0 0 0 0 0 0 16 0 1 0 0 0 1 0 15 0 1 0 15 0 1 0 15 0 1 0 15 0 
+1 0 0 0 0 0 0 0 0 0 0 0 17 0 16 0 1 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 
+1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 
+1 0 0 0 0 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 
+1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+1 0 1 0 1 0 1 0 0 0 0 0 1 0 15 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 
+1 0 0 0 0 0 1 0 0 0 0 0 1 0 15 0 1 0 15 0 0 0 0 0 1 0 1 0 0 0 0 0 17 0 
+0 0 0 0 0 0 0 0 1 0 0 0 1 0 15 0 1 0 15 0 1 0 1 0 1 0 0 0 0 0 0 0 1 0 
+0 0 0 0 0 0 0 0 1 0 16 0 1 0 16 0 1 0 16 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 
+0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 0
+
+layer // layer 3
+name Main
+offset 0 0
+cells_offset 520 0
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 19
+height 14
+cells
+0 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 0 
+2 2 2 2 2 2 2 2 2 2 0 2 0 2 0 2 0 2 0 
+2 0 0 0 0 0 0 2 2 2 0 2 0 2 0 2 0 2 0 
+2 0 0 0 0 0 0 0 2 2 0 2 0 2 0 2 0 2 2 
+2 2 2 2 2 2 2 0 0 0 0 0 0 0 0 0 0 0 2 
+2 0 0 0 0 0 2 2 2 2 2 2 2 2 2 12290 13826 0 2 
+2 26 26 1562 0 0 2 2 2 2 2 2 2 2 2 0 0 0 2 
+2 2 2 1538 0 0 2 2 2 2 2 2 2 2 2 0 0 0 2 
+2 2 2 1538 0 0 2 0 2 0 2 2 2 14042 0 0 0 0 2 
+2 2 2 2 2 0 2 0 2 0 2 2 2 0 0 0 2 0 2 
+0 0 0 0 2 0 2 0 2 0 2 0 0 0 0 2 2 0 2 
+0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 2 2 2 2 
+0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+0 0 0 0 2 2 2 0 2 2 2 2 2 2 2 2 2 2 2 
+sprite_cells
+18 0 18 0 18 0 18 0 18 0 18 0 18 0 15 0 15 0 15 0 15 0 15 0 15 0 15 0 15 0 15 0 15 0 15 0 15 0 
+18 0 19 0 18 0 19 0 18 0 19 0 18 0 15 0 15 0 15 0 0 0 15 0 0 0 15 0 0 0 15 0 0 0 15 0 15 0 
+20 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 15 0 15 0 0 0 15 0 0 0 15 0 0 0 15 0 0 0 15 0 15 0 
+21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 15 0 0 0 15 0 0 0 15 0 0 0 15 0 0 0 15 0 15 0 
+22 0 23 0 24 0 24 0 24 0 24 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26 0 
+20 0 0 0 0 0 0 0 0 0 0 0 21 0 15 0 15 0 15 0 15 0 15 0 15 0 15 0 15 0 15 0 27 0 0 0 26 0 
+21 0 28 0 0 0 29 0 0 0 0 0 21 0 15 0 30 0 30 0 30 0 30 0 30 0 26 0 26 0 0 0 0 0 0 0 26 0 
+21 0 0 0 0 0 0 0 0 0 0 0 21 0 15 0 15 0 15 0 15 0 15 0 15 0 15 0 26 0 0 0 0 0 0 0 26 0 
+21 0 31 0 0 0 32 0 0 0 0 0 21 0 0 0 15 0 0 0 15 0 30 0 15 0 33 0 0 0 0 0 0 0 0 0 26 0 
+18 0 22 0 22 0 22 0 18 0 0 0 21 0 0 0 15 0 0 0 15 0 15 0 26 0 0 0 0 0 0 0 26 0 0 0 15 0 
+18 0 34 0 24 0 25 0 18 0 0 0 22 0 0 0 15 0 0 0 15 0 0 0 0 0 0 0 0 0 26 0 15 0 0 0 15 0 
+18 0 21 0 19 0 21 0 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 15 0 26 0 15 0 
+18 0 35 0 24 0 36 0 18 0 18 0 22 0 15 0 15 0 15 0 15 0 15 0 26 0 26 0 15 0 15 0 30 0 30 0 15 0 
+18 0 18 0 18 0 18 0 18 0 18 0 18 0 15 0 15 0 15 0 15 0 15 0 15 0 15 0 15 0 15 0 30 0 30 0 15 0 
+decorations 18
+578 257 37 0
+575 292 38 0
+574 250 39 0
+572 258 40 0
+839 359 41 0
+920 359 42 0
+960 79 43 0
+879 79 44 0
+640 161 45 0
+801 79 46 0
+840 400 47 0
+920 400 47 0
+960 120 47 0
+1120 78 48 0
+1040 79 49 0
+1159 200 50 0
+1040 120 47 0
+1120 120 47 0
+
+layer // layer 4
+name noname
+offset 0 0
+cells_offset 800 0
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 13
+height 14
+no_cells
+sprite_cells
+0 0 0 0 0 0 51 0 52 0 53 0 52 0 53 0 52 0 53 0 52 0 54 0 0 0 
+0 0 0 0 0 0 55 0 0 0 55 0 0 0 55 0 0 0 55 0 0 0 56 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58 0 0 0 0 0 15 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 15 0 15 0 0 0 0 0 0 0 15 0 0 0 
+51 0 52 0 53 0 59 0 54 0 0 0 0 0 15 0 0 0 0 0 0 0 15 0 0 0 
+55 0 0 0 55 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 15 0 
+0 0 0 0 0 0 0 0 0 0 15 0 0 0 0 0 0 0 15 0 0 0 60 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 0 0 56 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 56 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 0 0 0 0 0 0 56 0 0 0 
+0 0 0 0 0 0 0 0 0 0 61 0 52 0 52 0 52 0 0 0 0 0 62 0 0 0 
+decorations 6
+799 358 63 0
+879 357 63 0
+919 78 63 0
+999 78 63 0
+1079 78 63 0
+1159 78 63 0
+
+} // layers
+
+entities { 
+hero/Magneto 1 {
+position_in_layer 680 320
+layer_index 3
+}
+buchar_S 12 {
+start_delay 200 200
+paused true
+position_in_layer 800 320
+layer_index 3
+}
+buchar_S 13 {
+start_delay 700 700
+paused true
+position_in_layer 880 320
+layer_index 3
+}
+Spec/Region 16 {
+operate 17
+position_in_layer 800 440
+layer_index 3
+}
+Spec/Actions 17 {
+a1_target 12
+a1_action start
+a2_target 13
+a2_action start
+position_in_layer 780 640
+layer_index 3
+}
+spikes40_N 19 {
+delay_to_fwd 500
+delay_to_bwd 500
+paused true
+position_in_layer 1040 480
+layer_index 3
+}
+spikes40_E 20 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 500 500
+paused true
+position_in_layer 1000 360
+layer_index 3
+}
+spikes40_S 21 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 1200 1200
+paused true
+position_in_layer 1080 280
+layer_index 3
+}
+spikes40_N 22 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 1900 1900
+paused true
+position_in_layer 1120 400
+layer_index 3
+}
+spikes_W 26 {
+delay_to_fwd 500
+delay_to_bwd 500
+paused true
+position_in_layer 1240 320
+layer_index 3
+}
+spikes_E 29 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 100 100
+paused true
+position_in_layer 1040 240
+layer_index 3
+}
+spikes40_N 32 {
+fwd_sound none
+bwd_sound none
+paused true
+position_in_layer 1200 440
+layer_index 3
+}
+spikes40_W 34 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 1000 1000
+fwd_sound none
+bwd_sound none
+paused true
+position_in_layer 1240 200
+layer_index 3
+}
+spikes40_W 35 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 1000 1000
+paused true
+position_in_layer 1240 280
+layer_index 3
+}
+spikes40_W 36 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 1000 1000
+fwd_sound none
+bwd_sound none
+paused true
+position_in_layer 1240 240
+layer_index 3
+}
+spikes40_W 37 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 1000 1000
+paused true
+position_in_layer 1240 160
+layer_index 3
+}
+buchar_S 38 {
+start_delay 300 300
+paused true
+position_in_layer 1160 40
+layer_index 3
+}
+Spec/Region 39 {
+operate 40
+position_in_layer 1160 160
+layer_index 3
+}
+Spec/Actions 40 {
+a1_target 38
+a1_action start
+a2_target 41
+a2_action start
+a3_target 42
+a3_action start
+a4_target 43
+a4_action start
+position_in_layer 1335 -80
+layer_index 3
+}
+buchar_S 41 {
+start_delay 800 800
+paused true
+position_in_layer 1080 40
+layer_index 3
+}
+buchar_S 42 {
+start_delay 1100 1100
+paused true
+position_in_layer 1000 40
+layer_index 3
+}
+buchar_S 43 {
+start_delay 1400 1400
+paused true
+position_in_layer 920 40
+layer_index 3
+}
+spikes40_W 47 {
+paused true
+position_in_layer 1120 400
+layer_index 3
+}
+spikes40_E 50 {
+paused true
+position_in_layer 1080 280
+layer_index 3
+}
+spikes40_E 51 {
+fwd_sound none
+bwd_sound none
+paused true
+position_in_layer 1160 360
+layer_index 3
+}
+Spec/LevelExit 52 {
+position_in_layer 640 120
+layer_index 3
+}
+Device/FloorPermanent 54 {
+operate 55
+position_in_layer 1000 480
+layer_index 3
+}
+Spec/Actions 55 {
+a1_target 19
+a1_action start
+a2_target 20
+a2_action start
+a3_target 47
+a3_action start
+a4_target 22
+a4_action start
+a5_target 32
+a5_action start
+a6_target 51
+a6_action start
+a7_target 26
+a7_action start
+a8_target 56
+a8_action run
+position_in_layer 1126 658
+layer_index 3
+}
+Spec/Actions 56 {
+a1_target 50
+a1_action start
+a2_target 21
+a2_action start
+a3_target 29
+a3_action start
+a4_target 35
+a4_action start
+a5_target 36
+a5_action start
+a6_target 34
+a6_action start
+a7_target 37
+a7_action start
+position_in_layer 1406 324
+layer_index 3
+}
+SoundComputer 57 {
+position_in_layer 582 260
+layer_index 3
+}
+} // entities

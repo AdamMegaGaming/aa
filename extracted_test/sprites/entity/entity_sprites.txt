@@ -1,0 +1,672 @@
+  transparent
+  grid_size 40 40
+
+//==============================================================================
+  use_surface sprites/entity/entity1.png
+
+  sprite INVISIBLE { rect 0 0 1 1 }
+
+  sprite tile/dr_beam_V { rect 112 0 5 40 pivot 3 0 in_editor 1 }
+  sprite tile/dr_beam_H { rect 117 0 40 5 pivot 0 3 in_editor 1 }
+
+  sprite lever_pulldown_0 { rect 117 5 16 35 pivot -12 0 in_editor 0 }
+  sprite lever_pulldown_1 { rect 133 5 16 45 pivot -12 0 in_editor 0 }
+  anim lever_pulldown { time_step 250 skey lever_pulldown_0 skey lever_pulldown_1 send }
+
+  sprite tile/lever_W0 { rect 0 0 28 27 in_editor 0 pivot -12 -5 }
+  sprite tile/lever_W1 { rect 28 0 28 27 in_editor 0 pivot -12 -5 }
+  sprite tile/lever_E0 { rect 56 0 28 27 in_editor 0 pivot 0 -5 }
+  sprite tile/lever_E1 { rect 84 0 28 27 in_editor 0 pivot 0 -5 }
+  sprite tile/lever_N0 { rect 0 27 27 28 in_editor 0 pivot -5 -12 }
+  sprite tile/lever_N1 { rect 27 27 27 28 in_editor 0 pivot -5 -12 }
+  sprite tile/lever_S0 { rect 54 27 27 28 in_editor 0 pivot -5 0 }
+  sprite tile/lever_S1 { rect 81 27 27 28 in_editor 0 pivot -5 0 }
+
+  anim tile/lever_N { time_step 250    key 0 tile/lever_N0    key 1 tile/lever_N1    end 2 }
+  anim tile/lever_E { time_step 250    key 0 tile/lever_E0    key 1 tile/lever_E1    end 2 }
+  anim tile/lever_W { time_step 250    key 0 tile/lever_W0    key 1 tile/lever_W1    end 2 }
+  anim tile/lever_S { time_step 250    key 0 tile/lever_S0    key 1 tile/lever_S1    end 2 }
+
+  sprite tile/button_E0 { rect 0  122 25 39 in_editor 0 pivot 0 0 }
+  sprite tile/button_E1 { rect 25 122 25 39 in_editor 0 pivot 0 0 }
+  sprite tile/button_W0 { rect 25 161 25 39 in_editor 0 pivot -15 0 }
+  sprite tile/button_W1 { rect 0  161 25 39 in_editor 0 pivot -15 0 }
+  sprite tile/button_N0 { rect 0 55 39 25 in_editor 0   pivot 0 -15 }
+  sprite tile/button_N1 { rect 40 55 39 25 in_editor 0  pivot 0 -15 }
+  sprite tile/button_S0 { rect 80 55 39 25 in_editor 0  pivot 0 0 }
+  sprite tile/button_S1 { rect 120 55 39 25 in_editor 0 pivot 0 0 }
+
+  anim tile/button_N { time_step 250    key 0 tile/button_N0    key 1 tile/button_N1    end 2 }
+  anim tile/button_E { time_step 250    key 0 tile/button_E0    key 1 tile/button_E1    end 2 }
+  anim tile/button_W { time_step 250    key 0 tile/button_W0    key 1 tile/button_W1    end 2 }
+  anim tile/button_S { time_step 250    key 0 tile/button_S0    key 1 tile/button_S1    end 2 }
+
+  //- FLOOR BUTTON ------------------------------------
+
+  sprite tile/floor_button_off   { rect 80 80 40 42 pivot 0 2 }
+  sprite tile/floor_button_on    { rect 120 80 40 42 pivot 0 2 }
+  sprite floorbutton_permanent_0 { rect 0 80 40 42 pivot 0 2 }
+  sprite floorbutton_permanent_1 { rect 40 80 40 42 pivot 0 2 }
+  
+  sprite biggate { rect 90 130 70 70 }
+
+
+//==============================================================================
+  use_surface sprites/entity/entity2.png
+
+  sprite device/terminal_1 { rect 0 0 40 52 in_editor 0 pivot 0 6 }
+  sprite device/terminal_2 { rect 40 0 40 52 in_editor 0 pivot 0 6 }
+  sprite device/terminal_3 { rect 80 0 40 52 in_editor 0 pivot 0 6 }
+  sprite device/terminal_4 { rect 120 0 40 52 in_editor 0 pivot 0 6 }
+  sprite device/terminal_5 { rect 0 52 40 52 in_editor 0 pivot 0 6 }
+  sprite device/terminal_6 { rect 40 52 40 52 in_editor 0 pivot 0 6 }
+
+  anim device/terminal {
+    time_step 75
+    skey device/terminal_1
+    skey device/terminal_2
+    skey device/terminal_3
+    skey device/terminal_4
+    skey device/terminal_5
+    skey device/terminal_6
+    send
+  }
+
+  sprite device/respawn_OFF { rect 80 52 40 79 pivot 0 40 in_editor 0 }
+  sprite device/respawn_ON { rect 120 52 40 79 pivot 0 40 in_editor 0 }
+
+  anim device/respawn {
+    time_step 150
+    skey device/respawn_ON
+    skey device/respawn_OFF
+    send
+  }
+
+  sprite exit_0 { rect 40 106 40 47 pivot 0 7 in_editor 1 }
+  sprite exit_1 { rect 0 106 40 47 pivot 0 7 in_editor 0 }
+  sprite exit_2 { rect 40 153 40 47 pivot 0 7 in_editor 0 }
+  sprite exit_3 { rect 0 153 40 47 pivot 0 7 in_editor 1 }
+  anim exit { time_step 100 skey exit_3 skey exit_2 skey exit_1 skey exit_0 send }
+
+  sprite tile/semafor_red { rect 80 131 22 22 }
+  sprite tile/semafor_green1 { rect 102 131 22 22 in_editor 0 }
+  sprite tile/semafor_green2 { rect 124 131 22 22 in_editor 0 }
+  anim tile/semafor_green {
+    key 0 tile/semafor_green1
+    key 100 tile/semafor_green2
+    end 200
+  }
+
+
+//==============================================================================
+  use_surface sprites/entity/entity3.png
+
+  sprite tile/drN_off { grid 0 0 in_editor 0 }
+  sprite tile/drN_on  { grid 1 0 in_editor 0 }
+  sprite tile/drE_off { grid 2 0 in_editor 0 }
+  sprite tile/drE_on  { grid 3 0 in_editor 0 }
+  sprite tile/drW_off { grid 0 1 in_editor 0 }
+  sprite tile/drW_on  { grid 1 1 in_editor 0 }
+  sprite tile/drS_off { grid 2 1 in_editor 0 }
+  sprite tile/drS_on  { grid 3 1 in_editor 0 }
+
+  anim tile/deathray_N { time_step 100    key 0 tile/drN_off    key 1 tile/drN_on    end 2 }
+  anim tile/deathray_E { time_step 100    key 0 tile/drE_off    key 1 tile/drE_on    end 2 }
+  anim tile/deathray_W { time_step 100    key 0 tile/drW_off    key 1 tile/drW_on    end 2 }
+  anim tile/deathray_S { time_step 100    key 0 tile/drS_off    key 1 tile/drS_on    end 2 }
+
+  sprite tile/teleport_flash1  { grid 0 2 in_editor 0 }
+  sprite tile/teleport_flash2  { grid 1 2 in_editor 0 }
+  sprite tile/teleport_flash3  { grid 2 2 in_editor 0 }
+  sprite tile/teleport_flash4  { grid 3 2 in_editor 0 }
+  sprite tile/teleport_flash5  { grid 0 3 in_editor 0 }
+  sprite tile/teleport_flash6  { grid 1 3 in_editor 0 }
+  sprite tile/teleport_flash7  { grid 2 3 in_editor 0 }
+  sprite tile/teleport_flash8  { grid 3 3 in_editor 0 }
+  sprite tile/teleport_flash9  { grid 0 4 in_editor 0 }
+  sprite tile/teleport_flash10 { grid 1 4 in_editor 0 }
+  sprite tile/teleport_flash11 { grid 2 4 in_editor 0 }
+  sprite tile/teleport_flash12 { grid 3 4 in_editor 0 }
+
+  anim tile/teleport_flash {
+      time_step 100
+      skey tile/teleport_flash1
+      skey tile/teleport_flash2
+      skey tile/teleport_flash3
+      skey tile/teleport_flash4
+      skey tile/teleport_flash5
+      skey tile/teleport_flash6
+      skey tile/teleport_flash7
+      skey tile/teleport_flash8
+      skey tile/teleport_flash9
+      skey tile/teleport_flash10
+      skey tile/teleport_flash11
+      skey tile/teleport_flash12
+      send
+  }
+
+
+
+//==============================================================================
+  use_surface sprites/entity/wind.png
+
+  sprite wind_field_N0 { grid 3 3 in_editor 0 }
+  sprite wind_field_N1 { grid 2 3 in_editor 0 }
+  sprite wind_field_N2 { grid 1 3 in_editor 0 }
+  sprite wind_field_N3 { grid 0 3 in_editor 0 }
+
+  sprite wind_field_S0 { grid 0 2 in_editor 0 }
+  sprite wind_field_S1 { grid 1 2 in_editor 0 }
+  sprite wind_field_S2 { grid 2 2 in_editor 0 }
+  sprite wind_field_S3 { grid 3 2 in_editor 0 }
+
+  sprite wind_field_E0 { grid 0 0 in_editor 0 }
+  sprite wind_field_E1 { grid 1 0 in_editor 0 }
+  sprite wind_field_E2 { grid 2 0 in_editor 0 }
+  sprite wind_field_E3 { grid 3 0 in_editor 0 }
+
+  sprite wind_field_W0 { grid 3 1 in_editor 0 }
+  sprite wind_field_W1 { grid 2 1 in_editor 0 }
+  sprite wind_field_W2 { grid 1 1 in_editor 0 }
+  sprite wind_field_W3 { grid 0 1 in_editor 0 }
+
+  anim wind_field_N { time_step 80 skey wind_field_N0 skey wind_field_N1 skey wind_field_N2 skey wind_field_N3 send }
+  anim wind_field_E { time_step 80 skey wind_field_E0 skey wind_field_E1 skey wind_field_E2 skey wind_field_E3 send }
+  anim wind_field_S { time_step 80 skey wind_field_S0 skey wind_field_S1 skey wind_field_S2 skey wind_field_S3 send }
+  anim wind_field_W { time_step 80 skey wind_field_W0 skey wind_field_W1 skey wind_field_W2 skey wind_field_W3 send }
+
+//==============================================================================
+  use_surface sprites/entity/entity4.png
+
+  sprite nobubble_field_0 { grid 0 4 in_editor 0 }
+  sprite nobubble_field_1 { grid 1 4 in_editor 0 }
+  sprite nobubble_field_2 { grid 2 4 in_editor 0 }
+  sprite nobubble_field_3 { grid 3 4 in_editor 0 }
+
+  anim nobubble_field {
+    time_step 80
+    skey nobubble_field_0
+    skey nobubble_field_1
+    skey nobubble_field_2
+    skey nobubble_field_3
+    send
+  }
+
+  sprite tile/fan_n_0 { grid 0 0 in_editor 0 }
+  sprite tile/fan_n_1 { grid 1 0 in_editor 0 }
+  sprite tile/fan_n_2 { grid 2 0 in_editor 0 }
+  sprite tile/fan_n_3 { grid 3 0 in_editor 0 }
+  sprite tile/fan_e_0 { grid 0 1 in_editor 0 }
+  sprite tile/fan_e_1 { grid 1 1 in_editor 0 }
+  sprite tile/fan_e_2 { grid 2 1 in_editor 0 }
+  sprite tile/fan_e_3 { grid 3 1 in_editor 0 }
+  sprite tile/fan_w_0 { grid 0 3 in_editor 0 }
+  sprite tile/fan_w_1 { grid 1 3 in_editor 0 }
+  sprite tile/fan_w_2 { grid 2 3 in_editor 0 }
+  sprite tile/fan_w_3 { grid 3 3 in_editor 0 }
+  sprite tile/fan_s_0 { grid 0 2 in_editor 0 }
+  sprite tile/fan_s_1 { grid 1 2 in_editor 0 }
+  sprite tile/fan_s_2 { grid 2 2 in_editor 0 }
+  sprite tile/fan_s_3 { grid 3 2 in_editor 0 }
+
+  anim tile/fan_n { time_step 50    key 0 tile/fan_n_0    key 1 tile/fan_n_1    key 2 tile/fan_n_2    key 3 tile/fan_n_3    end 4 }
+  anim tile/fan_e { time_step 50    key 0 tile/fan_e_0    key 1 tile/fan_e_1    key 2 tile/fan_e_2    key 3 tile/fan_e_3    end 4 }
+  anim tile/fan_w { time_step 50    key 0 tile/fan_w_0    key 1 tile/fan_w_1    key 2 tile/fan_w_2    key 3 tile/fan_w_3    end 4 }
+  anim tile/fan_s { time_step 50    key 0 tile/fan_s_0    key 1 tile/fan_s_1    key 2 tile/fan_s_2    key 3 tile/fan_s_3    end 4 }
+
+
+
+//==============================================================================
+  use_surface sprites/entity/entity5.png
+
+  //- BREAKABLE ----------------------------------------
+
+  sprite tile/cracked    { grid 0 0 }
+  sprite tile/cracked_a1 { grid 1 0 in_editor 0 }
+  sprite tile/cracked_a2 { grid 2 0 in_editor 0 }
+  sprite tile/cracked_a3 { grid 3 0 in_editor 0 }
+  sprite tile/cracked_a4 { grid 0 1 size 40 27 pivot 0 -13 in_editor 0 }
+  sprite tile/cracked_a5 { grid 1 1 size 40 13 pivot 0 -27 in_editor 0 }
+
+  anim tile/cracked_disappear {
+    key 0   tile/cracked_a1
+    key 100 tile/cracked_a2
+    key 200 tile/cracked_a3
+    key 300 tile/cracked_a4
+    key 400 tile/cracked_a5
+    end 500
+  }
+
+  //- BRIDGE -------------------------------------------
+
+  sprite tile/bridge    { grid 2 1 }
+  sprite tile/bridge_a1 { grid 3 1 in_editor 0 }
+  sprite tile/bridge_a2 { grid 0 2 in_editor 0 }
+  sprite tile/bridge_a3 { rect 40 80 28 28 pivot -6 -6   in_editor 0 }
+  sprite tile/bridge_a4 { rect 68 80 18 18 pivot -11 -11 in_editor 0 }
+  sprite tile/bridge_a5 { rect 40 108 8  8 pivot -16 -16 in_editor 0 }
+
+  anim tile/bridge_disappear {
+    key 0   tile/bridge_a1
+    key 100 tile/bridge_a2
+    key 200 tile/bridge_a3
+    key 300 tile/bridge_a4
+    key 400 tile/bridge_a5
+    end 500
+  }
+
+  //- CRATE --------------------------------------------
+
+  sprite tile/crate    { grid 0 3 }
+  sprite tile/crate_a1 { grid 1 3 in_editor 0 }
+  sprite tile/crate_a2 { grid 2 3 in_editor 0 }
+  sprite tile/crate_a3 { grid 3 3 in_editor 0 }
+  sprite tile/crate_a4 { rect 40 53 40 27 pivot 0 -13 in_editor 0 }
+  sprite tile/crate_a5 { rect  0 67 40 13 pivot 0 -27 in_editor 0 }
+
+  anim tile/crate_break {
+    time_step 100
+    skey tile/crate_a1
+    skey tile/crate_a2
+    skey tile/crate_a3
+    skey tile/crate_a4
+    skey tile/crate_a5
+    send
+  }
+
+  sprite tile/crate/solid  { grid 3 2 }
+
+//==============================================================================
+  use_surface sprites/entity/entity6.png
+
+  sprite crate/creature_sleep { grid 0 0 }
+  sprite crate/creature_angry0 { grid 1 0 in_editor 0 }
+  sprite crate/creature_angry1 { grid 2 0 in_editor 0 }
+  sprite crate/creature_angry2 { grid 3 0 in_editor 0 }
+  sprite crate/creature_angry3 { grid 0 1 in_editor 0 }
+  anim crate/creature_angry {
+    time_step 50
+    skey crate/creature_angry0
+    skey crate/creature_angry1
+    skey crate/creature_angry3
+    skey crate/creature_angry2
+    skey crate/creature_angry0
+    skey crate/creature_angry3
+    skey crate/creature_angry1
+    skey crate/creature_angry0
+    skey crate/creature_angry2
+    send
+  }
+
+  //- EYE-CRATE --------------------------------------------
+
+  sprite eyecrate0 { grid 3 1 }
+  sprite eyecrate1 { grid 0 2 in_editor 0 }
+  sprite eyecrate2 { grid 1 2 in_editor 0 }
+  sprite eyecrate3 { grid 2 2 in_editor 0 }
+  sprite eyecrate4 { grid 3 2 in_editor 0 }
+  anim eyecrate_look {
+    key    0 eyecrate2
+    key  100 eyecrate3
+    key  200 eyecrate2
+    key  300 eyecrate3
+    key  400 eyecrate4
+    key 1000 eyecrate3
+    key 2300 eyecrate4
+    key 4000 eyecrate3
+    key 4100 eyecrate2
+    key 6000 eyecrate3
+    key 6500 eyecrate2
+    key 6600 eyecrate1
+    key 6700 eyecrate2
+    key 6800 eyecrate1
+    key 8000 eyecrate2
+    key 8100 eyecrate3
+    key 12000 eyecrate2
+    end 12100
+  }
+
+  //- BOMB --------------------------------------------
+
+  sprite tile/bomb    { grid 1 1 }
+  sprite tile/bomb_a1 { grid 2 1 in_editor 0 }
+  use_surface sprites/entity/boom1.png
+  sprite tile/bomb_a2 { rect 0 0 120 120 in_editor 0 pivot 40 40 }
+  sprite tile/bomb_b2 { rect 40 40 40 40 in_editor 0 pivot 40 40 }
+  use_surface sprites/entity/boom2.png
+  sprite tile/bomb_a3 { rect 0 0 120 120 in_editor 0 pivot 40 40 }
+  sprite tile/bomb_b3 { rect 40 40 40 40 in_editor 0 pivot 40 40 }
+  use_surface sprites/entity/boom3.png
+  sprite tile/bomb_a4 { rect 0 0 120 120 in_editor 0 pivot 40 40 }
+  sprite tile/bomb_b4 { rect 40 40 40 40 in_editor 0 pivot 40 40 }
+
+  anim tile/bomb_break {
+    key 0 tile/bomb
+    key 500 tile/bomb_a1
+    key 600 tile/bomb_a2
+    key 700 tile/bomb_a3
+    key 800 tile/bomb_a4
+    end 900
+  }
+
+  anim boom {
+    key 0 tile/bomb_b2
+    key 100 tile/bomb_b3
+    key 200 tile/bomb_b4
+    key 300 INVISIBLE
+    end 400
+  }
+
+
+//==============================================================================
+  use_surface sprites/entity/deathbulbs.png
+
+  sprite bulbsofdeath_0  { grid 0 0 }
+  sprite bulbsofdeath_1  { grid 1 0 }
+  sprite bulbsofdeath_beam  { grid 1 0 pivot 0 20 }
+  anim   bulbsofdeath_end { time_step 1    key 0 bulbsofdeath_0    key 1 bulbsofdeath_1    end 2 }
+
+
+//==============================================================================
+  use_surface sprites/entity/doorV.png
+  grid_size 40 80
+
+  sprite tile/vdoor_0 { grid 0 0 in_editor 0 }
+  sprite tile/vdoor_1 { grid 1 0 in_editor 0 }
+  sprite tile/vdoor_2 { grid 2 0 in_editor 0 }
+  sprite tile/vdoor_3 { grid 3 0 in_editor 0 }
+  sprite tile/vdoor_4 { grid 0 1 in_editor 0 }
+  sprite tile/vdoor_5 { grid 1 1 in_editor 0 }
+  sprite tile/vdoor_6 { grid 2 1 in_editor 0 }
+  sprite tile/vdoor_7 { grid 3 1 in_editor 0 }
+
+  anim tile/door_V {
+    time_step 50
+    key 0 tile/vdoor_0
+    key 1 tile/vdoor_1
+    key 2 tile/vdoor_2
+    key 3 tile/vdoor_3
+    key 4 tile/vdoor_4
+    key 5 tile/vdoor_5
+    key 6 tile/vdoor_6
+    key 7 tile/vdoor_7
+    end 8
+  }
+
+//==============================================================================
+  use_surface sprites/entity/doorH.png
+  grid_size 80 40
+
+  sprite tile/hdoor_0 { grid 1 0 in_editor 0 }
+  sprite tile/hdoor_1 { grid 1 1 in_editor 0 }
+  sprite tile/hdoor_2 { grid 1 2 in_editor 0 }
+  sprite tile/hdoor_3 { grid 1 3 in_editor 0 }
+  sprite tile/hdoor_4 { grid 0 0 in_editor 0 }
+  sprite tile/hdoor_5 { grid 0 1 in_editor 0 }
+  sprite tile/hdoor_6 { grid 0 2 in_editor 0 }
+  sprite tile/hdoor_7 { grid 0 3 in_editor 0 }
+
+  anim tile/door_H {
+    time_step 50
+    key 0 tile/hdoor_0
+    key 1 tile/hdoor_1
+    key 2 tile/hdoor_2
+    key 3 tile/hdoor_3
+    key 4 tile/hdoor_4
+    key 5 tile/hdoor_5
+    key 6 tile/hdoor_6
+    key 7 tile/hdoor_7
+    end 8
+  }
+
+//==============================================================================
+  use_surface sprites/entity/door2V.png
+  grid_size 40 80
+
+  sprite tile/vdoor2_0 { grid 0 0 in_editor 0 }
+  sprite tile/vdoor2_1 { grid 1 0 in_editor 0 }
+  sprite tile/vdoor2_2 { grid 2 0 in_editor 0 }
+  sprite tile/vdoor2_3 { grid 3 0 in_editor 0 }
+  sprite tile/vdoor2_4 { grid 0 1 in_editor 0 }
+  sprite tile/vdoor2_5 { grid 1 1 in_editor 0 }
+  sprite tile/vdoor2_6 { grid 2 1 in_editor 0 }
+  sprite tile/vdoor2_7 { grid 3 1 in_editor 0 }
+
+  anim tile/door2_V {
+    time_step 50
+    key 0 tile/vdoor2_0
+    key 1 tile/vdoor2_1
+    key 2 tile/vdoor2_2
+    key 3 tile/vdoor2_3
+    key 4 tile/vdoor2_4
+    key 5 tile/vdoor2_5
+    key 6 tile/vdoor2_6
+    key 7 tile/vdoor2_7
+    end 8
+  }
+
+//==============================================================================
+  use_surface sprites/entity/door2H.png
+  grid_size 80 40
+
+  sprite tile/hdoor2_0 { grid 1 0 in_editor 0 }
+  sprite tile/hdoor2_1 { grid 1 1 in_editor 0 }
+  sprite tile/hdoor2_2 { grid 1 2 in_editor 0 }
+  sprite tile/hdoor2_3 { grid 1 3 in_editor 0 }
+  sprite tile/hdoor2_4 { grid 0 0 in_editor 0 }
+  sprite tile/hdoor2_5 { grid 0 1 in_editor 0 }
+  sprite tile/hdoor2_6 { grid 0 2 in_editor 0 }
+  sprite tile/hdoor2_7 { grid 0 3 in_editor 0 }
+
+  anim tile/door2_H {
+    time_step 50
+    key 0 tile/hdoor2_0
+    key 1 tile/hdoor2_1
+    key 2 tile/hdoor2_2
+    key 3 tile/hdoor2_3
+    key 4 tile/hdoor2_4
+    key 5 tile/hdoor2_5
+    key 6 tile/hdoor2_6
+    key 7 tile/hdoor2_7
+    end 8
+  }
+
+
+
+  grid_size 40 40
+
+
+
+//==============================================================================
+  use_surface sprites/entity/comp1.png
+
+  sprite comp01a { grid 0 0 in_editor 0 }
+  sprite comp01b { grid 1 0 in_editor 0 }
+  sprite comp01c { grid 2 0 in_editor 0 }
+  anim comp01 {
+    key 0 comp01a
+    key 100 comp01b
+    key 150 comp01c
+    key 200 comp01a
+    key 250 comp01b
+    key 300 comp01c
+    key 350 comp01a
+    key 400 comp01b
+    key 450 comp01c
+    key 500 comp01a
+    key 550 comp01b
+    key 600 comp01c
+    key 650 comp01a
+    key 700 comp01b
+    key 750 comp01c
+    end 4000
+  }
+
+  sprite comp02a { grid 3 0 in_editor 0 }
+  sprite comp02b { grid 0 1 in_editor 0 }
+  sprite comp02c { grid 1 1 in_editor 0 }
+  anim comp02 { time_step 100 skey comp02a skey comp02b skey comp02c send }
+
+  sprite comp03a { grid 2 1 size 80 40 in_editor 0 }
+  sprite comp03b { grid 0 2 size 80 40 in_editor 0 }
+  sprite comp03c { grid 2 2 size 80 40 in_editor 0 }
+  anim comp03 { time_step 100 skey comp03a skey comp03b skey comp03c send }
+
+  sprite comp04a { grid 0 3 size 80 80 }
+  sprite comp04b { grid 2 3 size 40 80 }
+  sprite comp05  { grid 3 3 }
+  sprite comp06  { grid 3 4 }
+
+//==============================================================================
+  opaque
+  use_surface sprites/entity/comp2.png
+
+  sprite monitorlineA01 { rect 69 50 91 1 in_editor 0 pivot 0 0 }
+  sprite monitorlineA02 { rect 69 50 91 1 in_editor 0 pivot 0 -10 }
+  sprite monitorlineA03 { rect 69 50 91 1 in_editor 0 pivot 0 -20 }
+  sprite monitorlineA04 { rect 69 50 91 1 in_editor 0 pivot 0 -30 }
+  sprite monitorlineA05 { rect 69 50 91 1 in_editor 0 pivot 0 -40 }
+  anim monitorlineA {
+    time_step 80
+    skey monitorlineA01
+    skey monitorlineA02
+    skey monitorlineA03
+    skey monitorlineA04
+    skey monitorlineA05
+    send
+  }
+
+  sprite monitorlineB01 { rect 69 50 28 1 in_editor 0 pivot 0 0 }
+  sprite monitorlineB02 { rect 69 50 28 1 in_editor 0 pivot 0 -5 }
+  sprite monitorlineB03 { rect 69 50 28 1 in_editor 0 pivot 0 -10 }
+  sprite monitorlineB04 { rect 69 50 28 1 in_editor 0 pivot 0 -15 }
+  sprite monitorlineB05 { rect 69 50 28 1 in_editor 0 pivot 0 -20 }
+  anim monitorlineB {
+    time_step 80
+    skey monitorlineB01
+    skey monitorlineB02
+    skey monitorlineB03
+    skey monitorlineB04
+    skey monitorlineB05
+    send
+  }
+
+  sprite comp_profa_b { rect 0 0 55 52 in_editor 0 pivot -20 28 }
+  sprite comp_profa_c { rect 0 52 55 55 in_editor 0 pivot -20 31 }
+  sprite comp_profa_a { rect 0 107 55 55 in_editor 0 pivot -20 31 }
+  anim bigframe_profa {
+    key 0 comp_profa_a
+    key 3000 comp_profa_b
+    key 3100 comp_profa_a
+    key 6000 comp_profa_b
+    key 6100 comp_profa_a
+    key 6200 comp_profa_b
+    key 6300 comp_profa_a
+    key 8000 comp_profa_c
+    key 10000 comp_profa_a
+    end 10100
+  }
+
+  sprite comp_eqalizer_a { rect 0 162 11 22 in_editor 0 }
+  sprite comp_eqalizer_b { rect 11 162 11 22 in_editor 0 }
+  sprite comp_eqalizer_c { rect 22 162 11 22 in_editor 0 }
+  anim comp_eqalizer { time_step 90 skey comp_eqalizer_a skey comp_eqalizer_b skey comp_eqalizer_c send }
+
+  sprite comp_rake { rect 55 109 80 20 }
+  sprite comp_rocket { rect 38 163 82 37 }
+  sprite comp_magneto { rect 55 0 46 52 }
+  sprite comp_text1 { rect 102 0 35 10 }
+  sprite comp_text2 { rect 137 0 23 10 }
+  sprite comp_text3 { rect 102 12 29 16 }
+  sprite comp_map { rect 55 52 91 57 }
+  sprite comp_arrow1 { rect 146 71 14 19 }
+  sprite comp_arrow2 { rect 0 185 19 14 }
+  sprite comp_arrow3 { rect 146 52 14 19 }
+  sprite comp_arrow4 { rect 19 185 19 14 }
+
+  sprite comp_sinus1 { rect 55 129 28 13 in_editor 0 }
+  sprite comp_sinus2 { rect 83 129 28 13 in_editor 0 }
+  sprite comp_sinus3 { rect 111 129 28 13 in_editor 0 }
+  sprite comp_sinus4 { rect 55 142 28 13 in_editor 0 }
+  sprite comp_sinus5 { rect 83 142 28 13 in_editor 0 }
+  anim comp_sinus {
+    time_step 80
+    skey comp_sinus1
+    skey comp_sinus2
+    skey comp_sinus3
+    skey comp_sinus4
+    skey comp_sinus5
+    send
+  }
+
+  transparent
+
+//==============================================================================
+  use_surface sprites/entity/gum_machine.png
+
+  sprite device/gum01 { rect 0 0 28 34 in_editor 0 pivot 11 0 }
+  sprite device/gum02 { rect 28 0 28 34 in_editor 0 pivot 11 0 }
+  sprite device/gum03 { rect 56 0 28 34 in_editor 0 pivot 11 0 }
+  sprite device/gum04 { rect 84 0 28 34 in_editor 0 pivot 11 0 }
+  sprite device/gum05 { rect 0 34 28 34 in_editor 0 pivot 11 0 }
+  anim device/gum_dose {
+    time_step 70
+    skey device/gum01
+    skey device/gum02
+    skey device/gum03
+    skey device/gum04
+    send
+  }
+  sprite device/gum_machine01 { rect 113 0 48 48 pivot 2 4 in_editor 0 }
+  sprite device/gum_machine02 { rect 113 48 48 48 pivot 2 4 in_editor 0 }
+  sprite device/gum_machine03 { rect 113 96 48 48 pivot 2 4 in_editor 0 }
+  anim device/gum_body {
+    time_step 120
+    skey device/gum_machine01
+    skey device/gum_machine02
+    send
+  }
+
+//==============================================================================
+  use_surface sprites/entity/door_single.png
+  grid_size 40 40
+
+  sprite tile/vsdoor_0 { grid 0 0 in_editor 0 }
+  sprite tile/vsdoor_1 { grid 1 0 in_editor 0 }
+  sprite tile/vsdoor_2 { grid 2 0 in_editor 0 }
+  sprite tile/vsdoor_3 { grid 3 0 in_editor 0 }
+  anim tile/door_single_V { time_step 50    key 0 tile/vsdoor_0    key 1 tile/vsdoor_1    key 2 tile/vsdoor_2    key 3 tile/vsdoor_3    end 8  }
+
+  sprite tile/hsdoor_0 { grid 0 1 in_editor 0 }
+  sprite tile/hsdoor_1 { grid 1 1 in_editor 0 }
+  sprite tile/hsdoor_2 { grid 2 1 in_editor 0 }
+  sprite tile/hsdoor_3 { grid 3 1 in_editor 0 }
+  anim tile/door_single_H { time_step 50    key 0 tile/hsdoor_0    key 1 tile/hsdoor_1    key 2 tile/hsdoor_2    key 3 tile/hsdoor_3    end 8  }
+
+//==============================================================================
+  use_surface sprites/entity/levitator.png
+  grid_size 40 40
+
+  sprite levitator_1 { grid 0 0 in_editor 0 }
+  sprite levitator_2 { grid 1 0 in_editor 0 }
+  sprite levitator_3 { grid 2 0 in_editor 0 }
+  sprite levitator_4 { grid 3 0 in_editor 0 }
+  anim levitator {
+    time_step 100
+    skey levitator_1
+    skey levitator_2
+    skey levitator_3
+    skey levitator_4
+    skey levitator_3
+    skey levitator_2
+    send
+  }
+  
+//==============================================================================
+  use_surface sprites/entity/mandi.png
+
+  sprite mandi_1 { rect 0 0 60 63 in_editor 0 pivot 10 23 }
+  sprite mandi_2 { rect 0 63 60 63 in_editor 0 pivot 10 23 }
+  anim mandi {    key 0 mandi_1    key 500 mandi_2    end 580   }
+  
+// EOF

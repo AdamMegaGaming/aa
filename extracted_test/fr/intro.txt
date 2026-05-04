@@ -1,0 +1,16 @@
+dialogue    intro/00.jpg    fr/intro/00a.png    125 21
+dialogue    intro/01.jpg    fr/intro/01a.png    328 20
+bg          intro/02.jpg
+dialogue    intro/03.jpg    fr/intro/03a.png    336 20
+dialogue    intro/03.jpg    fr/intro/03b.png    368 88
+dialogue    intro/04.jpg    fr/intro/04a.png    355 45
+dialogue    intro/05.jpg    fr/intro/05a.png    51 125
+dialogue    intro/06.jpg    fr/intro/06a.png    224 6
+dialogue    intro/07.jpg    fr/intro/07a.png    72 88
+dialogue    intro/07.jpg    fr/intro/07b.png    22 23
+dialogue    intro/05.jpg    fr/intro/05b.png    60 125
+dialogue    intro/08.jpg    fr/intro/08a.png    71 156
+
+
+
+

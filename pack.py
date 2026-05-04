@@ -29,6 +29,23 @@ from pathlib import Path
 HEADER_SIZE = 0x4E
 ENTRY_SIZE = 8
 
+# Inside record 0, before the "__lookup__\0" marker, there is a per-record
+# metadata table. After a 176-byte header / hash bucket region, it contains
+# one 16-byte entry for every record in the database:
+#
+#   u32 f1      filename hash (used for the named-lookup hash table)
+#   u16 rec_idx record index
+#   u16 marker  0xFFFF for hash-indexed entries, slot info otherwise
+#   u32 size    record size (THIS is what the engine reads at load time)
+#   u32 size2   record size again (duplicate)
+#
+# The repacker MUST rewrite the two size fields whenever a payload changes
+# size, otherwise the engine will load truncated/garbage data and bail out
+# (e.g. kick the player back to the menu when entering a resized level).
+SIZE_TABLE_OFFSET = 0xB0  # bytes into record 0
+SIZE_TABLE_STRIDE = 16
+SIZE_FIELD_OFFSET = 8     # within each 16-byte entry
+
 
 def parse_pdb(data: bytes):
     num_records = struct.unpack(">H", data[0x4C:0x4E])[0]
@@ -135,9 +152,27 @@ def main() -> int:
     for rec_index in range(n + 1, num_records):
         extras.append(get_record_bytes(data, entries, sizes, rec_index))
 
-    new_rec0 = build_record0(rec0_prefix, names[:n], rec0_trailing)
-    all_records = [new_rec0] + payloads + extras
+    # Build record 0 with the original size table, then patch it with the
+    # final sizes of every record (including record 0 itself).
+    new_rec0_bytes = bytearray(build_record0(rec0_prefix, names[:n], rec0_trailing))
+    all_records = [bytes(new_rec0_bytes)] + payloads + extras
     record_count = len(all_records)
+
+    patched = 0
+    for rec_index in range(record_count):
+        entry_off = SIZE_TABLE_OFFSET + rec_index * SIZE_TABLE_STRIDE
+        if entry_off + SIZE_TABLE_STRIDE > len(new_rec0_bytes):
+            break  # ran out of table room; original may not cover this record
+        actual_size = len(all_records[rec_index])
+        struct.pack_into(
+            "<II",
+            new_rec0_bytes,
+            entry_off + SIZE_FIELD_OFFSET,
+            actual_size,
+            actual_size,
+        )
+        patched += 1
+    all_records[0] = bytes(new_rec0_bytes)
 
     # Recompute offsets. Body region starts after header + entry table + gap.
     body_start = HEADER_SIZE + record_count * ENTRY_SIZE + len(gap_bytes)
@@ -166,10 +201,12 @@ def main() -> int:
     print(f"Wrote {out_path} ({len(out):,} bytes)")
     print(f"Records: {record_count}  reused-from-original: {reused}  resized: {resized}")
     print(f"Total payload: {total_out:,} bytes (was {total_in:,})")
+    print(f"Patched size-table entries inside record 0: {patched}/{record_count}")
     if resized:
         print(
-            "Note: some payloads changed size. The PDB is valid; whether the "
-            "game accepts the new sizes depends on engine buffer limits."
+            "Note: some payloads changed size. The PDB is valid and the engine's "
+            "size table has been updated; whether the game accepts the new sizes "
+            "depends on engine buffer limits."
         )
     return 0
 

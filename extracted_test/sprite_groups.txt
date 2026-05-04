@@ -1,0 +1,25 @@
+//tiles
+  sprites tile sprites/tile/tile_sprites.txt
+
+//spec. tiles
+  sprites spectile sprites/spectile/spectile_sprites.txt
+
+//pozadi a hlina
+  sprites wall sprites/bgr/bgr_sprites.txt
+
+//entity
+  sprites tile sprites/entity/entity_sprites.txt
+
+//heroes: bubble, magneto, baloon
+  sprites hero sprites/hero/hero_sprites.txt
+
+//enemaci
+  sprites enemy sprites/enemy/enemy_sprites.txt
+
+//user interface
+  sprites ui sprites/ui/ui_sprites.txt
+  sprites menu sprites/menu/menu_sprites.txt
+  sprites select_level sprites/menu/select_level.txt
+  sprites iphone sprites/menu/iphone.txt
+
+// EOF //

@@ -1,0 +1,11 @@
+dialogue    intro/19.jpg    cs/intro/19a.png   18 15
+dialogue    intro/20.jpg    cs/intro/20a.png   217 39
+dialogue    intro/20.jpg    cs/intro/20b.png   218 8
+dialogue    intro/20.jpg    cs/intro/20c.png   201 40
+dialogue    intro/20.jpg    cs/intro/20d.png   304 68
+dialogue    intro/20.jpg    cs/intro/20e.png   217 16
+dialogue    intro/20.jpg    cs/intro/20f.png   203 45
+dialogue    intro/20.jpg    cs/intro/20g.png   201 79
+dialogue    intro/20.jpg    cs/intro/20h.png   258 137
+
+

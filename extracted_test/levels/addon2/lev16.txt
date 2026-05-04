@@ -1,0 +1,733 @@
+sprite_table {
+ bgr/wall_brick2 1
+ bgr/wall_brick 2
+ bgr/pipe3 3
+ bgr/pipe1 4
+ bgr/pipe2 5
+ bgr/win3 6
+ bgr/plate3 7
+ bgr/plate1 8
+ bgr/pipe6 9
+ bgr/pipe4 10
+ bgr/plate2 11
+ bgr/grate 12
+ bgr/arc_top1 13
+ bgr/arc_top2 14
+ bgr/arc_top3 15
+ bgr/pipe5 16
+ bgr/arc_left 17
+ bgr/arc_right 18
+ bgr/rig 19
+ bgr/futro_H 20
+ bgr/column1 21
+ bgr/column3 22
+ wall_stoneA_02 23
+ wall_stoneA_05 24
+ shadow_fix_01 25
+ shadow_fix_02 26
+ wall_tech_37 27
+ wall_tech_12 28
+ columnA_top 29
+ columnA_middle 30
+ wall_tech_01 31
+ wall_tech_05 32
+ wall_tech_11 33
+ wall_tech_14 34
+ wall_tech_08 35
+ wall_tech_30 36
+ tech_light 37
+ wall_tech_06 38
+ wall_tech_07 39
+ wall_tech_21 40
+ wall_tech_26 41
+ wall_tech_22 42
+ wall_tech_03 43
+ wall_tech_31 44
+ wall_tech_13 45
+ wall_tech_25 46
+ wall_tech_28 47
+ wall_tech_23 48
+ wall_tech_35 49
+ wall_tech_33 50
+ wall_stoneA_06 51
+ wall_stoneA_08 52
+ wall_stoneA_03 53
+ wall_tech_47 54
+ wall_green_24a 55
+ wall_green_24b 56
+ wall_tech_10 57
+ wall_tech_09 58
+ wall_stoneA_07 59
+ columnA_bottom 60
+ mandi 61
+ wall_stoneA_04 62
+ wall_stoneA_10 63
+ wall_stoneA_11 64
+ wall_stoneA_12 65
+ wall_stoneA_13 66
+ wall_tech_20 67
+ sign/storage 68
+ sign/exit 69
+ sign/arrow2 70
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name noname
+offset 0 0
+cells_offset -280 -520
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 15
+height 16
+no_cells
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 0 0 2 0 
+2 0 0 0 3 0 4 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 5 0 2 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 0 0 6 0 
+0 0 7 0 5 0 0 0 0 0 8 0 0 0 0 0 0 0 0 0 0 0 8 0 0 0 0 0 0 0 
+0 0 7 0 5 0 2 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 0 0 2 0 
+2 0 0 0 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 9 0 4 0 4 0 10 0 2 0 0 0 2 0 11 0 2 0 0 0 0 0 0 0 1 0 
+0 0 7 0 2 0 0 0 1 0 5 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 4 0 4 0 
+0 0 7 0 0 0 0 0 12 0 5 0 12 0 1 0 1 0 1 0 0 0 1 0 5 0 2 0 0 0 
+2 0 0 0 13 0 14 0 15 0 5 0 1 0 13 0 14 0 15 0 0 0 4 0 16 0 0 0 0 0 
+0 0 0 0 17 0 0 0 18 0 5 0 1 0 17 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+0 0 0 0 17 0 0 0 18 0 5 0 1 0 17 0 0 0 0 0 19 0 0 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 20 0 0 0 0 0 0 0 4 0 4 0 4 0 0 0 0 0 
+1 0 2 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 21 0 2 0 0 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22 0 0 0 0 0 0 0 0 0 0 0 
+decorations 0
+
+layer // layer 1
+name noname
+offset 15 15
+cells_offset -280 -560
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 15
+height 17
+shadow
+no_cells
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 24 0 0 0 24 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 0 0 0 
+24 0 0 0 24 0 0 0 24 0 0 0 0 0 0 0 24 0 0 0 24 0 0 0 0 0 23 0 0 0 
+23 0 0 0 0 0 0 0 26 0 24 0 0 0 24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 0 0 
+23 0 0 0 26 0 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 0 0 
+23 0 0 0 0 0 0 0 0 0 0 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 26 0 27 0 0 0 0 0 0 0 23 0 24 0 0 0 0 0 
+23 0 0 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 26 0 0 0 0 0 0 0 0 0 
+0 0 0 0 26 0 27 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 0 0 0 0 0 0 0 0 
+23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 0 0 0 0 0 0 0 0 0 0 0 
+0 0 28 0 0 0 0 0 0 0 25 0 0 0 0 0 0 0 23 0 0 0 0 0 0 0 0 0 0 0 
+24 0 0 0 24 0 0 0 24 0 0 0 0 0 24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+29 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 1
+121 -200 25 0
+
+layer // layer 2
+name Main
+offset 0 0
+cells_offset -280 -560
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 16
+height 18
+cells
+0 0 0 0 0 0 0 0 0 0 0 0 2 2 2 2 
+0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 
+2 2 2 2 2 2 2 2 2 2 2 2 0 2 0 2 
+2 0 0 0 0 2 2 2 2 0 0 0 0 2 0 2 
+2 0 0 0 0 0 0 0 0 0 0 0 0 2 0 2 
+2 0 0 2 0 0 0 0 0 0 0 0 0 2 0 2 
+2 0 0 0 0 0 0 0 0 0 0 0 0 2 0 2 
+2 0 0 0 0 0 0 0 0 0 0 0 0 2 0 2 
+2 0 0 0 0 0 0 2 0 0 0 2 2 2 0 2 
+2 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 
+2 0 0 2 0 0 0 0 0 0 2 0 0 0 0 2 
+2 0 0 0 0 0 0 0 0 0 2 0 0 2 2 0 
+2 0 0 0 0 0 0 0 0 2 2 0 2 0 0 0 
+2 2 0 0 0 0 0 0 0 2 0 0 2 0 0 0 
+2 2 2 2 2 2 0 2 2 2 0 0 2 0 0 0 
+2 0 0 0 0 0 0 2 0 0 0 0 2 0 0 0 
+2 0 0 0 0 0 0 2 0 0 0 2 2 2 2 0 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+sprite_cells
+31 0 32 0 32 0 32 0 32 0 32 0 32 0 32 0 32 0 32 0 32 0 33 0 34 0 34 0 34 0 23 0 
+35 0 36 0 37 0 36 0 36 0 36 0 36 0 36 0 36 0 37 0 36 0 38 0 0 0 0 0 0 0 0 0 
+27 0 39 0 39 0 39 0 39 0 40 0 41 0 41 0 42 0 39 0 39 0 43 0 0 0 44 0 0 0 44 0 
+45 0 0 0 0 0 0 0 0 0 46 0 47 0 47 0 48 0 0 0 0 0 0 0 0 0 49 0 0 0 49 0 
+45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49 0 0 0 49 0 
+45 0 0 0 0 0 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49 0 0 0 49 0 
+45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49 0 0 0 49 0 
+45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50 0 0 0 50 0 
+45 0 0 0 0 0 0 0 0 0 0 0 0 0 27 0 0 0 0 0 0 0 23 0 51 0 52 0 0 0 53 0 
+45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 
+45 0 0 0 0 0 27 0 0 0 0 0 0 0 0 0 0 0 0 0 53 0 0 0 0 0 0 0 0 0 0 0 
+45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 0 0 0 0 53 0 24 0 0 0 
+45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53 0 0 0 0 0 53 0 54 0 0 0 55 0 
+33 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53 0 0 0 0 0 29 0 0 0 0 0 56 0 
+57 0 58 0 51 0 59 0 59 0 52 0 0 0 51 0 59 0 52 0 0 0 0 0 30 0 33 0 28 0 56 0 
+29 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 0 0 0 0 0 0 0 0 60 0 57 0 58 0 56 0 
+60 0 0 0 61 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53 0 62 0 23 0 53 0 56 0 
+24 0 0 0 63 0 53 0 64 0 65 0 66 0 24 0 0 0 24 0 0 0 24 0 0 0 0 0 24 0 0 0 
+decorations 5
+-40 -462 67 0
+0 -462 67 0
+-31 -423 68 0
+-201 11 69 0
+80 120 70 0
+
+layer // layer 3
+name noname
+offset 0 0
+cells_offset 0 0
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 0
+height 0
+no_cells
+no_sprite_cells
+decorations 0
+
+} // layers
+
+entities { 
+Crate 148 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 160 -260
+layer_index 2
+}
+Crate 149 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 140 -180
+layer_index 2
+}
+Crate 150 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 120 -220
+layer_index 2
+}
+Crate 151 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 100 -100
+layer_index 2
+}
+Crate 152 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 100 -260
+layer_index 2
+}
+Crate 153 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 80 -140
+layer_index 2
+}
+Crate 154 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 80 -180
+layer_index 2
+}
+Crate 155 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 60 -220
+layer_index 2
+}
+Crate 156 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 40 -260
+layer_index 2
+}
+Crate 157 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 60 -20
+layer_index 2
+}
+Crate 158 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 0 -20
+layer_index 2
+}
+Crate 159 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -60 -20
+layer_index 2
+}
+Crate 160 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -100 -20
+layer_index 2
+}
+Crate 161 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -160 -20
+layer_index 2
+}
+Crate 162 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -200 -60
+layer_index 2
+}
+Crate 163 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -140 -60
+layer_index 2
+}
+Crate 164 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -100 -60
+layer_index 2
+}
+Crate 165 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -40 -60
+layer_index 2
+}
+Crate 166 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 20 -60
+layer_index 2
+}
+Crate 167 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 60 -60
+layer_index 2
+}
+Crate 168 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 40 -100
+layer_index 2
+}
+Crate 169 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 20 -140
+layer_index 2
+}
+Crate 171 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -80 -100
+layer_index 2
+}
+Crate 172 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -80 -140
+layer_index 2
+}
+Crate 173 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -60 -180
+layer_index 2
+}
+Crate 174 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -180 -100
+layer_index 2
+}
+Crate 175 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -200 -140
+layer_index 2
+}
+Crate 177 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -220 -180
+layer_index 2
+}
+Crate 178 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -180 -180
+layer_index 2
+}
+Crate 179 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -200 -220
+layer_index 2
+}
+Crate 180 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -220 -260
+layer_index 2
+}
+Crate 181 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -140 -180
+layer_index 2
+}
+Crate 184 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -100 -180
+layer_index 2
+}
+Crate 185 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -80 -220
+layer_index 2
+}
+Crate 186 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -60 -260
+layer_index 2
+}
+Crate 187 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -160 -260
+layer_index 2
+}
+Crate 188 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -120 -260
+layer_index 2
+}
+Crate 189 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -100 -300
+layer_index 2
+}
+Crate 190 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -180 -300
+layer_index 2
+}
+Crate 192 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 0 -260
+layer_index 2
+}
+Crate 193 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -40 -220
+layer_index 2
+}
+Crate 196 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -220 -300
+layer_index 2
+}
+Crate 197 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -200 -340
+layer_index 2
+}
+Crate 198 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -220 -380
+layer_index 2
+}
+Crate 199 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -180 -380
+layer_index 2
+}
+Crate 200 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -140 -380
+layer_index 2
+}
+Crate 201 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -100 -340
+layer_index 2
+}
+Crate 202 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -60 -300
+layer_index 2
+}
+Crate 203 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 0 -300
+layer_index 2
+}
+Crate 204 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer -20 -340
+layer_index 2
+}
+Crate 205 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 60 -300
+layer_index 2
+}
+Crate 206 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 100 -300
+layer_index 2
+}
+Crate 207 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 140 -300
+layer_index 2
+}
+Crate 208 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 40 -340
+layer_index 2
+}
+Crate 209 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 80 -340
+layer_index 2
+}
+Crate 210 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 140 -340
+layer_index 2
+}
+Crate 211 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 120 -380
+layer_index 2
+}
+Spec/LevelExit 213 {
+closed_sprite none
+opened_sprite none
+position_in_layer -200 80
+layer_index 2
+}
+Crate 216 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 200 -260
+layer_index 2
+}
+Crate 217 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 220 -300
+layer_index 2
+}
+Crate 218 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 180 -340
+layer_index 2
+}
+Crate 219 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 220 -340
+layer_index 2
+}
+Crate 220 {
+sprite eyecrate0
+grabbed_sprite eyecrate_look
+break_anim none
+breakable false
+position_in_layer 200 -380
+layer_index 2
+}
+Crate/solid 225 {
+position_in_layer 160 -380
+layer_index 2
+}
+Crate/solid 226 {
+position_in_layer 180 -300
+layer_index 2
+}
+Crate/solid 227 {
+position_in_layer -60 -340
+layer_index 2
+}
+Crate/solid 228 {
+position_in_layer -120 -220
+layer_index 2
+}
+Crate/solid 229 {
+position_in_layer -160 -220
+layer_index 2
+}
+hero/profa_jetpack 238 {
+position_in_layer 104 75
+layer_index 2
+}
+} // entities

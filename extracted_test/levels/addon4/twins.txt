@@ -1,0 +1,103 @@
+sprite_table {
+ wall_stoneA_03 1
+ wall_metalA_02 2
+ mandi 3
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name Main
+offset 0 0
+cells_offset 0 240
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 19
+height 14
+cells
+0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 194 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 194 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 194 
+2 2 2 13850 0 0 0 0 0 0 0 0 0 0 0 0 0 0 194 
+0 0 2 0 0 0 0 0 0 2 2 2 2 0 0 2 0 0 194 
+0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 194 
+0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 194 
+2 2 2 0 0 0 0 0 0 0 0 2 2 2 0 0 0 0 194 
+2 0 0 0 0 0 0 0 0 0 0 2 0 2 2 2 2 2 2 
+2 2 2 2 2 2 0 0 2 2 2 2 0 0 0 0 0 0 0 
+0 0 0 0 0 2 0 0 2 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 2 0 0 2 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 2 2 2 2 0 0 0 0 0 0 0 0 0 0 
+sprite_cells
+0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 
+1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 
+1 0 1 0 1 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 
+0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 
+0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 
+0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 2 0 
+1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 2 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 
+1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 1
+61 360 3 0
+
+} // layers
+
+entities { 
+hero/Magneto 1 {
+balloon false
+position_in_layer 480 520
+layer_index 0
+}
+hero/Magneto 2 {
+anim magneto_probe
+stick_anim magneto_probe
+climb_anim magneto_probe
+death_anim magneto_probe_death
+driver_anim INVISIBLE
+driver_anim_speed INVISIBLE
+driver_anim_idle1 INVISIBLE
+driver_anim_idle2 INVISIBLE
+driver_anim_idle3 INVISIBLE
+driver_anim_idle4 INVISIBLE
+driver_anim_idle5 INVISIBLE
+position_in_layer 400 400
+layer_index 0
+}
+THORNBALL/medium 3 {
+position_in_layer 517 401
+layer_index 0
+}
+AcidPool 4 {
+size 2 3
+position_in_layer 240 640
+layer_index 0
+}
+Spec/LevelExit 13 {
+closed_sprite none
+opened_sprite none
+position_in_layer 60 360
+layer_index 0
+}
+Device/FloorButton 15 {
+operate 16
+position_in_layer 600 440
+layer_index 0
+}
+DoorV 16 {
+position_in_layer 120 320
+layer_index 0
+}
+Device/Terminal 17 {
+show_doc "outtake2"
+position_in_layer 40 600
+layer_index 0
+}
+} // entities

@@ -1,0 +1,352 @@
+sprite_table {
+ bgr/wall_brick2 1
+ bgr/pipe2 2
+ bgr/wall_brick 3
+ bgr/win3 4
+ bgr/grate 5
+ bgr/hole1 6
+ bgr/pipe6 7
+ bgr/pipe1 8
+ bgr/pipe4 9
+ bgr/rig 10
+ bgr/plate2 11
+ bgr/pipe5 12
+ wall_stoneA_03 13
+ wall_arc_01 14
+ wall_arc_02 15
+ wall_arc_03 16
+ columnA_top 17
+ columnA_bottom 18
+ shadow_fix_01 19
+ wall_stoneA_05 20
+ wall_stoneA_02 21
+ wall_yellow_03 22
+ wall_yellow_04 23
+ wall_yellowx_3 24
+ wall_yellowx_4 25
+ wall_yellowx_5 26
+ wall_yellow_11 27
+ wall_yellow_02 28
+ wall_yellow_10 29
+ sign/gaugeB 30
+ wall_yellow_01 31
+ sign/arrow1 32
+ metal_pipe_07 33
+ sign/grate_round 34
+ metal_pipe_03 35
+ wall_yellow_12 36
+ wall_yellow_13 37
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name noname
+offset 0 0
+cells_offset 400 280
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 11
+height 11
+no_cells
+sprite_cells
+0 0 0 0 1 0 1 0 2 0 3 0 1 0 1 0 1 0 0 0 0 0 
+3 0 0 0 3 0 4 0 2 0 0 0 3 0 4 0 3 0 0 0 3 0 
+0 0 0 0 0 0 0 0 2 0 3 0 0 0 0 0 5 0 0 0 0 0 
+3 0 0 0 6 0 6 0 7 0 8 0 9 0 6 0 0 0 0 0 0 0 
+0 0 0 0 10 0 0 0 6 0 6 0 7 0 8 0 0 0 0 0 0 0 
+8 0 8 0 8 0 8 0 8 0 9 0 6 0 1 0 0 0 0 0 0 0 
+1 0 6 0 3 0 6 0 6 0 2 0 1 0 6 0 0 0 0 0 0 0 
+3 0 0 0 6 0 0 0 11 0 12 0 6 0 1 0 0 0 0 0 0 0 
+0 0 0 0 3 0 6 0 7 0 8 0 8 0 8 0 0 0 0 0 0 0 
+3 0 6 0 6 0 0 0 3 0 6 0 6 0 6 0 0 0 0 0 0 0 
+0 0 0 0 1 0 1 0 0 0 6 0 6 0 1 0 0 0 0 0 0 0 
+decorations 0
+
+layer // layer 1
+name noname
+offset 0 0
+cells_offset 375 295
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 12
+height 11
+shadow
+no_cells
+sprite_cells
+13 0 13 0 13 0 14 0 15 0 16 0 13 0 14 0 15 0 16 0 13 0 13 0 
+13 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+13 0 18 0 19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 0
+
+layer // layer 2
+name Main
+offset 0 0
+cells_offset 360 280
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 13
+height 12
+cells
+0 2 2 2 2 2 2 2 2 2 2 2 2 
+0 2 0 0 0 0 0 0 0 0 0 0 2 
+0 2 0 0 0 0 0 0 0 0 0 0 2 
+0 2 2 0 0 0 0 0 0 2 2 2 2 
+0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 2 2 2 2 2 2 2 2 2 0 0 0 
+sprite_cells
+22 0 0 0 23 0 24 0 25 0 26 0 23 0 24 0 25 0 26 0 23 0 23 0 23 0 
+23 0 27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 0 
+23 0 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+28 0 22 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 31 0 32 0 23 0 23 0 
+0 0 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33 0 0 0 
+22 0 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 28 0 33 0 0 0 
+23 0 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 0 0 33 0 0 0 
+23 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 0 23 0 33 0 0 0 
+23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34 0 28 0 35 0 0 0 
+22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 0 0 0 0 0 0 
+23 0 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31 0 0 0 0 0 0 0 
+23 0 23 0 36 0 37 0 37 0 37 0 37 0 37 0 37 0 0 0 0 0 0 0 0 0 
+decorations 0
+
+} // layers
+
+entities { 
+Break/Bridge 113 {
+position_in_layer 600 680
+layer_index 2
+}
+Break/Bridge 114 {
+position_in_layer 640 640
+layer_index 2
+}
+Spec/SignalPlexor 115 {
+operate_1 113
+operate_5 124
+position_in_layer 624 822
+layer_index 2
+}
+Spec/SignalPlexor 116 {
+operate_1 122
+operate_2 127
+position_in_layer 320 726
+layer_index 2
+}
+Spec/SignalPlexor 117 {
+operate_1 114
+operate_2 155
+operate_5 144
+position_in_layer 826 576
+layer_index 2
+}
+Spec/SignalPlexor 118 {
+operate_1 129
+operate_2 128
+operate_3 136
+operate_5 141
+invert true
+position_in_layer 288 556
+layer_index 2
+}
+Break/Bridge 121 {
+broken false
+position_in_layer 680 640
+layer_index 2
+}
+Break/Bridge 122 {
+position_in_layer 440 640
+layer_index 2
+}
+Break/Bridge 123 {
+broken false
+position_in_layer 600 640
+layer_index 2
+}
+Spec/SignalPlexor 124 {
+operate_1 123
+operate_2 121
+invert true
+position_in_layer 714 824
+layer_index 2
+}
+Break/Bridge 127 {
+position_in_layer 640 680
+layer_index 2
+}
+Break/Bridge 128 {
+broken false
+position_in_layer 480 640
+layer_index 2
+}
+Break/Bridge 129 {
+broken false
+position_in_layer 520 600
+layer_index 2
+}
+Spec/SignalPlexor 132 {
+operate_1 138
+operate_2 135
+operate_5 159
+position_in_layer 300 452
+layer_index 2
+}
+Spec/SignalPlexor 134 {
+operate_1 154
+operate_5 145
+position_in_layer 832 448
+layer_index 2
+}
+Break/Bridge 135 {
+position_in_layer 480 560
+layer_index 2
+}
+Break/Bridge 136 {
+position_in_layer 560 520
+layer_index 2
+}
+Break/Bridge 138 {
+position_in_layer 440 520
+layer_index 2
+}
+Break/Bridge 140 {
+position_in_layer 520 520
+layer_index 2
+}
+Spec/SignalPlexor 141 {
+operate_1 140
+operate_2 136
+invert true
+position_in_layer 290 622
+layer_index 2
+}
+Spec/SignalPlexor 144 {
+operate_1 153
+invert true
+position_in_layer 828 510
+layer_index 2
+}
+Spec/SignalPlexor 145 {
+operate_1 157
+invert true
+position_in_layer 836 406
+layer_index 2
+}
+Break/Bridge 153 {
+broken false
+position_in_layer 640 560
+layer_index 2
+}
+Break/Bridge 154 {
+position_in_layer 680 520
+layer_index 2
+}
+Break/Bridge 155 {
+position_in_layer 640 480
+layer_index 2
+}
+Break/Bridge 157 {
+broken false
+position_in_layer 600 440
+layer_index 2
+}
+Break/Bridge 158 {
+position_in_layer 560 440
+layer_index 2
+}
+Spec/SignalPlexor 159 {
+operate_1 160
+operate_3 164
+invert true
+position_in_layer 300 385
+layer_index 2
+}
+Break/Bridge 160 {
+broken false
+position_in_layer 520 400
+layer_index 2
+}
+Break/Bridge 163 {
+position_in_layer 680 400
+layer_index 2
+}
+Break/Bridge 164 {
+broken false
+position_in_layer 480 400
+layer_index 2
+}
+Spec/SignalPlexor 165 {
+operate_1 163
+operate_2 158
+position_in_layer 610 199
+layer_index 2
+}
+hero/Magneto 166 {
+position_in_layer 520 680
+layer_index 2
+}
+Device/Lever_PullDown 167 {
+operate 165
+col_size 16 40
+position_in_layer 600 320
+layer_index 2
+}
+Device/Lever_PullDown 168 {
+operate 132
+position_in_layer 440 440
+layer_index 2
+}
+Spec/LevelExit 169 {
+position_in_layer 780 360
+layer_index 2
+}
+Device/Lever_W 170 {
+operate 115
+position_in_layer 680 680
+layer_index 2
+}
+Device/Lever_E 171 {
+operate 116
+position_in_layer 440 680
+layer_index 2
+}
+Device/Lever_W 172 {
+operate 134
+position_in_layer 680 440
+layer_index 2
+}
+Device/Lever_W 173 {
+operate 117
+position_in_layer 680 560
+layer_index 2
+}
+Device/Lever_E 174 {
+operate 118
+position_in_layer 440 560
+layer_index 2
+}
+Spec/LevelBoundary 175 {
+position_in_layer 800 680
+layer_index 2
+}
+Spec/LevelBoundary 176 {
+position_in_layer 400 320
+layer_index 2
+}
+} // entities

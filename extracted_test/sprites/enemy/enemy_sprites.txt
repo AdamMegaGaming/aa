@@ -1,0 +1,887 @@
+//==============================================================================
+  use_surface sprites/enemy/enemy1.png
+//==============================================================================
+
+  transparent
+  grid_size 40 40
+
+  //--------------------------------------------
+
+  sprite happyblue_0 { grid 0 0 in_editor 0 }
+  sprite happyblue_1 { grid 1 0 in_editor 0 }
+  sprite happyblue_2 { grid 2 0 in_editor 0 }
+  sprite happyblue_3 { grid 3 0 in_editor 0 }
+
+  anim happyblue { time_step 100 skey happyblue_0  skey happyblue_1  skey happyblue_2  skey happyblue_3  send }
+
+  //--------------------------------------------
+
+  sprite mine_0 { grid 4 0 in_editor 0 }
+  sprite mine_1 { grid 5 0 in_editor 0 }
+  sprite mine_2 { grid 0 1 in_editor 0 }
+  sprite mine_3 { grid 1 1 in_editor 0 }
+
+  anim mine { key 0 mine_0  key 200 mine_1  key 400 mine_2  key 600 mine_1  end 800 }
+
+  //--------------------------------------------
+
+  sprite pinkbat_0 { grid 2 1 in_editor 0 }
+  sprite pinkbat_1 { grid 3 1 in_editor 0 }
+  sprite pinkbat_2 { grid 4 1 in_editor 0 }
+  sprite pinkbat_3 { grid 5 1 in_editor 0 }
+
+  anim pinkbat {
+    time_step 25
+    skey pinkbat_0
+    skey pinkbat_1
+    skey pinkbat_2
+    skey pinkbat_3
+    skey pinkbat_2
+    skey pinkbat_1
+    send
+  }
+
+  //--------------------------------------------
+
+  sprite seahorse_0 { grid 0 2 in_editor 0 size 40 57 }
+  sprite seahorse_1 { grid 1 2 in_editor 0 size 40 57 }
+  sprite seahorse_2 { grid 2 2 in_editor 0 size 40 57 }
+  sprite seahorse_3 { grid 3 2 in_editor 0 size 40 57 }
+
+  anim seahorse {
+    time_step 150
+    skey seahorse_0
+    skey seahorse_1
+    skey seahorse_2
+    skey seahorse_3
+    skey seahorse_2
+    skey seahorse_1
+    send
+  }
+
+  //--------------------------------------------
+
+  sprite greenbat_0 { rect 0 137 60 44 in_editor 0 }
+  sprite greenbat_1 { rect 60 137 60 44 in_editor 0 }
+  sprite greenbat_2 { rect 120 137 60 44 in_editor 0 }
+  sprite greenbat_3 { rect 180 137 60 44 in_editor 0 }
+
+  anim greenbat {
+    time_step 50
+    skey greenbat_0
+    skey greenbat_1
+    skey greenbat_2
+    skey greenbat_3
+    skey greenbat_2
+    skey greenbat_1
+    send
+  }
+
+  //--------------------------------------------
+
+  sprite sadstewie_0 { rect 0 181 40 31 in_editor 0 }
+  sprite sadstewie_1 { rect 40 181 40 31 in_editor 0 }
+  sprite sadstewie_2 { rect 80 181 40 31 in_editor 0 }
+
+  anim sadstewie { time_step 150 skey sadstewie_0 skey sadstewie_1 skey sadstewie_2 skey sadstewie_1 send }
+
+  //--------------------------------------------
+
+
+  //--------------------------------------------
+
+  grid_size 16 16
+  sprite shot/popcorn0 { grid 15 0 in_editor 1 }
+  sprite shot/popcorn1 { grid 15 1 in_editor 0 }
+  sprite shot/popcorn2 { grid 15 2 in_editor 0 }
+  sprite shot/popcorn3 { grid 15 3 in_editor 0 }
+  sprite shot/popcorn4 { grid 15 4 in_editor 0 }
+
+  anim shot/popcorn {
+    time_step 100
+    skey shot/popcorn0
+    skey shot/popcorn1
+    skey shot/popcorn2
+    skey shot/popcorn3
+    skey shot/popcorn4
+    send
+  }
+
+  sprite shot/chip0 { rect 240 80 8 8 in_editor 0 }
+  sprite shot/chip1 { rect 240 88 8 8 in_editor 0 }
+  sprite shot/chip2 { rect 248 80 8 8 in_editor 0 }
+  sprite shot/chip3 { rect 248 88 8 8 in_editor 0 }
+  anim shot/chip { time_step 50    skey shot/chip0    skey shot/chip1    skey shot/chip2    skey shot/chip3    send }
+  
+  sprite miniexplo0 { rect 240 96 8 8 in_editor 0 }
+  sprite miniexplo1 { rect 248 96 8 8 in_editor 0 }
+  sprite miniexplo2 { rect 248 104 8 8 in_editor 0 }
+  anim miniexplo { time_step 50    skey miniexplo0    skey miniexplo1    skey miniexplo2    send }
+
+
+//==============================================================================
+  use_surface sprites/enemy/purple.png
+//==============================================================================
+
+  grid_size 69 77
+
+  sprite purpleigor_a0 { grid 0 0 in_editor 0 }
+  sprite purpleigor_a1 { grid 1 0 in_editor 0 }
+  sprite purpleigor_a2 { grid 2 0 in_editor 0 }
+  sprite purpleigor_a3 { grid 0 1 in_editor 0 }
+  sprite purpleigor_b0 { grid 1 1 in_editor 0 }
+  sprite purpleigor_b1 { grid 2 1 in_editor 0 }
+  sprite purpleigor_b2 { grid 0 2 in_editor 0 }
+  sprite purpleigor_b3 { grid 1 2 in_editor 0 }
+
+  anim purpleigor_a {
+    time_step 150
+    skey purpleigor_a0
+    skey purpleigor_a1
+    skey purpleigor_a2
+    skey purpleigor_a3
+    skey purpleigor_a2
+    skey purpleigor_a1
+    send
+  }
+  anim purpleigor_b {
+    time_step 80
+    skey purpleigor_b0
+    skey purpleigor_b1
+    skey purpleigor_b2
+    skey purpleigor_b3
+    skey purpleigor_b2
+    skey purpleigor_b1
+    send
+  }
+
+  sprite teeth40_N0  { rect 0 244 40 12 pivot 0 -8 in_editor 0 }
+  sprite teeth80_N0  { rect 0 244 80 12 pivot 0 -8 in_editor 0 }
+  sprite teeth120_N0 { rect 0 244 120 12 pivot 0 -8 in_editor 0 }
+  sprite teeth40_N1  { rect 0 232 40 12 pivot 0 -8 in_editor 0 }
+  sprite teeth80_N1  { rect 0 232 80 12 pivot 0 -8 in_editor 0 }
+  sprite teeth120_N1 { rect 0 232 120 12 pivot 0 -8 in_editor 0 }
+
+  sprite teeth40_S0  { rect 120 244 40 12 pivot 0 -20 in_editor 0 }
+  sprite teeth80_S0  { rect 120 244 80 12 pivot 0 -20 in_editor 0 }
+  sprite teeth120_S0 { rect 120 244 120 12 pivot 0 -20 in_editor 0 }
+  sprite teeth40_S1  { rect 120 232 40 12 pivot 0 -20 in_editor 0 }
+  sprite teeth80_S1  { rect 120 232 80 12 pivot 0 -20 in_editor 0 }
+  sprite teeth120_S1 { rect 120 232 120 12 pivot 0 -20 in_editor 0 }
+
+  sprite teeth40_E0  { rect 244 0 12 40 pivot -20 0 in_editor 0 }
+  sprite teeth80_E0  { rect 244 0 12 80 pivot -20 0 in_editor 0 }
+  sprite teeth120_E0 { rect 244 0 12 120 pivot -20 0 in_editor 0 }
+  sprite teeth40_E1  { rect 232 0 12 40 pivot -20 0 in_editor 0 }
+  sprite teeth80_E1  { rect 232 0 12 80 pivot -20 0 in_editor 0 }
+  sprite teeth120_E1 { rect 232 0 12 120 pivot -20 0 in_editor 0 }
+
+  sprite teeth40_W0  { rect 220 0 12 40 pivot 12 0 in_editor 0 }
+  sprite teeth80_W0  { rect 220 0 12 80 pivot 12 0 in_editor 0 }
+  sprite teeth120_W0 { rect 220 0 12 120 pivot 12 0 in_editor 0 }
+  sprite teeth40_W1  { rect 208 0 12 40 pivot 12 0 in_editor 0 }
+  sprite teeth80_W1  { rect 208 0 12 80 pivot 12 0 in_editor 0 }
+  sprite teeth120_W1 { rect 208 0 12 120 pivot 12 0 in_editor 0 }
+  
+  anim teeth40_N  { time_step 250 skey teeth40_N0 skey teeth40_N1 send }
+  anim teeth80_N  { time_step 250 skey teeth80_N0 skey teeth80_N1 send }
+  anim teeth120_N { time_step 250 skey teeth120_N0 skey teeth120_N1 send }
+  anim teeth40_E  { time_step 250 skey teeth40_E0 skey teeth40_E1 send }
+  anim teeth80_E  { time_step 250 skey teeth80_E0 skey teeth80_E1 send }
+  anim teeth120_E { time_step 250 skey teeth120_E0 skey teeth120_E1 send }
+  anim teeth40_W  { time_step 250 skey teeth40_W0 skey teeth40_W1 send }
+  anim teeth80_W  { time_step 250 skey teeth80_W0 skey teeth80_W1 send }
+  anim teeth120_W { time_step 250 skey teeth120_W0 skey teeth120_W1 send }
+  anim teeth40_S  { time_step 250 skey teeth40_S0 skey teeth40_S1 send }
+  anim teeth80_S  { time_step 250 skey teeth80_S0 skey teeth80_S1 send }
+  anim teeth120_S { time_step 250 skey teeth120_S0 skey teeth120_S1 send }
+
+//==============================================================================
+  use_surface sprites/enemy/hubert.png
+//==============================================================================
+
+  grid_size 80 80
+
+  sprite angryhubert_0 { grid 0 0 in_editor 0 }
+  sprite angryhubert_1 { grid 1 0 in_editor 0 }
+  sprite angryhubert_2 { grid 2 0 in_editor 0 }
+  sprite angryhubert_3 { grid 0 1 in_editor 0 }
+  sprite angryhubert_4 { grid 1 1 in_editor 0 }
+  sprite angryhubert_5 { grid 2 1 in_editor 0 }
+  sprite angryhubert/shit_0 { grid 0 2 in_editor 0 }
+  sprite angryhubert/shit_1 { grid 1 2 in_editor 0 }
+  sprite angryhubert/shit_2 { grid 2 2 in_editor 0 }
+
+  anim angryhubert {
+    time_step 100
+    skey angryhubert_0
+    skey angryhubert_1
+    skey angryhubert_2
+    skey angryhubert_3
+    skey angryhubert_4
+    skey angryhubert_5
+    send
+  }
+
+  anim angryhubert/shit {
+    time_step 100
+    skey angryhubert/shit_0
+    skey angryhubert/shit_1
+    skey angryhubert/shit_2
+    send
+  }
+
+  //-----------------------------------------------------
+
+  sprite bouncer40_N  { rect 0 244 40 12 pivot 0 12 }
+  sprite bouncer80_N  { rect 0 244 80 12 pivot 0 12 }
+  sprite bouncer120_N { rect 0 244 120 12 pivot 0 12 }
+  sprite bouncer40_E  { rect 244 120 12 40 }
+  sprite bouncer80_E  { rect 244 120 12 80 }
+  sprite bouncer120_E { rect 244 120 12 120 }
+  sprite bouncer40_W  { rect 244 0 12 40 pivot 12 0 }
+  sprite bouncer80_W  { rect 244 0 12 80 pivot 12 0 }
+  sprite bouncer120_W { rect 244 0 12 120 pivot 12 0 }
+  sprite bouncer40_S  { rect 120 244 40 12 }
+  sprite bouncer80_S  { rect 120 244 80 12 }
+  sprite bouncer120_S { rect 120 244 120 12 }
+
+//==============================================================================
+  use_surface sprites/enemy/bean.png
+//==============================================================================
+
+  grid_size 57 68
+
+  sprite bean_W_0 { grid 0 0 in_editor 0 }
+  sprite bean_W_1 { grid 1 0 in_editor 0 }
+  sprite bean_W_2 { grid 2 0 in_editor 0 }
+  sprite bean/fire_W_0 { grid 3 0 in_editor 0 }
+  sprite bean/fire_W_1 { grid 0 1 in_editor 0 }
+  sprite bean/fire_W_2 { grid 1 1 in_editor 0 }
+  sprite bean_E_0 { grid 1 2 in_editor 0 }
+  sprite bean_E_1 { grid 2 2 in_editor 0 }
+  sprite bean_E_2 { grid 3 2 in_editor 0 }
+  sprite bean/fire_E_0 { grid 2 1 in_editor 0 }
+  sprite bean/fire_E_1 { grid 3 1 in_editor 0 }
+  sprite bean/fire_E_2 { grid 0 2 in_editor 0 }
+
+  anim bean_W  { time_step 150    skey bean_W_0    skey bean_W_1    skey bean_W_2    skey bean_W_1    send }
+  anim bean_E  { time_step 150    skey bean_E_0    skey bean_E_1    skey bean_E_2    skey bean_E_1    send }
+
+  anim bean_W/fire {
+    key 0 bean/fire_W_2
+    key 100 bean/fire_W_1
+    key 200 bean/fire_W_0
+    key 300 bean_W_1
+    end 400
+  }
+
+  anim bean_E/fire {
+    key 0 bean/fire_E_0
+    key 100 bean/fire_E_1
+    key 200 bean/fire_E_2
+    key 300 bean_E_1
+    end 400
+  }
+
+  //--------------------------------------------
+
+  sprite piranha_W_0 { rect 0 204 40 26 in_editor 0 }
+  sprite piranha_W_1 { rect 40 204 40 26 in_editor 0 }
+  sprite piranha_W_2 { rect 80 204 40 26 in_editor 0 }
+  sprite piranha_W_3 { rect 120 204 40 26 in_editor 0 }
+  anim piranha_W { time_step 100  skey piranha_W_0  skey piranha_W_1  skey piranha_W_2  skey piranha_W_3 send }
+
+  sprite piranha_E_0 { rect 0 230 40 26 in_editor 0 }
+  sprite piranha_E_1 { rect 40 230 40 26 in_editor 0 }
+  sprite piranha_E_2 { rect 80 230 40 26 in_editor 0 }
+  sprite piranha_E_3 { rect 120 230 40 26 in_editor 0 }
+  anim piranha_E { time_step 100  skey piranha_E_0  skey piranha_E_1  skey piranha_E_2  skey piranha_E_3 send }
+
+  //--------------------------------------------
+
+  sprite ceilingrobot_W_0 { rect 160 204 67 26 in_editor 0 }
+  sprite ceilingrobot_W_1 { rect 160 231 67 25 in_editor 0 }
+  anim ceilingrobot_W { time_step 100  skey ceilingrobot_W_0  skey ceilingrobot_W_1  send }
+
+  //--------------------------------------------
+  
+  sprite cyclop_spider_1 { rect 228 0 28 32 in_editor 0  pivot 13 16 }
+  sprite cyclop_spider_2 { rect 228 32 28 32 in_editor 0 pivot 13 16 }
+  sprite cyclop_spider_3 { rect 228 64 28 32 in_editor 0 pivot 13 16 }
+  anim cyclop_spider {
+    time_step 80
+    skey cyclop_spider_1
+    skey cyclop_spider_2
+    skey cyclop_spider_3
+    skey cyclop_spider_2
+    send
+  }
+
+  //--------------------------------------------
+
+  sprite rednose_punk0 { rect 228 96 16 30 pivot 0 0 in_editor 0 }
+  sprite rednose_punk1 { rect 228 126 16 30 pivot 0 0 in_editor 0 }
+  sprite rednose_punk2 { rect 228 156 16 30 pivot 0 0 in_editor 0 }
+  
+  anim rednose_punk { time_step 100 skey rednose_punk0 skey rednose_punk1 skey rednose_punk2 skey rednose_punk1 send }
+
+//==============================================================================
+  use_surface sprites/enemy/volcano.png
+//==============================================================================
+
+  //--------------------------------------------
+
+  sprite volcano_0 { rect 58 0 51 40 in_editor 0 }
+  sprite volcano_1 { rect 109 0 51 40 in_editor 0 }
+  sprite volcano_2 { rect 160 0 51 40 in_editor 0 }
+
+  anim volcano { time_step 100 skey volcano_0 skey volcano_1 skey volcano_2 skey volcano_1 send }
+
+  //--------------------------------------------
+
+  sprite ceilingrobot_E_0 { rect 58 40 67 26 in_editor 0 }
+  sprite ceilingrobot_E_1 { rect 125 41 67 25 in_editor 0 }
+  anim ceilingrobot_E { time_step 100  skey ceilingrobot_E_0  skey ceilingrobot_E_1  send }
+
+  //--------------------------------------------
+
+  sprite cannon_W_0 { rect 0 66 45 37 in_editor 0 }
+  sprite cannon_W_1 { rect 45 66 45 37 in_editor 0 }
+  sprite cannon_W_2 { rect 90 66 45 37 in_editor 0 }
+  anim cannon_W/fire { time_step 100  skey cannon_W_2 skey cannon_W_1 skey cannon_W_0 send }
+
+  sprite cannon_E_0 { rect 0 104 45 37 in_editor 0 }
+  sprite cannon_E_1 { rect 45 104 45 37 in_editor 0 }
+  sprite cannon_E_2 { rect 90 104 45 37 in_editor 0 }
+  anim cannon_E/fire { time_step 100  skey cannon_E_0 skey cannon_E_1 skey cannon_E_2 send }
+
+  //--------------------------------------------
+
+  sprite jellyfish_0 { rect 135 66 31 40 in_editor 0 }
+  sprite jellyfish_1 { rect 166 66 31 40 in_editor 0 }
+  sprite jellyfish_2 { rect 197 66 31 40 in_editor 0 }
+  anim jellyfish { time_step 100  skey jellyfish_0 skey jellyfish_1 skey jellyfish_2 send }
+
+  //--------------------------------------------
+
+  sprite spider_0 { rect 0 140 41 42 in_editor 0 pivot 19 16 }
+  sprite spider_1 { rect 41 140 41 42 in_editor 0 pivot 19 16 }
+  sprite spider_2 { rect 82 140 41 42 in_editor 0 pivot 19 16 }
+  anim spider { time_step 100  skey spider_0 skey spider_1 skey spider_2 skey spider_1 send }
+
+  //--------------------------------------------
+
+  sprite dog_W_0 { rect 0 182 36 40 in_editor 0 }
+  sprite dog_W_1 { rect 36 182 36 40 in_editor 0 }
+  sprite dog_W_2 { rect 72 182 36 40 in_editor 0 }
+  sprite dog_W_3 { rect 108 182 36 40 in_editor 0 }
+  sprite dog_E_3 { rect 144 182 36 40 in_editor 0 }
+  sprite dog_E_2 { rect 180 182 36 40 in_editor 0 }
+  sprite dog_E_1 { rect 216 182 36 40 in_editor 0 }
+  sprite dog_E_0 { rect 211 0 36 40 in_editor 0 }
+  anim dog_W { time_step 80 skey dog_W_0 skey dog_W_1 skey dog_W_2 skey dog_W_3 send }
+  anim dog_W/fly { time_step 50 skey dog_W_0 skey dog_W_1 skey dog_W_2 skey dog_W_3 send }
+  anim dog_E { time_step 80 skey dog_E_0 skey dog_E_1 skey dog_E_2 skey dog_E_3 send }
+  anim dog_E/fly { time_step 50 skey dog_E_0 skey dog_E_1 skey dog_E_2 skey dog_E_3 send }
+
+  //--------------------------------------------
+
+  sprite threewheel_0 { rect 0 222 51 34 in_editor 0 }
+  sprite threewheel_1 { rect 51 222 51 34 in_editor 0 }
+  sprite threewheel_2 { rect 102 222 51 34 in_editor 0 }
+  sprite threewheel_3 { rect 153 222 51 34 in_editor 0 }
+  anim threewheel_E {
+    time_step 80
+    skey threewheel_0    skey threewheel_1    skey threewheel_2    skey threewheel_3
+    send
+  }
+  anim threewheel_W {
+    time_step 80
+    skey threewheel_3    skey threewheel_2    skey threewheel_1    skey threewheel_0
+    send
+  }
+
+  //--------------------------------------------
+
+  sprite flybot0 { rect 135 106 44 36 in_editor 0 }
+  sprite flybot1 { rect 179 106 44 36 in_editor 0 }
+  sprite flybot2 { rect 135 142 44 36 in_editor 0 }
+  sprite flybot3 { rect 179 142 44 36 in_editor 0 }
+  anim flybot {
+    time_step 50
+    skey flybot0
+    skey flybot1
+    skey flybot2
+    skey flybot3
+    send
+  }
+
+  //--------------------------------------------
+
+  sprite UFO0 { rect 0 0 58 22 in_editor 0 }
+  sprite UFO1 { rect 0 22 58 22 in_editor 0 }
+  sprite UFO2 { rect 0 44 58 22 in_editor 0 }
+  anim UFO { time_step 100 skey UFO0 skey UFO1 skey UFO2 send }
+  
+  sprite shot/ufo0 { rect 192 40 24 8 in_editor 0 }
+  sprite shot/ufo1 { rect 192 48 24 8 in_editor 0 }
+  sprite shot/ufo2 { rect 192 56 24 8 in_editor 0 }
+  anim shot/ufo { time_step 50 skey shot/ufo1 skey shot/ufo2 send }
+
+  sprite shot/cogwheel0 { rect 228 40 16 16 in_editor 0 }
+  sprite shot/cogwheel1 { rect 228 56 16 16 in_editor 0 }
+  sprite shot/cogwheel2 { rect 228 72 16 16 in_editor 0 }
+  anim shot/cogwheel { time_step 100 skey shot/cogwheel1 skey shot/cogwheel2 send }
+
+
+
+//==============================================================================
+  use_surface sprites/enemy/sperm.png
+//==============================================================================
+
+  grid_size 45 65
+
+  sprite sperm_W_0 { grid 0 0 in_editor 0 }
+  sprite sperm_W_1 { grid 1 0 in_editor 0 }
+  sprite sperm_W_2 { grid 2 0 in_editor 0 }
+  sprite sperm_W_fly_0 { grid 3 0 in_editor 0 }
+  sprite sperm_W_fly_1 { grid 4 0 in_editor 0 }
+  anim sperm_W { time_step 100 skey sperm_W_0 skey sperm_W_1 skey sperm_W_2 skey sperm_W_1 send }
+  anim sperm_W_fly { time_step 100 skey sperm_W_fly_0 skey sperm_W_fly_1 send }
+
+  sprite sperm_E_0 { grid 4 1 in_editor 0 }
+  sprite sperm_E_1 { grid 3 1 in_editor 0 }
+  sprite sperm_E_2 { grid 2 1 in_editor 0 }
+  sprite sperm_E_fly_0 { grid 1 1 in_editor 0 }
+  sprite sperm_E_fly_1 { grid 0 1 in_editor 0 }
+  anim sperm_E { time_step 100 skey sperm_E_0 skey sperm_E_1 skey sperm_E_2 skey sperm_E_1 send }
+  anim sperm_E_fly { time_step 100 skey sperm_E_fly_0 skey sperm_E_fly_1 send }
+
+  sprite crocodile_W_0 { rect 0 130 80 31 in_editor 0 }
+  sprite crocodile_W_1 { rect 80 130 80 31 in_editor 0 }
+  sprite crocodile_W_2 { rect 160 130 80 31 in_editor 0 }
+  sprite crocodile_W_3 { rect 0 161 80 31 in_editor 0 }
+  sprite crocodile_E_0 { rect 80 161 80 31 in_editor 0 }
+  sprite crocodile_E_1 { rect 160 161 80 31 in_editor 0 }
+  sprite crocodile_E_2 { rect 0 192 80 31 in_editor 0 }
+  sprite crocodile_E_3 { rect 80 192 80 31 in_editor 0 }
+
+  anim crocodile_W { time_step 100 skey crocodile_W_0 skey crocodile_W_1 skey crocodile_W_2 skey crocodile_W_3 send }
+  anim crocodile_E { time_step 100 skey crocodile_E_0 skey crocodile_E_1 skey crocodile_E_2 skey crocodile_E_3 send }
+
+  sprite bullet/explo_0 { rect 0 223 30 30 in_editor 0 pivot center }
+  sprite bullet/explo_1 { rect 30 223 30 30 in_editor 0 pivot center }
+  sprite bullet/explo_2 { rect 60 223 30 30 in_editor 0 pivot center }
+  sprite bullet/explo_3 { rect 90 223 30 30 in_editor 0 pivot center }
+  sprite bullet/explo_4 { rect 120 223 30 30 in_editor 0 pivot center }
+  sprite bullet/explo_5 { rect 150 223 30 30 in_editor 0 pivot center }
+  sprite bullet_W { rect 180 223 20 11 in_editor 1 pivot center }
+  sprite bullet_E { rect 180 234 20 11 in_editor 1 pivot center }
+  anim bullet/explo {
+    time_step 50
+    skey bullet/explo_0
+    skey bullet/explo_1
+    skey bullet/explo_2
+    skey bullet/explo_3
+    skey bullet/explo_4
+    skey bullet/explo_5
+    send
+  }
+
+
+//==============================================================================
+  use_surface sprites/enemy/spikes.png
+//==============================================================================
+
+  grid_size 40 40
+
+  sprite spikes_N { grid 0 0 gsize 1 2 }
+  sprite spikes_E { grid 1 0 gsize 2 1 }
+  sprite spikes_W { grid 0 2 gsize 2 1 }
+  sprite spikes_S { grid 2 1 gsize 1 2 }
+
+  sprite buchar_N { grid 3 0 gsize 1 2 }
+  sprite buchar_E { grid 4 0 gsize 2 1 }
+  sprite buchar_W { grid 3 2 gsize 2 1 }
+  sprite buchar_S { grid 5 1 gsize 1 2 }
+
+  sprite spikes2_N0 { grid 0 4 }
+  sprite spikes2_N1 { grid 1 4 }
+  sprite spikes2_N2 { grid 2 4 }
+  anim spikes2_N   { key 0 spikes2_N0 key 2000 spikes2_N1 key 2100 spikes2_N2 end 2200 }
+
+  sprite spikes2_S0 { grid 3 4 }
+  sprite spikes2_S1 { grid 4 4 }
+  sprite spikes2_S2 { grid 5 4 }
+  anim spikes2_S   { key 0 spikes2_S0 key 2000 spikes2_S1 key 2100 spikes2_S2 end 2200 }
+
+  sprite spikes2_W0 { grid 0 5 }
+  sprite spikes2_W1 { grid 1 5 }
+  sprite spikes2_W2 { grid 2 5 }
+  anim spikes2_W   { key 0 spikes2_W0 key 2000 spikes2_W1 key 2100 spikes2_W2 end 2200 }
+
+  sprite spikes2_E0 { grid 3 5 }
+  sprite spikes2_E1 { grid 5 5 }
+  sprite spikes2_E2 { grid 4 5 }
+  anim spikes2_E   { key 0 spikes2_E0 key 2000 spikes2_E1 key 2100 spikes2_E2 end 2200 }
+
+
+  sprite indiana_1 { grid 2 3 in_editor 0 }
+  sprite indiana_2 { grid 3 3 in_editor 0 }
+  sprite indiana_3 { grid 4 3 in_editor 0 }
+  sprite indiana_4 { grid 5 3 in_editor 0 }
+  sprite indiana_5 { grid 1 1 in_editor 0 }
+  sprite indiana_6 { grid 4 1 in_editor 0 }
+  sprite indiana_7 { grid 0 3 in_editor 0 }
+  sprite indiana_8 { grid 1 3 in_editor 0 }
+
+  anim indiana_L {
+    time_step 50
+    skey indiana_1 skey indiana_2 skey indiana_3 skey indiana_4 skey indiana_5 skey indiana_6 skey indiana_7 skey indiana_8
+    send
+  }
+  anim indiana_R {
+    time_step 50
+    skey indiana_8 skey indiana_7 skey indiana_6 skey indiana_5 skey indiana_4 skey indiana_3 skey indiana_2 skey indiana_1
+    send
+  }
+
+//==============================================================================
+  use_surface sprites/enemy/krapnik.png
+//==============================================================================
+
+  sprite spidermole_1 { rect 96 196 80 60 in_editor 0 }
+  sprite spidermole_2 { rect 176 196 80 60 in_editor 0 }
+  sprite spidermole_3 { rect 176 136 80 60 in_editor 0 }
+  anim spidermole { time_step 80    skey spidermole_1    skey spidermole_2    skey spidermole_3    skey spidermole_2    send }
+  
+  sprite krapnik_0 { rect 0   0  50 59  in_editor 0 }
+  sprite krapnik_1 { rect 50  0  50 59 in_editor 0 }
+  sprite krapnik_2 { rect 100 0  50 53 in_editor 0 }
+  sprite krapnik_3 { rect 150 0  50 48 in_editor 0 }
+  sprite krapnik_4 { rect 200 0  50 42 in_editor 0 }
+  sprite krapnik_5 { rect 0   59 50 36 in_editor 0 }
+  sprite krapnik_6 { rect 50  59 50 30 in_editor 0 }
+  sprite krapnik_7 { rect 100 53 50 24 in_editor 0 }
+  sprite krapnik_8 { rect 150 48 50 20 in_editor 0 }
+  sprite krapnik_9 { rect 200 42 50 23 in_editor 0 }
+
+  sprite krapnik/shot_S { rect 0 95 22 49  in_editor 1  pivot 11 0 }
+  sprite krapnik/shot_E { rect 0 194 49 22 in_editor 1 }
+  sprite krapnik/shot_W { rect 0 215 49 22 in_editor 1 }
+  sprite krapnik/shot_N { rect 0 144 22 49 in_editor 1  pivot 11 0}
+//  sprite krapnik/shot_1 { rect 22 95 30 42 in_editor 0  pivot 15 -7 }
+//  sprite krapnik/shot_2 { rect 52 89 27 31 in_editor 0  pivot 13 -18 }
+//  sprite krapnik/shot_3 { rect 79 89 29 20 in_editor 0  pivot 14 -29 }
+//  sprite krapnik/shot_4 { rect 108 77 28 11 in_editor 0 pivot 14 -38 }
+  sprite krapnik/shot_1 { rect 22 95 30 42 in_editor 0  pivot 15 2 }
+  sprite krapnik/shot_2 { rect 52 89 27 31 in_editor 0  pivot 12 -9 }
+  sprite krapnik/shot_3 { rect 79 89 29 20 in_editor 0  pivot 13 -20 }
+  sprite krapnik/shot_4 { rect 108 77 28 11 in_editor 0 pivot 13 -29 }
+
+  anim krapnik/mrk { key 0 krapnik_0 key 1000 krapnik_1 end 1080 }
+
+  anim krapnik/fire {
+    key 0 krapnik_2
+    key 80 krapnik_9
+    key 200 krapnik_8
+    key 280 krapnik_7
+    key 360 krapnik_6
+    key 440 krapnik_5
+    key 520 krapnik_4
+    key 600 krapnik_3
+    key 680 krapnik_0
+    end 760
+  }
+
+  anim krapnik/break {
+    time_step 80
+    skey krapnik/shot_1
+    skey krapnik/shot_2
+    skey krapnik/shot_3
+    skey krapnik/shot_4
+    send
+  }
+ 
+  sprite nosal { rect 50 177 46 79 }
+  sprite nos01 { rect 22 173 21 21 in_editor 0 }
+  sprite nos02 { rect 22 173 16 21 in_editor 0 pivot -5 0 }
+  sprite nos03 { rect 22 173 11 21 in_editor 0 pivot -10 0 }
+  sprite nos04 { rect 22 173 6 21 in_editor 0  pivot -15 0 }
+  sprite nosal_voko01 { rect 22 148 13 12 in_editor 0 }
+  sprite nosal_voko02 { rect 35 148 13 12 in_editor 0 }
+  sprite nosal_voko03 { rect 22 160 13 12 in_editor 0 }
+  sprite nosal_voko04 { rect 35 160 13 12 in_editor 0 }
+  anim nos { time_step 50   skey nos01   skey nos02   skey nos03   skey nos04   send }
+  anim nosal_voko {
+    time_step 50
+    skey nosal_voko01
+    skey nosal_voko02
+    skey nosal_voko03
+    skey nosal_voko04
+    send
+  }
+ 
+
+//==============================================================================
+  use_surface sprites/enemy/drop.png
+//==============================================================================
+
+  sprite drop_explo_0 { rect 0 0 46 29 in_editor 0 pivot 23 29 }
+  sprite drop_explo_1 { rect 46 0 46 29 in_editor 0 pivot 23 29 }
+  sprite drop_explo_2 { rect 92 0 46 29 in_editor 0 pivot 23 29 }
+  sprite drop_explo_3 { rect 138 0 46 29 in_editor 0 pivot 23 29 }
+  sprite drop_explo_4 { rect 184 0 46 29 in_editor 0 pivot 23 29 }
+  sprite drop_explo_5 { rect 0 29 46 29 in_editor 0 pivot 23 29 }
+  sprite drop_explo_6 { rect 46 29 46 29 in_editor 0 pivot 23 29 }
+  sprite drop_explo_7 { rect 92 29 46 29 in_editor 0 pivot 23 29 }
+  sprite drop_explo_8 { rect 138 29 46 29 in_editor 0 pivot 23 29 }
+  anim drop_explo {
+    time_step 80
+    skey drop_explo_0
+    skey drop_explo_1
+    skey drop_explo_2
+    skey drop_explo_3
+    skey drop_explo_4
+    skey drop_explo_5
+    skey drop_explo_6
+    skey drop_explo_7
+    skey drop_explo_8
+    send
+  }
+  sprite shot/drop { rect 230 0 5 10 pivot 2 10 }
+  sprite shot/drop_fall0 { rect 184 29 7 8 pivot 3 20 in_editor 0 }
+  sprite shot/drop_fall1 { rect 191 29 7 8 pivot 3 20 in_editor 0 }
+  sprite shot/drop_fall2 { rect 198 29 7 8 pivot 3 20 in_editor 0 }
+  sprite shot/drop_fall3 { rect 205 29 7 8 pivot 3 20 in_editor 0 }
+  anim shot/drop_fall {
+    key 0   shot/drop_fall0
+    key 100 shot/drop_fall1
+    key 200 shot/drop_fall2
+    key 300 shot/drop_fall3
+    end 360
+  }
+  
+  sprite eyeplant0 { rect   0 59 64 74 in_editor 0 }
+  sprite eyeplant1 { rect  64 59 64 74 in_editor 0 }
+  sprite eyeplant2 { rect 128 59 64 74 in_editor 0 }
+  anim eyeplant { time_step 150 skey eyeplant0 skey eyeplant1 skey eyeplant2 skey eyeplant1 send }
+  
+  sprite periscop_0 { rect 0 132 40 40 pivot 0 0 in_editor 0 }
+  sprite periscop_1 { rect 40 132 40 40 pivot 0 0 in_editor 0 }
+  sprite periscop_2 { rect 80 132 40 40 pivot 0 0 in_editor 0 }
+  sprite periscop_3 { rect 120 132 40 40 pivot 0 0 in_editor 0 }
+  sprite periscop_4 { rect 160 132 40 40 pivot 0 0 in_editor 0 }
+  sprite periscop_5 { rect 200 52 40 40 pivot 0 0 in_editor 0 }
+  sprite periscop_6 { rect 200 92 40 40 pivot 0 0 in_editor 0 }
+  sprite periscop_7 { rect 200 132 40 40 pivot 0 0 in_editor 0 }
+  anim periscop {
+    time_step 70
+    skey periscop_0    skey periscop_1    skey periscop_2    skey periscop_3    skey periscop_4    skey periscop_5    skey periscop_6    skey periscop_7
+    send
+  }
+
+//==============================================================================
+  use_surface sprites/enemy/thorns.png
+//==============================================================================
+
+  sprite thornball_big0 { rect 0 0 55 61 in_editor 0 }
+  sprite thornball_big1 { rect 55 0 55 61 in_editor 0 }
+  anim thornball_big {
+    time_step 100
+    skey thornball_big0
+    skey thornball_big1
+    send
+  }
+
+  sprite thornball_medium0 { rect 111 0 36 36 in_editor 0  }
+  sprite thornball_medium1 { rect 147 0 36 36 in_editor 0  }
+  anim thornball_medium {
+    time_step 100
+    skey thornball_medium0
+    skey thornball_medium1
+    send
+  }
+
+  sprite thornball_small0 { rect 111 37 22 27 in_editor 0  }
+  sprite thornball_small1 { rect 133 37 22 27 in_editor 0  }
+  anim thornball_small {
+    time_step 100
+    skey thornball_small0
+    skey thornball_small1
+    send
+  }
+  
+  //***********************
+
+  sprite thorns_S_big0 { rect 0 62 76 25 in_editor 0  }
+  sprite thorns_S_big1 { rect 0 87 76 25 in_editor 0  }
+  anim thorns_S_big {
+    time_step 100
+    skey thorns_S_big0
+    skey thorns_S_big1
+    send
+  }
+
+  sprite thorns_S_medium0 { rect 185 0 48 21 in_editor 0  }
+  sprite thorns_S_medium1 { rect 185 21 48 21 in_editor 0  }
+  anim thorns_S_medium {
+    time_step 100
+    skey thorns_S_medium0
+    skey thorns_S_medium1
+    send
+  }
+
+  sprite thorns_S_small0  { rect 234 0 19 21 in_editor 0  }
+  sprite thorns_S_small1  { rect 234 21 19 21 in_editor 0  }
+  anim thorns_S_small {
+    time_step 100
+    skey thorns_S_small0
+    skey thorns_S_small1
+    send
+  }
+
+  //***********************
+
+  sprite thorns_W_big0 { rect 206 43 25 76 in_editor 0  }
+  sprite thorns_W_big1 { rect 231 43 25 76 in_editor 0  }
+  anim thorns_W_big {
+    time_step 100
+    skey thorns_W_big0
+    skey thorns_W_big1
+    send
+  }
+
+  sprite thorns_W_medium0 { rect 42 116 21 48 in_editor 0  }
+  sprite thorns_W_medium1 { rect 63 116 21 48 in_editor 0  }
+  anim thorns_W_medium {
+    time_step 100
+    skey thorns_W_medium0
+    skey thorns_W_medium1
+    send
+  }
+
+  sprite thorns_W_small0  { rect 42 165 21 19 in_editor 0  }
+  sprite thorns_W_small1  { rect 63 165 21 19 in_editor 0  }
+  anim thorns_W_small {
+    time_step 100
+    skey thorns_W_small0
+    skey thorns_W_small1
+    send
+  }
+
+  //***********************
+
+  sprite thorns_N_big0 { rect 77 65 76 25 in_editor 0  }
+  sprite thorns_N_big1 { rect 77 90 76 25 in_editor 0  }
+  anim thorns_N_big {
+    time_step 100
+    skey thorns_N_big0
+    skey thorns_N_big1
+    send
+  }
+
+  sprite thorns_N_medium0 { rect 85 116 48 21 in_editor 0  }
+  sprite thorns_N_medium1 { rect 85 137 48 21 in_editor 0  }
+  anim thorns_N_medium {
+    time_step 100
+    skey thorns_N_medium0
+    skey thorns_N_medium1
+    send
+  }
+
+  sprite thorns_N_small0  { rect 135 116 19 21 in_editor 0  }
+  sprite thorns_N_small1  { rect 135 137 19 21 in_editor 0  }
+  anim thorns_N_small {
+    time_step 100
+    skey thorns_N_small0
+    skey thorns_N_small1
+    send
+  }
+
+  //***********************
+
+  sprite thorns_E_big0 { rect 156 43 25 76 in_editor 0  }
+  sprite thorns_E_big1 { rect 181 43 25 76 in_editor 0  }
+  anim thorns_E_big {
+    time_step 100
+    skey thorns_E_big0
+    skey thorns_E_big1
+    send
+  }
+
+  sprite thorns_E_medium0 { rect 0 116 21 48 in_editor 0  }
+  sprite thorns_E_medium1 { rect 21 116 21 48 in_editor 0  }
+  anim thorns_E_medium {
+    time_step 100
+    skey thorns_E_medium0
+    skey thorns_E_medium1
+    send
+  }
+
+  sprite thorns_E_small0  { rect 0 165 21 19 in_editor 0  }
+  sprite thorns_E_small1  { rect 21 165 21 19 in_editor 0  }
+  anim thorns_E_small {
+    time_step 100
+    skey thorns_E_small0
+    skey thorns_E_small1
+    send
+  }
+
+
+//==============================================================================
+  use_surface sprites/enemy/charlie.png
+//==============================================================================
+
+  sprite charlie_head0 { rect 0 0 80 71 pivot 0 0 in_editor 1 }
+  sprite charlie_head1 { rect 80 0 25 71 pivot 0 0 in_editor 1 }
+  sprite charlie_head2 { rect 0 71 80 57 pivot 0 0 in_editor 1 }
+  sprite charlie_head3 { rect 80 71 35 57 pivot 0 0 in_editor 1 }
+
+  sprite charlie_eye0 { rect 108 0 12 5 pivot 0 0 in_editor 0 }
+  sprite charlie_eye1 { rect 108 0 12 5 pivot -5 0 in_editor 0 }
+  sprite charlie_eye2 { rect 108 0 12 5 pivot -10 0 in_editor 0 }
+  sprite charlie_eye3 { rect 108 0 12 5 pivot -15 0 in_editor 0 }
+  sprite charlie_eye4 { rect 108 0 12 5 pivot -20 0 in_editor 0 }
+  anim charlie_eye {
+    key 0 charlie_eye0
+    key 3000 charlie_eye1
+    key 3050 charlie_eye2
+    key 3100 charlie_eye3
+    key 3150 charlie_eye4
+    key 6000 charlie_eye3
+    key 6050 charlie_eye2
+    key 6100 charlie_eye1
+    end 6150
+  }
+
+  sprite charlie_key_L0 { rect 0 128 22 32 pivot 0 0 in_editor 0 }
+  sprite charlie_key_L1 { rect 22 128 22 32 pivot 0 0 in_editor 0 }
+  sprite charlie_key_L2 { rect 44 128 22 32 pivot 0 0 in_editor 0 }
+  sprite charlie_key_L3 { rect 66 128 22 32 pivot 0 0 in_editor 0 }
+  sprite charlie_key_L4 { rect 88 128 22 32 pivot 0 0 in_editor 0 }
+  anim charlie_key_L {
+    time_step 120
+    skey charlie_key_L0
+    skey charlie_key_L1
+    skey charlie_key_L2
+    skey charlie_key_L3
+    skey charlie_key_L4
+    send
+  }
+
+  sprite charlie_key_R0 { rect 0 160 22 32 pivot 0 0 in_editor 0 }
+  sprite charlie_key_R1 { rect 22 160 22 32 pivot 0 0 in_editor 0 }
+  sprite charlie_key_R2 { rect 44 160 22 32 pivot 0 0 in_editor 0 }
+  sprite charlie_key_R3 { rect 66 160 22 32 pivot 0 0 in_editor 0 }
+  sprite charlie_key_R4 { rect 88 160 22 32 pivot 0 0 in_editor 0 }
+  anim charlie_key_R {
+    time_step 120
+    skey charlie_key_R0
+    skey charlie_key_R1
+    skey charlie_key_R2
+    skey charlie_key_R3
+    skey charlie_key_R4
+    send
+  }

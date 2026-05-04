@@ -1,0 +1,1349 @@
+// Format:
+// <ENTITY-DEF-NAME> <BUILTIN-ENTITY-TYPE> { properties }
+
+FlyingSprite FlyingSprite { }
+SpriteShooter SpriteShooter { }
+Scroller Scroller { }
+
+intro/tir1 FlyingSprite {
+ sprite1 intro/car1
+ sprite1_pos 0 0
+ sprite2 intro/tir_ad_1
+ sprite2_pos 205 -115
+}
+
+intro/tir2 FlyingSprite {
+ sprite1 intro/car1
+ sprite1_pos 0 0
+ sprite2 intro/tir_ad_2
+ sprite2_pos 205 -115
+}
+
+intro/tir3 FlyingSprite {
+ sprite1 intro/car1
+ sprite1_pos 0 0
+ sprite2 intro/tir_ad_3
+ sprite2_pos 205 -118
+}
+
+intro/car2 FlyingSprite { sprite1 intro/car2 }
+intro/car3 FlyingSprite { sprite1 intro/car3 }
+intro/car4 FlyingSprite { sprite1 intro/car4 }
+
+//------------------------------------------------------------------------------
+group SHOTS
+//------------------------------------------------------------------------------
+
+  shot/drop FreeFlyer {
+    anim_left shot/drop
+    death_anim drop_explo
+    speed 100 100
+    gravity 300
+    die_at_hit true
+    die_at_acid true
+    col_offset -2 -10
+    col_size 5 10
+    magneto_killer true
+    draw_order -1
+    death_sound sound/drop_splash.wav
+  }
+
+  shot/drop_nosound FreeFlyer {
+    anim_left shot/drop
+    death_anim drop_explo
+    speed 100 100
+    gravity 300
+    die_at_hit true
+    die_at_acid true
+    col_offset -2 -10
+    col_size 5 10
+    magneto_killer true
+    draw_order -1
+  }
+
+  shot/vapor FreeFlyer {
+    anim_left bullet/explo
+    speed 200 200
+    die_at_hit true
+    col_offset -10 -10
+    col_size 20 20
+    magneto_killer true
+    draw_order -1
+  }
+
+  shot/popcorn FreeFlyer {
+    anim_left shot/popcorn0
+    death_anim shot/popcorn
+    speed 80 80
+    die_at_hit true
+    col_offset 0 0
+    col_size 16 16
+    magneto_killer true
+    draw_order -1
+    death_sound sound/hit2.wav
+    sound_radius 200
+  }
+
+  shot/popcorn/gravity FreeFlyer {
+    anim_left shot/popcorn0
+    death_anim shot/popcorn
+    speed 200 400
+    gravity 300
+    die_at_hit true
+    col_offset 0 0
+    col_size 16 16
+    magneto_killer true
+    draw_order -1
+    death_sound sound/hit2.wav
+    sound_radius 200
+  }
+
+  shot/cogwheel FreeFlyer {
+    anim_left shot/cogwheel
+    speed 100 300
+    gravity 300
+    die_at_hit true
+    col_offset 0 0
+    col_size 16 16
+    magneto_killer true
+    draw_order -1
+    death_sound sound/hit4.wav
+  }
+
+  shot/popcorn/gravity2 FreeFlyer {
+    anim_left shot/popcorn0
+    death_anim shot/popcorn
+    speed 150 250
+    gravity 300
+    die_at_hit true
+    col_offset 0 0
+    col_size 16 16
+    magneto_killer true
+    draw_order -1
+    death_sound sound/hit2.wav
+  }
+
+  shot/bullet FreeFlyer {
+    anim_left bullet_W
+    anim_right bullet_E
+    death_anim bullet/explo
+    speed 200 200
+    die_at_hit true
+    col_offset -10 -5
+    col_size 20 11
+    magneto_killer true
+    draw_order -1
+    death_sound sound/hit.wav
+  }
+
+  shot/krapnik FreeFlyer {
+    anim_left krapnik/shot_S
+    death_anim krapnik/break
+    death_sound sound/krapnik_break.wav
+    speed 100 100
+    gravity 300
+    die_at_hit true
+    col_offset -10 5
+    col_size 20 35
+    magneto_killer true
+    draw_order -1
+  }
+
+  shot/chip FreeFlyer {
+    anim_left shot/chip
+    death_anim miniexplo
+    speed 200 200
+    die_at_hit true
+    col_offset 0 0
+    col_size 8 8
+    magneto_killer true
+    draw_order -1
+    death_sound sound/hit3.wav
+  }
+
+  shot/ufo FreeFlyer {
+    anim_left shot/ufo0
+    death_anim shot/ufo
+    speed 200 200
+    die_at_hit true
+    col_offset 0 0
+    col_size 24 8
+    magneto_killer true
+    draw_order -1
+  }
+
+
+//------------------------------------------------------------------------------
+group BUTTON
+//------------------------------------------------------------------------------
+
+  color 255 200 100
+  Device/Lever_N Lever {
+    sprite tile/lever_N
+    col_offset 7 14
+    col_size 26 26
+    switch_on_sound sound/lever_switch.wav
+    switch_off_sound sound/lever_switch.wav
+  }
+  Device/Lever_S Lever {
+    sprite tile/lever_S
+    col_offset 7 0
+    col_size 26 26
+    switch_on_sound sound/lever_switch.wav
+    switch_off_sound sound/lever_switch.wav
+  }
+  Device/Lever_E Lever {
+    sprite tile/lever_E
+    col_offset 0 7
+    col_size 26 26
+    switch_on_sound sound/lever_switch.wav
+    switch_off_sound sound/lever_switch.wav
+  }
+  Device/Lever_W Lever {
+    sprite tile/lever_W
+    col_offset 14 7
+    col_size 26 26
+    switch_on_sound sound/lever_switch.wav
+    switch_off_sound sound/lever_switch.wav
+  }
+
+  color 100 200 255
+  Device/Lever_PullDown Lever {
+    sprite lever_pulldown
+    col_offset 12 0
+    col_size 16 35
+    switch_on_sound sound/lever_switch.wav
+    switch_off_sound sound/lever_switch.wav
+  }
+
+
+
+  Device/button_N Lever {
+    sprite tile/button_N
+    col_offset 0 16
+    col_size 39 24
+    off_signal_enabled false
+    switch_on_sound sound/button_switch.wav
+    switch_off_sound sound/button_switch.wav
+  }
+  Device/button_S Lever {
+    sprite tile/button_S
+    col_offset 0 0
+    col_size 39 24
+    off_signal_enabled false
+    switch_on_sound sound/button_switch.wav
+    switch_off_sound sound/button_switch.wav
+  }
+  Device/button_E Lever {
+    sprite tile/button_E
+    col_offset 0 0
+    col_size 24 39
+    off_signal_enabled false
+    switch_on_sound sound/button_switch.wav
+    switch_off_sound sound/button_switch.wav
+  }
+  Device/button_W Lever {
+    sprite tile/button_W
+    col_offset 16 0
+    col_size 24 39
+    off_signal_enabled false
+    switch_on_sound sound/button_switch.wav
+    switch_off_sound sound/button_switch.wav
+  }
+
+  color 0 250 200
+  Device/FloorButton FloorButton {
+    on_sprite tile/floor_button_on
+    off_sprite tile/floor_button_off
+    switch_on_sound sound/floor_button_switch_on.wav
+    switch_off_sound sound/floor_button_switch_off.wav
+  }
+  Device/FloorPermanent FloorButton {
+    on_sprite floorbutton_permanent_1
+    off_sprite floorbutton_permanent_0
+    off_signal_enabled false
+    switch_on_sound sound/floor_button_switch_on.wav
+    switch_off_sound sound/floor_button_switch_off.wav
+  }
+
+//------------------------------------------------------------------------------
+group ITEM
+//------------------------------------------------------------------------------
+
+  color 255 100 0
+  CrateSpawner CrateSpawner { }
+
+  color 255 255 255
+  //Nuke Crate {    sprite nuke    pickable true    movable false    falling_time 0    draw_order 1  }
+
+  color 0 255 255
+  Levitator Crate {
+    sprite levitator
+    grabbed_sprite levitator
+    pickable false
+    breakable false
+    movable true
+    falling_time 0
+    draw_order 1
+  }
+
+  color 200 250 100
+  Crate Crate {
+    sprite tile/crate
+    break_anim tile/crate_break
+    grabbed_sprite tile/crate
+    crush_sound sound/crate_crush.wav
+    ground_hit_sound sound/crate_ground_hit.wav
+    draw_order 1
+  }
+  Crate/solid Crate {
+    sprite tile/crate/solid
+    grabbed_sprite tile/crate/solid
+    breakable 0
+    ground_hit_sound sound/crate_ground_hit.wav
+    draw_order 1
+  }
+  Crate/creature Crate {
+    sprite crate/creature_sleep
+    break_anim crate/creature_angry
+    grabbed_sprite crate/creature_angry
+    breakable 0
+    //crush_sound sound/crate_crush.wav
+    ground_hit_sound sound/crate_ground_hit.wav
+    draw_order 1
+  }
+  Item/bomb Crate {
+    sprite tile/bomb
+    break_anim tile/bomb_break
+    grabbed_sprite tile/bomb
+    crush_sound sound/crate_crush.wav
+    ground_hit_sound sound/crate_ground_hit.wav
+    delay_to_explode 500 500
+    max_falling_height 1
+    draw_order 1
+  }
+
+
+//------------------------------------------------------------------------------
+group HERO
+//------------------------------------------------------------------------------
+
+  hero/Magneto Magneto {
+    anim hero/magneto
+    climb_anim hero/magneto/stick
+    stick_anim hero/magneto/stick
+    death_anim hero/magneto/death
+    telescope_magnet telescope_magnet
+    telescope_stick telescope_stick
+
+    driver_anim boyIN_basic
+    driver_anim_idle1 boyIN_gum
+    driver_anim_idle2 boyIN_salute
+    driver_anim_idle3 boyIN_face
+    driver_anim_idle4 boyIN_whistle
+    driver_anim_idle5 boyIN_tenis
+    driver_anim_speed boyIN_laugh
+
+    speed1 150
+    speed2 250
+    gravity 500
+    fall_speed 140
+    fall_horizontal_speed1 110
+    fall_horizontal_speed2 250
+    max_falling_height 260
+    jump_speed 110
+    tile_count_to_speed_up 4
+    draw_order 10
+
+    death_sound sound/magneto_death.wav
+    respawn_sound sound/magneto_respawn.wav
+    moving_sound sound/magneto_move.wav
+    moving2_sound sound/magneto_move2.wav
+    wall_hit_sound sound/magneto_wall_hit.wav
+    stick_wall_hit_sound sound/magneto_wall_hit_stick.wav
+    telescope_hooking_sound sound/magneto_telescope_hooking.wav
+    telescope_canceling_sound sound/magneto_telescope_canceling.wav
+    telescope_moving_sound sound/magneto_telescope_moving.wav
+    fallcry_sound sound/magneto_fallcry.wav
+    dig_sound sound/magneto_dig.wav
+    jump_sound sound/magneto_jump.wav
+    spawn_balloon_sound sound/magneto_spawn_balloon.wav
+  }
+
+  hero/Skater Magneto {
+    humanoid 1
+    col2_offset 10 10
+    col2_size 20 20
+    dig false
+    balloon false
+    anim boy_rideR
+    anim_left boy_rideL
+    climb_anim boy_climbR
+    climb_anim_left boy_climbL
+    death_anim boy_death
+    speed1 150
+    speed2 250
+    gravity 500
+    fall_anim boy_jumpR
+    fall_anim_left boy_jumpL
+    fall_speed 100
+    fall_horizontal_speed1 110
+    fall_horizontal_speed2 250
+    max_falling_height 260
+    jump_speed 110
+    tile_count_to_speed_up 4
+    draw_order 10
+
+    climb_sound sound/skater_climb.wav
+    floor_hit_sound sound/skater_floor_hit.wav
+    wall_hit_sound sound/skater_wall_hit.wav
+    death_sound sound/bells.wav
+    moving_sound sound/skater_move.wav
+    moving2_sound sound/skater_move2.wav
+    jump_sound sound/magneto_jump.wav
+    respawn_sound sound/magneto_respawn.wav
+    spawn_balloon_sound sound/magneto_spawn_balloon.wav
+    fallcry_sound sound/magneto_fallcry.wav
+  }
+
+  hero/Balloon Bubble {
+    bubble_type baloon
+    sprite hero/bubble
+    death_sprite hero/bubble/death
+    grab_begin_anim hero/bubble/stick
+    grab_anim hero/bubble/grab
+    radius 12
+    draw_order 11
+    death_sound sound/drop_splash.wav
+    wall_hit_sound sound/bubble_wall_hit.wav
+    grab_item_sound sound/bubble_grab_item.wav
+    drop_item_sound sound/bubble_drop_item.wav
+    respawn_sound sound/magneto_respawn.wav
+    bounce_sound sound/bouncer.wav
+  }
+
+  hero/profa_jetpack Bubble {
+    bubble_type baloon
+    sprite profa_jpR
+    sprite_left profa_jpL
+    grab_anim profa_jpR_grab
+    grab_anim_left profa_jpL_grab
+    death_sprite boom
+    bounciness 32000
+    radius 14
+    draw_order 11
+    death_sound sound/profa_explo.wav
+    wall_hit_sound sound/bubble_wall_hit.wav
+    grab_item_sound sound/bubble_grab_item.wav
+    drop_item_sound sound/bubble_drop_item.wav
+    respawn_sound sound/magneto_respawn.wav
+    bounce_sound sound/bouncer.wav
+    gravity 0
+  }
+
+  color 250 100 0
+  MagnetoFeatures MagnetoFeatures { }
+
+//------------------------------------------------------------------------------
+group DEV_KILL
+//------------------------------------------------------------------------------
+
+  color 50 255 150
+  DeathRayH DeathRay {
+    orientation horizontal
+    part1_sprite tile/deathray_E
+    part2_sprite tile/deathray_W
+    ray_sprite tile/dr_beam_H
+    on true
+    looping_sound sound/death_ray_looping.wav
+    sound_radius 250
+  }
+  DeathRayV DeathRay {
+  orientation vertical
+    part1_sprite tile/deathray_S
+    part2_sprite tile/deathray_N
+    ray_sprite tile/dr_beam_V
+    on true
+    looping_sound sound/death_ray_looping.wav
+    sound_radius 250
+  }
+  color 180 255 150
+  BulbOfDeath DeathRay {
+    orientation horizontal
+    part1_sprite bulbsofdeath_end
+    part2_sprite bulbsofdeath_end
+    ray_sprite bulbsofdeath_beam
+    on true
+    on_duration 1000
+    off_duration 2000
+    looping_sound sound/death_ray_looping.wav
+    sound_radius 250
+    //draw_order 11
+  }
+
+
+  color 0 255 0
+  AcidPool AcidPool {
+    top_sprite liquid/acid
+    fill_sprite liquid/acid_full
+    draining_sound sound/acid_pool_draining.wav
+    filling_sound sound/acid_pool_draining.wav
+    draw_order 100
+    looping_sound sound/water.wav
+    sound_radius 150
+  }
+
+  color 255 200 0
+  spikes_N OrthoFlyer {
+    orientation vertical  forward false
+    anim_fwd spikes_N     anim_bwd spikes_N
+    speed_fwd 80          speed_bwd 200
+    delay_to_fwd 1500     delay_to_bwd 1500
+    col_offset 1 1        col_size 38 78
+    move_distance 80
+    magneto_killer true
+    fwd_kill_hack true
+    bwd_sound sound/spikes_fire.wav
+    fwd_sound sound/spikes_hide.wav
+    draw_order -1
+  }
+  spikes_E OrthoFlyer {
+    orientation horizontal  forward true
+    anim_fwd spikes_E       anim_bwd spikes_E
+    speed_fwd 200           speed_bwd 80
+    delay_to_fwd 1500       delay_to_bwd 1500
+    col_offset 1 1          col_size 78 38
+    move_distance 80
+    magneto_killer true
+    bwd_kill_hack true
+    fwd_sound sound/spikes_fire.wav
+    bwd_sound sound/spikes_hide.wav
+    draw_order -1
+  }
+  spikes_W OrthoFlyer {
+    orientation horizontal  forward false
+    anim_fwd spikes_W       anim_bwd spikes_W
+    speed_fwd 80            speed_bwd 200
+    delay_to_fwd 1500       delay_to_bwd 1500
+    col_offset 1 1          col_size 78 38
+    move_distance 80
+    magneto_killer true
+    fwd_kill_hack true
+    bwd_sound sound/spikes_fire.wav
+    fwd_sound sound/spikes_hide.wav
+    draw_order -1
+  }
+  spikes_S OrthoFlyer {
+    orientation vertical  forward true
+    anim_fwd spikes_S     anim_bwd spikes_S
+    speed_fwd 200         speed_bwd 80
+    delay_to_fwd 1500     delay_to_bwd 1500
+    col_offset 1 1        col_size 38 78
+    move_distance 80
+    magneto_killer true
+    bwd_kill_hack true
+    fwd_sound sound/spikes_fire.wav
+    bwd_sound sound/spikes_hide.wav
+    draw_order -1
+  }
+
+  spikes40_N OrthoFlyer {
+    orientation vertical  forward false
+    anim_fwd spikes2_N     anim_bwd spikes2_N
+    speed_fwd 40          speed_bwd 100
+    delay_to_fwd 1500     delay_to_bwd 1500
+    col_offset 1 1        col_size 38 38
+    move_distance 40
+    magneto_killer true
+    fwd_kill_hack true
+    bwd_sound sound/spikes_fire.wav
+    fwd_sound sound/spikes_hide.wav
+    draw_order -1
+  }
+  spikes40_E OrthoFlyer {
+    orientation horizontal  forward true
+    anim_fwd spikes2_E       anim_bwd spikes2_E
+    speed_fwd 100           speed_bwd 40
+    delay_to_fwd 1500        delay_to_bwd 1500
+    col_offset 1 1        col_size 38 38
+    move_distance 40
+    magneto_killer true
+    bwd_kill_hack true
+    fwd_sound sound/spikes_fire.wav
+    bwd_sound sound/spikes_hide.wav
+    draw_order -1
+  }
+  spikes40_W OrthoFlyer {
+    orientation horizontal  forward false
+    anim_fwd spikes2_W       anim_bwd spikes2_W
+    speed_fwd 40            speed_bwd 100
+    delay_to_fwd 1500       delay_to_bwd 1500
+    col_offset 1 1        col_size 38 38
+    move_distance 40
+    magneto_killer true
+    fwd_kill_hack true
+    bwd_sound sound/spikes_fire.wav
+    fwd_sound sound/spikes_hide.wav
+    draw_order -1
+  }
+  spikes40_S OrthoFlyer {
+    orientation vertical  forward true
+    anim_fwd spikes2_S     anim_bwd spikes2_S
+    speed_fwd 100         speed_bwd 40
+    delay_to_fwd 1500      delay_to_bwd 1500
+    col_offset 1 1        col_size 38 38
+    move_distance 40
+    magneto_killer true
+    bwd_kill_hack true
+    fwd_sound sound/spikes_fire.wav
+    bwd_sound sound/spikes_hide.wav
+    draw_order -1
+  }
+
+
+  color 255 255 255
+  buchar_N OrthoFlyer {
+    orientation vertical  forward false
+    anim_fwd buchar_N     anim_bwd buchar_N
+    speed_fwd 80          speed_bwd 200
+    delay_to_fwd 1500     delay_to_bwd 500
+    col_offset 0 0        col_size 40 80
+    magneto_killer 1
+    move_distance 80
+    cell_col_size 1 2
+    fwd_sound sound/buchar_hide.wav
+    bwd_sound sound/buchar_fire.wav
+  }
+  buchar_E OrthoFlyer {
+    orientation horizontal  forward true
+    anim_fwd buchar_E       anim_bwd buchar_E
+    speed_fwd 200           speed_bwd 80
+    delay_to_fwd 500        delay_to_bwd 1500
+    col_offset 0 0          col_size 70 40
+    magneto_killer 1
+    move_distance 80
+    cell_col_size 2 1
+    fwd_sound sound/buchar_fire.wav
+    bwd_sound sound/buchar_hide.wav
+  }
+  buchar_W OrthoFlyer {
+    orientation horizontal  forward false
+    anim_fwd buchar_W       anim_bwd buchar_W
+    speed_fwd 80            speed_bwd 200
+    delay_to_fwd 1500       delay_to_bwd 500
+    col_offset 0 0          col_size 80 40
+    magneto_killer 1
+    move_distance 80
+    cell_col_size 2 1
+    fwd_sound sound/buchar_hide.wav
+    bwd_sound sound/buchar_fire.wav
+  }
+  buchar_S OrthoFlyer {
+    orientation vertical  forward true
+    anim_fwd buchar_S     anim_bwd buchar_S
+    speed_fwd 200         speed_bwd 80
+    delay_to_fwd 500      delay_to_bwd 1500
+    col_offset 0 0        col_size 40 80
+    magneto_killer 1
+    move_distance 80
+    cell_col_size 1 2
+    fwd_sound sound/buchar_fire.wav
+    bwd_sound sound/buchar_hide.wav
+  }
+
+
+//------------------------------------------------------------------------------
+group DEVICE
+//------------------------------------------------------------------------------
+
+  color 255 100 100
+  photo   Region { on_sprite photo  off_sprite photo0 trigger_once false }
+  SEMAFOR Region { on_sprite tile/semafor_green  off_sprite tile/semafor_red }
+
+  color 100 255 255
+  DoorV Door {
+    sprite tile/door_V
+    direction 1
+    start_opened false
+    operate_once false
+    open_sound sound/door_open.wav
+    close_sound sound/door_close.wav
+  }
+  DoorH Door {
+    sprite tile/door_H
+    direction 0
+    start_opened false
+    operate_once false
+    open_sound sound/door_open.wav
+    close_sound sound/door_close.wav
+  }
+
+  Door2V Door {
+    sprite tile/door2_V
+    direction 1
+    start_opened false
+    operate_once false
+    open_sound sound/door_open.wav
+    close_sound sound/door_close.wav
+  }
+  Door2H Door {
+    sprite tile/door2_H
+    direction 0
+    start_opened false
+    operate_once false
+    open_sound sound/door_open.wav
+    close_sound sound/door_close.wav
+  }
+
+  color 200 155 255
+  DoorSingleV Door {
+    sprite tile/door_single_V
+    direction 1
+    start_opened false
+    operate_once false
+    open_sound sound/door_open.wav
+    close_sound sound/door_close.wav
+  }
+  DoorSingleH Door {
+    sprite tile/door_single_H
+    direction 0
+    start_opened false
+    operate_once false
+    open_sound sound/door_open.wav
+    close_sound sound/door_close.wav
+  }
+
+  color 255 100 255
+  FanN Fan { sprite tile/fan_n    enabled true    direction up    force 65536    force_multiplier 1     looping_sound sound/fan.wav sound_radius 200 }
+  FanE Fan { sprite tile/fan_e    enabled true    direction right   force 65536    force_multiplier 1   looping_sound sound/fan.wav sound_radius 200 }
+  FanW Fan { sprite tile/fan_w    enabled true    direction left      force 65536    force_multiplier 1 looping_sound sound/fan.wav sound_radius 200 }
+  FanS Fan { sprite tile/fan_s    enabled true    direction down    force 65536    force_multiplier 1   looping_sound sound/fan.wav sound_radius 200 }
+
+  color 255 255 255
+  Device/Respawn Respawn {
+    off_sprite device/respawn_OFF
+    on_sprite device/respawn
+    activate_sound sound/respawn_activate.wav
+  }
+  Device/Teleport Teleport {
+    flash_sprite tile/teleport_flash
+    draw_order 11
+    flash_in_sound sound/teleport_flash_in.wav
+    flash_out_sound sound/teleport_flash_out.wav
+    looping_sound sound/teleport_looping.wav
+  }
+  Device/Terminal Region {
+    magneto true
+    on_sprite device/terminal
+    off_sprite device/terminal
+  }
+
+  color 250 200 100
+  Break/Bridge Breakable {
+    sprite tile/bridge
+    break_anim tile/bridge_disappear
+    breakable_by_magneto false
+    broken true
+    break_sound sound/bridge_break.wav
+    materialize_sound sound/bridge_materialize.wav
+  }
+
+  gum_machine_dose Region {
+    size 40 40
+    off_sprite device/gum_dose
+    on_sprite device/gum05
+    draw_order -1
+    off_looping_sound sound/water.wav
+  }
+  gum_machine_body Region {
+    size 40 40
+    magneto true
+    on_sprite device/gum_body
+    off_sprite device/gum_machine03
+    draw_order -1
+    trigger_once true
+  }
+
+// -----------------------------------------------------------------------------
+group THORNS
+// -----------------------------------------------------------------------------
+
+  color 250 250 100
+  krapnik_N FreeFlyer { anim_left krapnik/shot_N  col_offset -5 5  col_size 10 40  draw_order -1 magneto_killer true }
+  krapnik_E FreeFlyer { anim_left krapnik/shot_E  col_offset 0 5  col_size 40 10  draw_order -1  magneto_killer true }
+  krapnik_W FreeFlyer { anim_left krapnik/shot_W  col_offset 5 5  col_size 40 10  draw_order -1  magneto_killer true }
+  krapnik_S FreeFlyer { anim_left krapnik/shot_S  col_offset -5 0  col_size 10 40  draw_order -1 magneto_killer true }
+
+  color 0 255 0
+  THORNBALL/small  FreeFlyer { anim_left thornball_small  col_offset 2 4    col_size 18 18  magneto_killer true }
+  THORNBALL/medium FreeFlyer { anim_left thornball_medium col_offset 10 5   col_size 25 27  magneto_killer true }
+  THORNBALL/big    FreeFlyer { anim_left thornball_big    col_offset 10 10  col_size 45 40  magneto_killer true }
+
+  color 100 255 100
+  thorns/big_S      FreeFlyer { anim_left thorns_N_big     col_offset 10  0  col_size 60 25  magneto_killer true }
+  thorns/big_W      FreeFlyer { anim_left thorns_E_big     col_offset  2 10  col_size 25 60  magneto_killer true }
+  thorns/big_E      FreeFlyer { anim_left thorns_W_big     col_offset  0 10  col_size 25 60  magneto_killer true }
+  thorns/big_N      FreeFlyer { anim_left thorns_S_big     col_offset 10  2  col_size 60 25  magneto_killer true }
+  thorns/medium_S   FreeFlyer { anim_left thorns_N_medium  col_offset  2  0  col_size 42 18  magneto_killer true }
+  thorns/medium_W   FreeFlyer { anim_left thorns_E_medium  col_offset  4  2  col_size 18 42  magneto_killer true }
+  thorns/medium_E   FreeFlyer { anim_left thorns_W_medium  col_offset  0  4  col_size 18 42  magneto_killer true }
+  thorns/medium_N   FreeFlyer { anim_left thorns_S_medium  col_offset  4  2  col_size 42 18  magneto_killer true }
+  thorns/small_S    FreeFlyer { anim_left thorns_N_small   col_offset  0  0  col_size 18 16  magneto_killer true }
+  thorns/small_W    FreeFlyer { anim_left thorns_E_small   col_offset  8  2  col_size 16 18  magneto_killer true }
+  thorns/small_E    FreeFlyer { anim_left thorns_W_small   col_offset  0  2  col_size 16 18  magneto_killer true }
+  thorns/small_N    FreeFlyer { anim_left thorns_S_small   col_offset  2  6  col_size 18 16  magneto_killer true }
+
+  color 255 255 255
+  teeth40_N  FreeFlyer { anim_left teeth40_N   col_offset  0  10  col_size 40 10  magneto_killer true }
+  teeth80_N  FreeFlyer { anim_left teeth80_N   col_offset  0  10  col_size 80 10  magneto_killer true }
+  teeth120_N FreeFlyer { anim_left teeth120_N  col_offset  0  10  col_size 120 10  magneto_killer true }
+  teeth40_E  FreeFlyer { anim_left teeth40_E   col_offset  20  0  col_size 10 40  magneto_killer true }
+  teeth80_E  FreeFlyer { anim_left teeth80_E   col_offset  20  0  col_size 10 80  magneto_killer true }
+  teeth120_E FreeFlyer { anim_left teeth120_E  col_offset  20  0  col_size 10 120  magneto_killer true }
+  teeth40_W  FreeFlyer { anim_left teeth40_W   col_offset -10 0   col_size 10 40  magneto_killer true }
+  teeth80_W  FreeFlyer { anim_left teeth80_W   col_offset -10 0   col_size 10 80  magneto_killer true }
+  teeth120_W FreeFlyer { anim_left teeth120_W  col_offset -10 0   col_size 10 120  magneto_killer true }
+  teeth40_S  FreeFlyer { anim_left teeth40_S   col_offset  0  20  col_size 40 10  magneto_killer true }
+  teeth80_S  FreeFlyer { anim_left teeth80_S   col_offset  0  20  col_size 80 10  magneto_killer true }
+  teeth120_S FreeFlyer { anim_left teeth120_S  col_offset  0  20  col_size 120 10  magneto_killer true }
+
+  color 0 255 255
+  steelspikes_N  FreeFlyer { anim_left spikes2_N  col_offset 1 1  col_size 38 38  magneto_killer true draw_order -1 }
+  steelspikes_E  FreeFlyer { anim_left spikes2_E  col_offset 1 1  col_size 38 38  magneto_killer true draw_order -1 }
+  steelspikes_W  FreeFlyer { anim_left spikes2_W  col_offset 1 1  col_size 38 38  magneto_killer true draw_order -1 }
+  steelspikes_S  FreeFlyer { anim_left spikes2_S  col_offset 1 1  col_size 38 38  magneto_killer true draw_order -1 }
+  color 200 255 255
+  steelspikes_omni  FreeFlyer { anim_left steelspikes_omni  col_offset 1 1  col_size 38 38  magneto_killer true draw_order -1 }
+  
+  
+  color 255 255 255
+
+
+// -----------------------------------------------------------------------------
+group special
+// -----------------------------------------------------------------------------
+
+  color 250 150 250
+  Break/Wall Breakable {
+    sprite tile/cracked
+    break_anim tile/cracked_disappear
+    break_sound sound/crate_crush.wav
+  }
+
+  color 50 250 50
+  MapPlace MapPlace { }
+  MapCursor MapCursor { }
+
+  color 255 100 100
+  Spec/Region Region { magneto true   trigger_once false }
+  Spec/Actions Actions { }
+  Spec/Actions/Camera Actions {
+    a1_action camera
+    a2_delay 300
+    a2_action open
+    a3_delay 1000
+    a3_action camera_back
+  }
+
+  color 255 255 100
+  Sound Sound { }
+  SoundDeathRay Sound { sound sound/death_ray_looping.wav looping 1 radius 250 }
+  SoundBulbOfDeath Sound { sound sound/death_ray_looping.wav looping 1 radius 250 }
+  SoundTerminal Sound { sound sound/terminal_looping.wav looping 1 radius 80 auto_start 1 size 40 120 }
+  SoundComputer Sound { sound sound/computer.wav looping 1 radius 200 auto_start 1 size 80 80 }
+  SoundTV       Sound { sound sound/tv.wav looping 1 radius 150 auto_start 1 size 100 70 }
+  SoundFan      Sound { sound sound/fan.wav looping 1 radius 200 auto_start 1 size 40 40 }
+  SoundMachine  Sound { sound sound/machine.wav looping 1 radius 300 auto_start 1 size 40 40 }
+  SoundWater    Sound { sound sound/water.wav looping 1 radius 150 auto_start 1 size 40 40 }
+
+  color 0 255 255
+  Spec/PathPoint PathPoint { }
+  Spec/Note Note { }
+  Spec/SignalCombiner SignalCombiner { }
+  Spec/SignalPlexor SignalPlexor { }
+  Spec/LevelBoundary LevelBoundary { }
+  
+  color 255 200 0
+  Spec/LevelExit LevelExit { opened_sprite exit closed_sprite exit_3 open_sound sound/exit_door.wav }
+
+// -----------------------------------------------------------------------------
+// enemies
+// -----------------------------------------------------------------------------
+
+group ENEMY
+
+bouncer/purple FreeFlyer {
+  anim_left purpleigor_a
+  speed 20 20
+  change_dir_delay 200 2000
+  affinity 1
+  affinity_target balloon
+  affinity_speed 50
+  affinity_anim_left purpleigor_b
+  col_offset 15 20
+  col_size 50 50
+  killer false
+  magneto_killer false
+  bounce_power 140
+  bounce_type from_center
+}
+
+happyblue FreeFlyer {
+  anim_left happyblue
+  speed 60 200
+  angle 0 360
+  col_offset 5 5
+  col_size 30 30
+  killer true
+  magneto_killer true
+  bounce_power 180
+  bounce_type from_center
+}
+
+color 0 250 200
+fly/pinkbat FreeFlyer {
+  anim_left pinkbat
+  speed 40 100
+  change_dir_delay 100 1000
+  affinity -1
+  affinity_target magneto
+  affinity_anim_left pinkbat
+  affinity_speed 40
+  killer true
+  magneto_killer true
+  col_offset 5 5
+  col_size 30 20
+  looping_sound sound/wings.wav
+  sound_radius 250
+}
+
+fly/greenbat FreeFlyer {
+  anim_left greenbat
+  speed 40 100
+  change_dir_delay 100 1000
+  affinity -1
+  affinity_target magneto
+  affinity_anim_left pinkbat
+  affinity_speed 40
+  killer true
+  magneto_killer true
+  col_offset 10 5
+  col_size 40 35
+  looping_sound sound/wings.wav
+  sound_radius 250
+}
+
+fly/jellyfish FreeFlyer {
+  anim_left jellyfish
+  speed 60 200
+  angle 0 360
+  killer true
+  magneto_killer true
+  col_offset 2 2
+  col_size 28 32
+  bounce_power 180
+}
+
+fly/mine FreeFlyer {
+  anim_left mine
+  speed 10 10
+  change_dir_delay 20 200
+  affinity 1
+  affinity_speed 40
+  affinity_anim_left mine
+  killer true
+  magneto_killer true
+  col_offset 5 5
+  col_size 30 30
+}
+
+color 255 0 255
+multishot/angryHubert FreeFlyer {
+  anim_left angryhubert
+  shot_anim_left angryhubert/shit
+  killer true
+  magneto_killer true
+  col_offset 5 5
+  col_size 70 70
+  shot_delay 1000 3000
+  shot_offset 40 40
+  shot_entity shot/popcorn
+  shot_count 8
+  shot_angle_step 45
+  shot_sound sound/shot_hubert.wav
+}
+
+multishot/volcano FreeFlyer {
+  anim_left volcano
+  shot_anim_left volcano
+  col_offset 5 5
+  col_size 40 35
+  killer true
+  magneto_killer true
+  shot_delay 500 2000
+  shot_offset 20 -5
+  shot_angle 30 150
+  shot_entity shot/popcorn/gravity
+  shot_count 1
+  shot_sound sound/shot1.wav
+}
+
+color 255 255 100
+shooter/bean FreeFlyer {
+  anim_left bean_W
+  anim_right bean_E
+  shot_anim_left bean_W/fire
+  shot_anim_right bean_E/fire
+  angle 160 180
+  killer true
+  magneto_killer true
+  col_offset 10 8
+  col_size 35 55
+  shot_offset 15 8
+  shot_angle 180 180
+  shot_delay 500 2000
+  shot_entity shot/popcorn/gravity
+  shot_count 1
+  shot_sound sound/bean.wav
+}
+
+shooter/cannon FreeFlyer {
+  anim_left cannon_W_0
+  shot_anim_left cannon_W/fire
+  anim_right cannon_E_2
+  shot_anim_right cannon_E/fire
+  angle 180 180
+  killer true
+  magneto_killer true
+  col_offset 5 5
+  col_size 40 35
+  shot_delay 1100 3000
+  shot_offset 10 16
+  shot_angle 180 180
+  shot_entity shot/bullet
+  shot_count 1
+  shot_sound sound/cannon.wav
+}
+
+shooter/krapnik FreeFlyer {
+  anim_left krapnik/mrk
+  shot_anim_left krapnik/fire
+  col_offset 15 5
+  col_size 20 50
+  killer true
+  magneto_killer true
+  shot_delay 2000 2000
+  shot_offset 25 -1
+  shot_angle 270 270
+  shot_entity shot/krapnik
+  shot_count 1
+  shot_sound sound/krapnik_fire.wav
+}
+
+shooter/drop FreeFlyer {
+  anim_left INVISIBLE
+  shot_anim_left INVISIBLE
+  preshot_anim_left shot/drop_fall
+  shot_delay 500 2000
+  shot_offset 0 -10
+  shot_angle 270 270
+  shot_entity shot/drop
+  shot_count 1
+  killer false
+  bounce_type none
+}
+
+shooter/vapor_E FreeFlyer {
+  anim_left INVISIBLE
+  shot_anim_left INVISIBLE
+  shot_delay 1000 2000
+  shot_offset 0 0
+  shot_angle 0 0
+  shot_entity shot/vapor
+  shot_count 1
+  shot_sound sound/vapor_fire.wav
+  killer false
+  bounce_type none
+}
+
+color 255 200 0
+ortho/crocodile OrthoFlyer {
+  anim_fwd crocodile_E
+  anim_bwd crocodile_W
+  killer true
+  magneto_killer true
+  speed_fwd 80
+  speed_bwd 80
+  move_distance 200
+  delay_to_fwd 20
+  delay_to_bwd 20
+  col_offset 4 4
+  col_size 72 28
+}
+ortho/spider OrthoFlyer {
+  orientation vertical
+  anim_fwd spider
+  anim_bwd spider
+  speed_fwd 160
+  speed_bwd 80
+  move_distance 200
+  delay_to_fwd 100
+  delay_to_bwd 20
+  fibre true
+  fibre_offset -20
+  fibre_color 206 196 186
+  killer true
+  magneto_killer true
+  col_offset -12 -20
+  col_size 30 40
+  looping_sound sound/footsteps2.wav
+}
+ortho/cyclop_spider OrthoFlyer {
+  orientation vertical
+  anim_fwd cyclop_spider
+  anim_bwd cyclop_spider
+  speed_fwd 160
+  speed_bwd 80
+  move_distance 200
+  delay_to_fwd 100
+  delay_to_bwd 20
+  fibre true
+  fibre_offset -15
+  fibre_color 206 196 186
+  killer true
+  magneto_killer true
+  col_offset -13 -16
+  col_size 27 32
+  looping_sound sound/footsteps2.wav
+}
+ortho/piranha FreeFlyer {
+  anim_left piranha_W
+  anim_right piranha_E
+  speed 40 100
+  angle 150 210
+  killer true
+  magneto_killer true
+  col_offset 2 5
+  col_size 35 18
+}
+ortho/seahorse FreeFlyer {
+  anim_left seahorse
+  speed 40 80
+  angle 60 120
+  col_offset 5 5
+  col_size 30 45
+  killer true
+  magneto_killer true
+}
+
+color 0 200 255
+ortho/sadStewie OrthoFlyer {
+  orientation vertical
+  anim_fwd sadstewie
+  anim_bwd sadstewie
+  killer true
+  magneto_killer true
+  speed_fwd 40
+  speed_bwd 40
+  move_distance 200
+  delay_to_fwd 20
+  delay_to_bwd 20
+  col_offset 0 0
+  col_size 40 28
+}
+
+
+color 255 100 100
+ortho/ceilingrobot OrthoFlyer {
+  anim_fwd ceilingrobot_E
+  anim_bwd ceilingrobot_W
+  speed_fwd 60
+  speed_bwd 60
+  move_distance 160
+  col_offset 0 0
+  col_size 65 25
+  killer true
+  magneto_killer true
+  looping_sound sound/motor.wav
+}
+ortho/threewheel OrthoFlyer {
+  anim_fwd threewheel_E
+  anim_bwd threewheel_W
+  speed_fwd 100
+  speed_bwd 100
+  move_distance 200
+  col_offset 2 5
+  col_size 47 30
+  shot_delay 2000 2000
+  shot_offset 22 5
+  shot_angle 90 90
+  shot_entity shot/chip
+  shot_count 1
+  shot_sound sound/shot1.wav
+  killer true
+  magneto_killer true
+  looping_sound sound/motor.wav
+  sound_radius 250
+}
+
+color 200 200 255
+walk/sperm Walker {
+  anim_left sperm_W
+  anim_right sperm_E
+  fly_anim_left sperm_W_fly
+  fly_anim_right sperm_E_fly
+  jump_delay 1000 3000
+  jump_speed_x 40
+  jump_speed_y 300
+  gravity 300
+  change_dir_delay 1000 3000
+  col_offset 5 30
+  col_size 35 35
+  killer true
+  magneto_killer true
+  jump_sound sound/jump.wav
+}
+
+walk/dog Walker {
+  speed_size 80
+  anim_left dog_W
+  anim_right dog_E
+  fly_anim_left dog_W/fly
+  fly_anim_right dog_E/fly
+  jump_delay 1000 3000
+  jump_speed_x 40
+  jump_speed_y 250
+  gravity 300
+  change_dir_delay 2000 4000
+  col_offset 5 5
+  col_size 30 35
+  killer true
+  magneto_killer true
+  looping_sound sound/footsteps.wav
+  falling_sound sound/footsteps2.wav
+}
+
+walk/indy Walker {
+  speed_size 300
+  anim_left indiana_L
+  anim_right indiana_R
+  fly_anim_left indiana_L
+  fly_anim_right indiana_R
+  gravity 300
+  killer true
+  magneto_killer true
+  col_offset 5 5
+  col_size 30 35
+}
+
+walk/indy/delay Walker {
+  speed_size 300
+  anim_left indiana_L
+  anim_right indiana_R
+  fly_anim_left indiana_L
+  fly_anim_right indiana_R
+  gravity 300
+  delay_to_death 20000 20000
+  killer true
+  magneto_killer true
+  col_offset 5 5
+  col_size 30 35
+}
+
+walk/indy/delay2 Walker {
+  speed_size 300
+  anim_left indiana_L
+  anim_right indiana_R
+  fly_anim_left indiana_L
+  fly_anim_right indiana_R
+  gravity 300
+  delay_to_death 5000 5000
+  killer true
+  magneto_killer true
+  col_offset 5 5
+  col_size 30 35
+}
+
+SpiderMole OrthoFlyer {
+  anim_fwd spidermole
+  anim_bwd spidermole
+  speed_fwd 60
+  speed_bwd 60
+  move_distance 200
+  col_offset 10 10
+  col_size 60 50
+  killer true
+  magneto_killer true
+  shot_delay 1000 3000
+  shot_offset 40 21
+  shot_entity shot/chip
+  shot_count 2
+  shot_angle_step 180
+  shot_sound sound/shot1.wav
+  looping_sound sound/footsteps.wav
+}
+
+
+color 255 100 0
+bot/flybot OrthoFlyer {
+  anim_fwd flybot
+  anim_bwd flybot
+  killer true
+  magneto_killer true
+  speed_fwd 80
+  speed_bwd 80
+  move_distance 200
+  delay_to_fwd 20
+  delay_to_bwd 20
+  col_offset 4 4
+  col_size 34 28
+  looping_sound sound/heli.wav
+}
+
+bot/UFO OrthoFlyer {
+  anim_fwd UFO
+  anim_bwd UFO
+  speed_fwd 100
+  speed_bwd 100
+  move_distance 200
+  col_offset 2 0
+  col_size 52 20
+  shot_delay 2000 2000
+  shot_offset 20 20
+  shot_angle 270 270
+  shot_entity shot/ufo
+  shot_count 1
+  shot_sound sound/ufo_fire.wav
+  looping_sound sound/ufo.wav
+  killer true
+  magneto_killer true
+  sound_radius 270
+}
+
+
+// -----------------------------------------------------------------------------
+// x-trash
+// -----------------------------------------------------------------------------
+
+group x-trash
+
+  bouncer40_N  FreeFlyer { anim_left bouncer40_N   col_offset  0 -12  col_size 40 12  killer false  bounce_power 220 bounce_type random }
+  bouncer80_N  FreeFlyer { anim_left bouncer80_N   col_offset  0 -12  col_size 80 12  killer false  bounce_power 220 bounce_type random }
+  bouncer120_N FreeFlyer { anim_left bouncer120_N  col_offset  0 -12  col_size 120 12 killer false  bounce_power 220 bounce_type random }
+
+  bouncer40_E  FreeFlyer { anim_left bouncer40_E   col_offset  0 0  col_size 12 40  killer false  bounce_power 220 bounce_type random }
+  bouncer80_E  FreeFlyer { anim_left bouncer80_E   col_offset  0 0  col_size 12 80  killer false  bounce_power 220 bounce_type random }
+  bouncer120_E FreeFlyer { anim_left bouncer120_E  col_offset  0 0  col_size 12 120 killer false  bounce_power 220 bounce_type random }
+
+  bouncer40_W  FreeFlyer { anim_left bouncer40_W   col_offset -12 0  col_size 12 40  killer false  bounce_power 220 bounce_type random }
+  bouncer80_W  FreeFlyer { anim_left bouncer80_W   col_offset -12 0  col_size 12 80  killer false  bounce_power 220 bounce_type random }
+  bouncer120_W FreeFlyer { anim_left bouncer120_W  col_offset -12 0  col_size 12 120 killer false  bounce_power 220 bounce_type random }
+
+  bouncer40_S  FreeFlyer { anim_left bouncer40_S   col_offset  0  0  col_size 40 12  killer false  bounce_power 220 bounce_type random }
+  bouncer80_S  FreeFlyer { anim_left bouncer80_S   col_offset  0  0  col_size 80 12  killer false  bounce_power 220 bounce_type random }
+  bouncer120_S FreeFlyer { anim_left bouncer120_S  col_offset  0  0  col_size 120 12 killer false  bounce_power 220 bounce_type random }
+
+  FreeFlyer FreeFlyer { }
+
+
+# EOF #

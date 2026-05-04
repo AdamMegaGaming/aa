@@ -1,0 +1,22 @@
+sprite_table {
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name Main
+offset 0 0
+cells_offset 0 0
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 0
+height 0
+no_cells
+no_sprite_cells
+decorations 0
+
+} // layers
+
+entities { 
+} // entities

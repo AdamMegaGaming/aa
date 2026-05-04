@@ -1,0 +1,180 @@
+sprite_table {
+ blueplate_16 1
+ blueplate_01 2
+ blueplate_07 3
+ blueplate_00 4
+ blueplate_14 5
+ wall_stoneA_02 6
+ wall_stoneA_05 7
+ wall_stoneA_04 8
+ shadow_fix_01 9
+ shadow_fix_02 10
+ teleOUT_dn 11
+ crane10 12
+ crane_platform 13
+ teleIN_up 14
+ metal_pipe_01 15
+ metal_pipe_06 16
+ metal_pipejoint_02 17
+ metal_pipe_02 18
+ metal_pipe_05 19
+ wall_stoneA_03 20
+ metal_pipe_07 21
+ mandi 22
+ bulbsofdeath_end 23
+ comp01 24
+ wall_metalA_01 25
+ wall_green_25a 26
+ metal_pipejoint_01 27
+ nogumE 28
+ nobubble_field 29
+ nogumW 30
+ metal_pipejoint_03 31
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name noname
+offset 0 0
+cells_offset 320 240
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 7
+height 10
+no_cells
+sprite_cells
+1 0 1 0 1 0 1 0 1 0 1 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2 0 0 0 2 0 2 0 2 0 2 0 2 0 
+0 0 3 0 0 0 0 0 0 0 0 0 0 0 
+2 0 3 0 2 0 2 0 2 0 2 0 2 0 
+0 0 3 0 0 0 0 0 0 0 0 0 0 0 
+4 0 3 0 4 0 4 0 4 0 4 0 4 0 
+5 0 3 0 5 0 5 0 5 0 5 0 5 0 
+0 0 3 0 0 0 0 0 0 0 0 0 0 0 
+0 0 3 0 4 0 4 0 4 0 4 0 0 0 
+decorations 0
+
+layer // layer 1
+name noname
+offset 15 15
+cells_offset 280 200
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 8
+height 11
+shadow
+no_cells
+sprite_cells
+6 0 7 0 0 0 7 0 0 0 7 0 0 0 8 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+6 0 0 0 9 0 0 0 0 0 0 0 0 0 0 0 
+0 0 10 0 11 0 0 0 0 0 0 0 0 0 0 0 
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 12 0 13 0 13 0 
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 9 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 14 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 1
+440 375 10 0
+
+layer // layer 2
+name Main
+offset 0 0
+cells_offset 160 160
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 15
+height 13
+cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 2 2 2 2 2 2 2 2 2 0 0 0 
+0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 0 0 2 0 2 0 0 0 0 0 2 0 0 0 
+0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 0 0 2 0 0 0 0 2 2 2 2 0 0 0 
+0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 0 0 2 2 0 0 0 0 0 2 2 0 0 0 
+0 0 0 2 2 2 2 2 2 2 2 2 0 0 0 
+sprite_cells
+0 0 0 0 15 0 16 0 16 0 17 0 16 0 16 0 16 0 17 0 16 0 16 0 18 0 0 0 0 0 
+0 0 0 0 19 0 6 0 20 0 7 0 0 0 7 0 0 0 7 0 0 0 20 0 21 0 0 0 0 0 
+0 0 0 0 19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 0 21 0 0 0 0 0 
+0 0 0 0 19 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 0 21 0 0 0 0 0 
+0 0 0 0 19 0 0 0 0 0 11 0 0 0 0 0 0 0 0 0 0 0 0 0 21 0 0 0 0 0 
+0 0 0 0 19 0 8 0 0 0 0 0 0 0 0 0 0 0 22 0 0 0 20 0 21 0 0 0 0 0 
+0 0 0 0 19 0 6 0 0 0 0 0 0 0 0 0 12 0 13 0 13 0 20 0 21 0 0 0 0 0 
+23 0 0 0 19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 0 21 0 0 0 23 0 
+24 0 0 0 19 0 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 0 0 0 24 0 
+25 0 26 0 27 0 28 0 29 0 29 0 29 0 29 0 29 0 29 0 29 0 30 0 31 0 26 0 25 0 
+0 0 26 0 27 0 28 0 29 0 29 0 29 0 29 0 29 0 29 0 29 0 30 0 31 0 26 0 0 0 
+0 0 0 0 0 0 20 0 14 0 0 0 0 0 0 0 0 0 0 0 14 0 20 0 0 0 0 0 0 0 
+0 0 0 0 0 0 7 0 0 0 20 0 7 0 0 0 7 0 0 0 20 0 20 0 0 0 0 0 0 0 
+decorations 0
+
+} // layers
+
+entities { 
+Device/Teleport 3 {
+position_in_layer 360 360
+layer_index 2
+}
+Spec/LevelExit 10 {
+closed_sprite none
+opened_sprite none
+position_in_layer 520 360
+layer_index 2
+}
+Crate 11 {
+position_in_layer 520 380
+layer_index 2
+}
+Crate 12 {
+position_in_layer 560 380
+layer_index 2
+}
+Crate 13 {
+position_in_layer 560 340
+layer_index 2
+}
+Crate 14 {
+position_in_layer 520 340
+layer_index 2
+}
+Crate 15 {
+position_in_layer 380 300
+layer_index 2
+}
+Spec/Region 16 {
+size 280 80
+balloon true
+killer true
+position_in_layer 320 520
+layer_index 2
+}
+hero/Skater 18 {
+balloon true
+position_in_layer 440 600
+layer_index 2
+}
+Device/Teleport 19 {
+target 3
+position_in_layer 320 560
+layer_index 2
+}
+Device/Teleport 20 {
+target 3
+position_in_layer 560 560
+layer_index 2
+}
+} // entities

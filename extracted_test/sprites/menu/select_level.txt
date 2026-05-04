@@ -1,0 +1,139 @@
+//==============================================================================
+// LEVEL BUTTONS
+//==============================================================================
+
+  use_surface sprites/menu/select_level1.png
+  grid_size 58 58
+  transparent
+
+
+  //N=normal
+  //H=highlight
+
+  sprite level1_done_N { grid 0 0 }
+  sprite level2_done_N { grid 1 0 }
+  sprite level3_done_N { grid 2 0 }
+  sprite level4_done_N { grid 3 0 }
+  sprite level5_done_N { grid 4 0 }
+  sprite level6_done_N { grid 5 0 }
+  sprite level7_done_N { grid 6 0 }
+  sprite level8_done_N { grid 7 0 }
+  sprite level9_done_N { grid 0 1 }
+  sprite level10_done_N { grid 1 1 }
+  sprite level11_done_N { grid 2 1 }
+  sprite level12_done_N { grid 3 1 }
+  sprite level13_done_N { grid 4 1 }
+  sprite level14_done_N { grid 5 1 }
+  sprite level15_done_N { grid 6 1 }
+  sprite level16_done_N { grid 7 1 }
+
+  sprite level1_done_H { grid 0 2 }
+  sprite level2_done_H { grid 1 2 }
+  sprite level3_done_H { grid 2 2 }
+  sprite level4_done_H { grid 3 2 }
+  sprite level5_done_H { grid 4 2 }
+  sprite level6_done_H { grid 5 2 }
+  sprite level7_done_H { grid 6 2 }
+  sprite level8_done_H { grid 7 2 }
+  sprite level9_done_H { grid 0 3 }
+  sprite level10_done_H { grid 1 3 }
+  sprite level11_done_H { grid 2 3 }
+  sprite level12_done_H { grid 3 3 }
+  sprite level13_done_H { grid 4 3 }
+  sprite level14_done_H { grid 5 3 }
+  sprite level15_done_H { grid 6 3 }
+  sprite level16_done_H { grid 7 3 }
+
+  use_surface sprites/menu/select_level2.png
+
+  sprite level1_undone_N { grid 0 0 }
+  sprite level2_undone_N { grid 1 0 }
+  sprite level3_undone_N { grid 2 0 }
+  sprite level4_undone_N { grid 3 0 }
+  sprite level5_undone_N { grid 4 0 }
+  sprite level6_undone_N { grid 5 0 }
+  sprite level7_undone_N { grid 6 0 }
+  sprite level8_undone_N { grid 7 0 }
+  sprite level9_undone_N { grid 0 1 }
+  sprite level10_undone_N { grid 1 1 }
+  sprite level11_undone_N { grid 2 1 }
+  sprite level12_undone_N { grid 3 1 }
+  sprite level13_undone_N { grid 4 1 }
+  sprite level14_undone_N { grid 5 1 }
+  sprite level15_undone_N { grid 6 1 }
+  sprite level16_undone_N { grid 7 1 }
+
+  sprite level1_undone_H { grid 0 2 }
+  sprite level2_undone_H { grid 1 2 }
+  sprite level3_undone_H { grid 2 2 }
+  sprite level4_undone_H { grid 3 2 }
+  sprite level5_undone_H { grid 4 2 }
+  sprite level6_undone_H { grid 5 2 }
+  sprite level7_undone_H { grid 6 2 }
+  sprite level8_undone_H { grid 7 2 }
+  sprite level9_undone_H { grid 0 3 }
+  sprite level10_undone_H { grid 1 3 }
+  sprite level11_undone_H { grid 2 3 }
+  sprite level12_undone_H { grid 3 3 }
+  sprite level13_undone_H { grid 4 3 }
+  sprite level14_undone_H { grid 5 3 }
+  sprite level15_undone_H { grid 6 3 }
+  sprite level16_undone_H { grid 7 3 }
+
+//==============================================================================
+// SET SELECTION & OTHERS
+//==============================================================================
+
+  use_surface sprites/menu/select_level3.png
+  opaque
+  grid_size 80 80
+
+  sprite levelset_previous_N { grid 0 0 }
+  sprite levelset_next_N     { grid 1 0 }
+  sprite levelset_previous_H { grid 2 0 }
+  sprite levelset_next_H     { grid 3 0 }
+  sprite levelset_previous_disabled { grid 4 0 }
+  sprite levelset_next_disabled     { grid 4 0 }
+  sprite levelset_return_N   { rect 0 80 512 60 }
+  sprite levelset_return_H   { rect 0 140 512 60 }
+
+  transparent
+  use_surface sprites/menu/set0.jpg    sprite levelset0 { rect 0 0 505 200 }
+  use_surface sprites/menu/set1.png    sprite levelset1 { rect 0 0 505 200 }
+  use_surface sprites/menu/set2.png    sprite levelset2 { rect 0 0 505 200 }
+  use_surface sprites/menu/set3.png    sprite levelset3 { rect 0 0 505 200 }
+  use_surface sprites/menu/set4.png    sprite levelset4 { rect 0 0 505 200 }
+  use_surface sprites/menu/set_profa.png    sprite levelset_profa { rect 0 0 505 200 }
+  use_surface sprites/menu/set5.png    sprite levelset5 { rect 0 0 505 200 }
+  use_surface sprites/menu/set6.png    sprite levelset6 { rect 0 0 505 200 }
+  use_surface sprites/menu/set7.jpg    sprite levelset7 { rect 0 0 505 200 }
+  use_surface sprites/menu/addon.png   sprite addon { rect 0 0 505 200 }
+  use_surface sprites/menu/addon_fun1.png   sprite addon_fun1 { rect 0 0 505 200 }
+  opaque
+
+  use_surface sprites/menu/replay.png
+  transparent
+  grid_size 357 94
+  sprite levelset_replay_N { grid 0 0 }
+  sprite levelset_replay_H { grid 0 1 }
+
+//==============================================================================
+// LOCKED & BONUS
+//==============================================================================
+
+  use_surface sprites/menu/select_level4.png
+  grid_size 58 58
+  transparent
+
+  sprite level_full_lock_N    { grid 0 0 }
+  sprite level_full_lock_H    { grid 1 0 }
+  sprite level_bonus_lock_N   { grid 0 1 }
+  sprite level_bonus_lock_H   { grid 1 1 }
+  sprite level_bonus_unlock_N { grid 0 2 }
+  sprite level_bonus_unlock_H { grid 1 2 }
+  sprite level_bonus_won_N    { grid 0 3 }
+  sprite level_bonus_won_H    { grid 1 3 }
+  sprite level_demo_lock_N    { grid 0 4 }
+  sprite level_demo_lock_H    { grid 1 4 }
+  sprite level0_undone_N      { grid 0 5 }
+  sprite level0_undone_H      { grid 1 5 }

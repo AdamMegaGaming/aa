@@ -1,0 +1,42 @@
+
+map {
+  title addon_fun1
+  sprite addon_fun1
+  
+level levels/addon5/lev01.txt
+level levels/addon5/lev02.txt
+level levels/addon5/lev03.txt
+level levels/addon5/lev04.txt
+level levels/addon5/lev05.txt
+
+level levels/addon5/lev06.txt
+level levels/addon5/lev07.txt
+level levels/addon5/lev08.txt
+//level levels/addon5/lev09.txt
+//level levels/addon5/lev10.txt
+
+//level levels/addon5/lev11.txt
+//level levels/addon5/lev12.txt
+//level levels/addon5/lev13.txt
+//level levels/addon5/lev14.txt
+
+//level levels/addon5/bumper.txt
+//level levels/addon5/lev16.txt
+
+//  bonus 2
+}
+
+map {
+  final
+  title finallite
+  sprite levelset7
+  button_text lite_button_locked
+  button_text_locked lite_button_locked
+  
+  // Keep the map non-empty to prevent crashes, even if the level can't be played in lite version.
+  level levels/set3/bonus1.txt
+  
+  bonus 0
+}
+
+// EOF //

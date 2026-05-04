@@ -1,0 +1,97 @@
+
+height 10
+width 5
+
+glyph ! { width 5 }
+glyph " { width 5 }
+glyph \# { width 5 }
+glyph $ { width 5 }
+glyph % { width 5 }
+glyph & { width 5 }
+glyph ' { width 5 }
+glyph ( { width 5 }
+glyph ) { width 5 }
+glyph * { width 5 }
+glyph + { width 5 }
+glyph , { width 5 }
+glyph - { width 5 }
+glyph . { width 5 }
+glyph / { width 5 }
+glyph 0 { width 5 }
+glyph 1 { width 5 }
+glyph 2 { width 5 }
+glyph 3 { width 5 }
+glyph 4 { width 5 }
+glyph 5 { width 5 }
+glyph 6 { width 5 }
+glyph 7 { width 5 }
+glyph 8 { width 5 }
+glyph 9 { width 5 }
+glyph : { width 5 }
+glyph ; { width 5 }
+glyph < { width 5 }
+glyph = { width 5 }
+glyph > { width 5 }
+glyph ? { width 5 }
+glyph _ { width 5 }
+// @
+
+line
+
+glyph A { width 5 }
+glyph B { width 5 }
+glyph C { width 5 }
+glyph D { width 5 }
+glyph E { width 5 }
+glyph F { width 5 }
+glyph G { width 5 }
+glyph H { width 5 }
+glyph I { width 5 }
+glyph J { width 5 }
+glyph K { width 5 }
+glyph L { width 5 }
+glyph M { width 5 }
+glyph N { width 5 }
+glyph O { width 5 }
+glyph P { width 5 }
+glyph Q { width 5 }
+glyph R { width 5 }
+glyph S { width 5 }
+glyph T { width 5 }
+glyph U { width 5 }
+glyph V { width 5 }
+glyph W { width 5 }
+glyph X { width 5 }
+glyph Y { width 5 }
+glyph Z { width 5 }
+
+line
+
+glyph a { width 5 }
+glyph b { width 5 }
+glyph c { width 5 }
+glyph d { width 5 }
+glyph e { width 5 }
+glyph f { width 5 }
+glyph g { width 5 }
+glyph h { width 5 }
+glyph i { width 5 }
+glyph j { width 5 }
+glyph k { width 5 }
+glyph l { width 5 }
+glyph m { width 5 }
+glyph n { width 5 }
+glyph o { width 5 }
+glyph p { width 5 }
+glyph q { width 5 }
+glyph r { width 5 }
+glyph s { width 5 }
+glyph t { width 5 }
+glyph u { width 5 }
+glyph v { width 5 }
+glyph w { width 5 }
+glyph x { width 5 }
+glyph y { width 5 }
+glyph z { width 5 }
+
+// EOF //

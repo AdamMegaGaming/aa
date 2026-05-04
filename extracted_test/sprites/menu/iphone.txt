@@ -1,0 +1,36 @@
+//==============================================================================
+// IPHONE SPRITES
+//==============================================================================
+
+  transparent
+
+  use_surface sprites/menu/iphone1.png
+  sprite iphone_circle_spawn { rect 176 0 55 55 }
+  sprite iphone_circle_kill { rect 176 55 55 55 }
+  sprite iphone_circle_drop { rect 88 88 55 55 }
+  sprite iphone_menu { rect 161 110 70 22 }
+  
+  grid_size 44 44
+  
+  sprite iphone_arrowN { grid 0 0 }
+  sprite iphone_arrowE { grid 1 0 }
+  sprite iphone_arrowS { grid 2 0 }
+  sprite iphone_arrowW { grid 3 0 }
+
+  sprite iphone_arrowN_filled { grid 0 1 }
+  sprite iphone_arrowE_filled { grid 1 1 }
+  sprite iphone_arrowS_filled { grid 2 1 }
+  sprite iphone_arrowW_filled { grid 3 1 }
+  
+  sprite iphone_cross_hide { grid 0 2 }
+  sprite iphone_cross_show { grid 1 2 }
+
+  sprite iphone_arrow2N { grid 0 1 pivot 22 22 }
+  sprite iphone_arrow2E { grid 1 1 pivot 22 22 }
+  sprite iphone_arrow2S { grid 2 1 pivot 22 22 }
+  sprite iphone_arrow2W { grid 3 1 pivot 22 22 }
+
+  sprite iphone_arrow2NE { grid 3 1 pivot 22 33 }
+  sprite iphone_arrow2NW { grid 1 1 pivot 22 33 }
+  sprite iphone_arrow2SE { grid 3 1 pivot 22 11 }
+  sprite iphone_arrow2SW { grid 1 1 pivot 22 11 }

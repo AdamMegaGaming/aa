@@ -1,0 +1,176 @@
+sprite_table {
+ bgr/plate_03 1
+ bgr/plate_01 2
+ bgr/plate_04 3
+ bgr/bulkhead 4
+ wall_yellow_02 5
+ wall_yellowx_3 6
+ wall_yellowx_5 7
+ wall_yellow_04 8
+ shadow_fix_02 9
+ wall_yellow_03 10
+ metal_ramp_02 11
+ metal_ramp_01 12
+ metal_ramp_03 13
+ wall_yellow_06 14
+ wall_stoneB_00 15
+ wall_stoneB_02 16
+ wall_yellow_11 17
+ wall_yellow_10 18
+ wall_yellow_01 19
+ wire_2E 20
+ wire_2S 21
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name noname
+offset 0 0
+cells_offset 280 240
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 12
+height 8
+no_cells
+sprite_cells
+0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 2 0 
+0 0 0 0 0 0 0 0 1 0 0 0 0 0 3 0 3 0 3 0 3 0 3 0 
+0 0 0 0 0 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 0 0 0 0 0 3 0 3 0 3 0 3 0 3 0 
+2 0 2 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 0 0 0 4 0 0 0 2 0 0 0 3 0 3 0 3 0 3 0 3 0 3 0 
+0 0 0 0 0 0 2 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 0
+
+layer // layer 1
+name noname
+offset 15 15
+cells_offset 240 240
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 13
+height 8
+shadow
+no_cells
+sprite_cells
+0 0 0 0 0 0 0 0 5 0 6 0 7 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 0 6 0 7 0 
+0 0 0 0 0 0 0 0 5 0 0 0 9 0 10 0 0 0 10 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 5 0 0 0 0 0 8 0 11 0 12 0 11 0 12 0 11 0 
+5 0 6 0 7 0 0 0 0 0 0 0 10 0 0 0 0 0 13 0 0 0 13 0 0 0 
+0 0 0 0 9 0 10 0 0 0 0 0 5 0 0 0 0 0 13 0 0 0 13 0 0 0 
+8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 0 0 0 13 0 0 0 
+decorations 0
+
+layer // layer 2
+name Main
+offset 0 0
+cells_offset 240 240
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 14
+height 9
+cells
+0 0 0 0 2 2 2 2 0 0 0 0 0 0 
+0 0 0 0 2 0 0 2 0 0 2 2 2 2 
+0 0 0 0 2 0 0 2 2 2 2 0 0 2 
+0 0 0 0 2 0 0 0 0 0 0 0 0 2 
+0 0 0 0 2 0 0 2 2 2 2 2 2 2 
+2 2 2 2 2 0 2 2 0 0 0 0 0 0 
+2 0 0 2 2 0 2 0 0 0 0 0 0 0 
+2 0 0 0 0 0 2 0 0 0 0 0 0 0 
+2 2 2 2 2 2 2 0 0 0 0 0 0 0 
+sprite_cells
+14 0 15 0 14 0 15 0 14 0 6 0 7 0 14 0 16 0 16 0 10 0 0 0 10 0 0 0 
+15 0 0 0 15 0 0 0 17 0 0 0 0 0 5 0 16 0 16 0 5 0 6 0 7 0 8 0 
+0 0 15 0 0 0 15 0 18 0 0 0 0 0 0 0 10 0 0 0 0 0 0 0 0 0 17 0 
+15 0 0 0 15 0 0 0 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18 0 
+0 0 14 0 0 0 14 0 18 0 0 0 0 0 8 0 11 0 12 0 11 0 12 0 11 0 8 0 
+5 0 6 0 7 0 19 0 0 0 0 0 14 0 14 0 0 0 13 0 0 0 13 0 0 0 5 0 
+0 0 0 0 0 0 0 0 0 0 0 0 17 0 0 0 0 0 13 0 0 0 13 0 0 0 0 0 
+5 0 0 0 0 0 0 0 0 0 0 0 18 0 0 0 0 0 13 0 0 0 13 0 0 0 5 0 
+0 0 10 0 0 0 10 0 0 0 10 0 0 0 10 0 0 0 10 0 0 0 10 0 0 0 0 0 
+decorations 4
+520 319 20 0
+560 319 21 0
+401 479 21 0
+362 479 20 0
+
+} // layers
+
+entities { 
+hero/Magneto 1 {
+position_in_layer 700 360
+layer_index 2
+}
+Crate/solid 2 {
+position_in_layer 460 540
+layer_index 2
+}
+Crate/solid 5 {
+position_in_layer 460 500
+layer_index 2
+}
+Crate/solid 6 {
+position_in_layer 460 460
+layer_index 2
+}
+Spec/LevelExit 7 {
+position_in_layer 300 520
+layer_index 2
+}
+DoorSingleV 8 {
+position_in_layer 520 360
+layer_index 2
+}
+DoorSingleV 9 {
+position_in_layer 360 520
+layer_index 2
+}
+photo 10 {
+position_in_layer 560 342
+layer_index 2
+}
+photo 11 {
+position_in_layer 400 502
+layer_index 2
+}
+Spec/Region 12 {
+size 73 40
+operate 13
+position_in_layer 525 361
+layer_index 2
+}
+Spec/SignalPlexor 13 {
+operate_1 8
+operate_2 10
+position_in_layer 715 497
+layer_index 2
+}
+Spec/SignalPlexor 14 {
+operate_1 9
+operate_2 11
+position_in_layer 490 680
+layer_index 2
+}
+Spec/Region 15 {
+size 73 40
+operate 14
+position_in_layer 364 521
+layer_index 2
+}
+Spec/LevelBoundary 16 {
+position_in_layer 720 520
+layer_index 2
+}
+Spec/LevelBoundary 17 {
+position_in_layer 320 320
+layer_index 2
+}
+} // entities

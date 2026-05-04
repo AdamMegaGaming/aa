@@ -1,0 +1,391 @@
+sprite_table {
+ bgr/plate_01 1
+ bgr/plate_07 2
+ bgr/plate_06 3
+ bgr/plate_08 4
+ bgr/plate_05 5
+ bgr/plate_10 6
+ bgr/plate_wire_1 7
+ bgr/plate_11 8
+ bgr/plate_02 9
+ wall_yellow_04 10
+ wall_yellow_03 11
+ wall_yellowx_3 12
+ wall_yellowx_4 13
+ wall_yellowx_5 14
+ wall_yellow_02 15
+ wall_yellow_11 16
+ shadow_fix_02 17
+ wall_stoneB_02 18
+ metal_fatpipe_01 19
+ wall_noidea_11 20
+ wall_noidea_10 21
+ wall_yellow_10 22
+ mandi 23
+ wall_yellow_06 24
+ wall_yellowx_7 25
+ wall_yellowx_8 26
+ wall_yellowx_6 27
+ wire_2E 28
+ wire_2H 29
+ wire_3S 30
+ wire_2S 31
+ wire_2V 32
+ wire_2N 33
+ wire_3W 34
+ zabradli 35
+ wire_3N 36
+ wire_2W 37
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name noname
+offset 0 0
+cells_offset 240 320
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 15
+height 10
+no_cells
+sprite_cells
+1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 
+0 0 2 0 3 0 0 0 3 0 0 0 3 0 0 0 3 0 0 0 4 0 3 0 0 0 3 0 0 0 
+0 0 5 0 1 0 1 0 6 0 1 0 1 0 1 0 1 0 1 0 7 0 1 0 1 0 1 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 1 0 7 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 
+0 0 1 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 
+0 0 1 0 7 0 1 0 1 0 8 0 8 0 8 0 8 0 1 0 1 0 1 0 1 0 1 0 1 0 
+0 0 1 0 0 0 4 0 1 0 8 0 8 0 8 0 8 0 1 0 1 0 1 0 1 0 1 0 1 0 
+0 0 9 0 7 0 1 0 1 0 8 0 8 0 8 0 8 0 1 0 1 0 1 0 1 0 1 0 1 0 
+0 0 1 0 0 0 1 0 1 0 8 0 8 0 8 0 8 0 1 0 1 0 1 0 1 0 1 0 1 0 
+decorations 0
+
+layer // layer 1
+name noname
+offset 15 15
+cells_offset 240 320
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 15
+height 10
+shadow
+no_cells
+sprite_cells
+10 0 11 0 0 0 12 0 13 0 14 0 11 0 0 0 12 0 13 0 14 0 10 0 12 0 13 0 14 0 
+15 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+15 0 0 0 11 0 0 0 11 0 0 0 0 0 0 0 11 0 0 0 11 0 0 0 11 0 0 0 11 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 11 0 0 0 10 0 
+15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 0
+
+layer // layer 2
+name Main
+offset 0 0
+cells_offset 240 320
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 16
+height 11
+cells
+2 2 2 2 2 2 12290 12290 2 2 2 2 2 2 2 2 
+2 0 2 0 0 0 0 0 0 0 0 0 0 0 0 2 
+2 0 2 0 0 0 0 0 0 0 0 0 0 0 0 2 
+2 0 2 2 2 2 0 0 2 2 2 2 2 2 2 2 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 
+2 0 0 0 0 0 0 0 0 0 0 0 2 2 2 2 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 
+2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+sprite_cells
+18 0 11 0 0 0 12 0 13 0 14 0 19 0 19 0 12 0 13 0 14 0 10 0 12 0 13 0 14 0 18 0 
+20 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 0 
+21 0 0 0 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 0 0 0 0 21 0 
+10 0 0 0 24 0 10 0 11 0 0 0 0 0 0 0 11 0 0 0 11 0 0 0 11 0 0 0 10 0 10 0 
+20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 0 
+21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 0 
+21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11 0 0 0 11 0 0 0 
+21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 0 
+21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 0 
+21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 0 
+10 0 25 0 25 0 26 0 27 0 25 0 25 0 25 0 25 0 25 0 26 0 27 0 25 0 25 0 26 0 10 0 
+decorations 0
+
+layer // layer 3
+name noname
+offset 0 0
+cells_offset 240 440
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 16
+height 8
+no_cells
+sprite_cells
+28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29 0 29 0 29 0 29 0 30 0 29 0 29 0 31 0 
+32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 0 
+32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 0 
+32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33 0 29 0 29 0 34 0 
+32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 0 
+32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 0 
+32 0 35 0 35 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35 0 35 0 35 0 35 0 32 0 
+33 0 29 0 29 0 29 0 29 0 36 0 36 0 36 0 36 0 29 0 29 0 29 0 29 0 29 0 29 0 37 0 
+decorations 0
+
+} // layers
+
+entities { 
+Crate/solid 1 {
+position_in_layer 340 700
+layer_index 2
+}
+DoorH 20 {
+position_in_layer 480 440
+layer_index 2
+}
+Spec/LevelExit 92 {
+closed_sprite none
+opened_sprite none
+position_in_layer 720 400
+layer_index 2
+}
+Spec/LevelBoundary 96 {
+position_in_layer 280 400
+layer_index 2
+}
+SEMAFOR 100 {
+balloon true
+magneto true
+crate true
+trigger_once false
+position_in_layer 440 680
+layer_index 2
+}
+SEMAFOR 116 {
+balloon true
+magneto true
+crate true
+trigger_once false
+position_in_layer 440 640
+layer_index 2
+}
+SEMAFOR 117 {
+balloon true
+magneto true
+crate true
+trigger_once false
+position_in_layer 440 600
+layer_index 2
+}
+SEMAFOR 118 {
+balloon true
+magneto true
+crate true
+trigger_once false
+position_in_layer 440 560
+layer_index 2
+}
+SEMAFOR 119 {
+balloon true
+magneto true
+crate true
+trigger_once false
+operate 137
+position_in_layer 480 560
+layer_index 2
+}
+SEMAFOR 120 {
+balloon true
+magneto true
+crate true
+trigger_once false
+operate 137
+position_in_layer 480 600
+layer_index 2
+}
+SEMAFOR 121 {
+balloon true
+magneto true
+crate true
+trigger_once false
+operate 132
+position_in_layer 480 640
+layer_index 2
+}
+SEMAFOR 122 {
+balloon true
+magneto true
+crate true
+trigger_once false
+operate 131
+position_in_layer 480 680
+layer_index 2
+}
+SEMAFOR 123 {
+balloon true
+magneto true
+crate true
+trigger_once false
+operate 135
+position_in_layer 520 680
+layer_index 2
+}
+SEMAFOR 124 {
+balloon true
+magneto true
+crate true
+trigger_once false
+operate 134
+position_in_layer 520 640
+layer_index 2
+}
+SEMAFOR 125 {
+balloon true
+magneto true
+crate true
+trigger_once false
+operate 133
+position_in_layer 520 600
+layer_index 2
+}
+SEMAFOR 126 {
+balloon true
+magneto true
+crate true
+trigger_once false
+position_in_layer 520 560
+layer_index 2
+}
+SEMAFOR 127 {
+balloon true
+magneto true
+crate true
+trigger_once false
+operate 136
+position_in_layer 560 560
+layer_index 2
+}
+SEMAFOR 128 {
+balloon true
+magneto true
+crate true
+trigger_once false
+position_in_layer 560 600
+layer_index 2
+}
+SEMAFOR 129 {
+balloon true
+magneto true
+crate true
+trigger_once false
+position_in_layer 560 640
+layer_index 2
+}
+SEMAFOR 130 {
+balloon true
+magneto true
+crate true
+trigger_once false
+position_in_layer 560 680
+layer_index 2
+}
+Spec/SignalPlexor 131 {
+operate_1 135
+operate_2 137
+position_in_layer 489 855
+layer_index 2
+}
+Spec/SignalPlexor 132 {
+operate_1 136
+operate_2 137
+position_in_layer 456 796
+layer_index 2
+}
+Spec/SignalPlexor 133 {
+operate_1 135
+operate_2 136
+operate_3 137
+position_in_layer 565 773
+layer_index 2
+}
+Spec/SignalPlexor 134 {
+operate_1 135
+operate_2 137
+position_in_layer 580 833
+layer_index 2
+}
+Spec/SignalCombiner 135 {
+threshold 4
+operate 138
+position_in_layer 169 888
+layer_index 2
+}
+Spec/SignalCombiner 136 {
+threshold 3
+operate 139
+position_in_layer 550 926
+layer_index 2
+}
+Spec/SignalCombiner 137 {
+threshold 6
+operate 20
+position_in_layer 744 857
+layer_index 2
+}
+DoorSingleH 138 {
+position_in_layer 280 440
+layer_index 2
+}
+DoorV 139 {
+position_in_layer 720 480
+layer_index 2
+}
+Crate/solid 140 {
+position_in_layer 300 420
+layer_index 2
+}
+Crate/solid 141 {
+position_in_layer 300 380
+layer_index 2
+}
+Crate/solid 142 {
+position_in_layer 780 540
+layer_index 2
+}
+Crate/solid 144 {
+position_in_layer 820 540
+layer_index 2
+}
+hero/Magneto 147 {
+position_in_layer 380 680
+layer_index 2
+}
+Device/Terminal 148 {
+show_doc "pattern"
+position_in_layer 720 680
+layer_index 2
+}
+Spec/Actions/Camera 151 {
+a1_target 20
+a2_target 20
+position_in_layer 568 1035
+layer_index 2
+}
+Spec/Actions/Camera 152 {
+a1_target 139
+a2_target 139
+position_in_layer 736 981
+layer_index 2
+}
+} // entities
