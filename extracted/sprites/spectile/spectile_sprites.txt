@@ -1,0 +1,356 @@
+  grid_size 40 40
+  opaque
+
+//==============================================================================
+  use_surface sprites/spectile/special.png
+
+  sprite shadow_fix_01 { rect 145 130 15 15 pivot -25 -25 transparent }
+  sprite shadow_fix_02 { rect 145 145 15 15 pivot -25 -25 transparent }
+  sprite wall_arc_chain_02 { rect 146 160 14 40 pivot -12 0 transparent }
+  sprite metal_lustr { rect 0 150 142 50 pivot 12 9 transparent }
+
+  sprite acid_tank0 { rect 0 0 80 80 transparent }
+  sprite acid_tank1 { rect 0 80 80 39 transparent }
+  sprite acid_tank_glass0 { rect 0 119 24 19 in_editor 0 }
+  sprite acid_tank_glass1 { rect 24 119 24 19 in_editor 0 }
+  sprite acid_tank_glass2 { rect 48 119 24 19 in_editor 0 }
+  sprite acid_tank_glass3 { rect 22 46 24 19 in_editor 0 }
+  anim acid_tank_glass {
+    time_step 100
+    skey acid_tank_glass0
+    skey acid_tank_glass1
+    skey acid_tank_glass2
+    skey acid_tank_glass3
+    send
+  }
+
+  sprite tractor1 { grid 2 2 transparent }
+  sprite tractor2 { grid 3 2 transparent }
+  sprite tractor3 { grid 2 0 size 80 40 transparent }
+  sprite tractor4 { grid 2 1 size 80 40 transparent }
+  
+//==============================================================================
+  use_surface sprites/spectile/teleport.png
+
+  sprite teleOUT_up_01 { grid 0 0 in_editor 0 }
+  sprite teleOUT_up_02 { grid 1 0 in_editor 0 }
+  sprite teleOUT_up_03 { grid 2 0 in_editor 0 }
+  sprite teleOUT_up_04 { grid 3 0 in_editor 0 }
+  anim teleOUT_up {
+    time_step 100
+    skey teleOUT_up_01
+    skey teleOUT_up_02
+    skey teleOUT_up_03
+    skey teleOUT_up_04
+    skey teleOUT_up_03
+    skey teleOUT_up_02
+    send
+  }
+
+  sprite teleOUT_dn_01 { grid 0 1 in_editor 0 }
+  sprite teleOUT_dn_02 { grid 1 1 in_editor 0 }
+  sprite teleOUT_dn_03 { grid 2 1 in_editor 0 }
+  sprite teleOUT_dn_04 { grid 3 1 in_editor 0 }
+  anim teleOUT_dn {
+    time_step 100
+    skey teleOUT_dn_01
+    skey teleOUT_dn_02
+    skey teleOUT_dn_03
+    skey teleOUT_dn_04
+    skey teleOUT_dn_03
+    skey teleOUT_dn_02
+    send
+  }
+
+  sprite teleIN_up_01 { grid 0 2 in_editor 0 }
+  sprite teleIN_up_02 { grid 1 2 in_editor 0 }
+  anim teleIN_up { time_step 100 skey teleIN_up_01 skey teleIN_up_02 send }
+
+  sprite teleIN_dn_01 { grid 2 2 in_editor 0 }
+  sprite teleIN_dn_02 { grid 3 2 in_editor 0 }
+  anim teleIN_dn { time_step 100 skey teleIN_dn_01 skey teleIN_dn_02 send }
+
+  sprite nogumW_0 { grid 0 3 in_editor 0 }
+  sprite nogumW_1 { grid 0 4 in_editor 0 }
+  sprite nogumN_0 { grid 1 3 in_editor 0 }
+  sprite nogumN_1 { grid 1 4 in_editor 0 }
+  sprite nogumE_0 { grid 2 3 in_editor 0 }
+  sprite nogumE_1 { grid 2 4 in_editor 0 }
+  sprite nogumS_0 { grid 3 3 in_editor 0 }
+  sprite nogumS_1 { grid 3 4 in_editor 0 }
+  anim nogumN { time_step 100 skey nogumN_0 skey nogumN_1 send }
+  anim nogumE { time_step 100 skey nogumE_0 skey nogumE_1 send }
+  anim nogumW { time_step 100 skey nogumW_0 skey nogumW_1 send }
+  anim nogumS { time_step 100 skey nogumS_0 skey nogumS_1 send }
+
+//==============================================================================
+  use_surface sprites/spectile/liquid.png
+
+  sprite liquid/acid_wave1 { grid 0 0 fast_blend in_editor 0 transparent }
+  sprite liquid/acid_wave2 { grid 1 0 fast_blend in_editor 0 transparent }
+  sprite liquid/acid_wave3 { grid 2 0 fast_blend in_editor 0 transparent }
+  sprite liquid/acid_wave4 { grid 3 0 fast_blend in_editor 0 transparent }
+  sprite liquid/acid_full  { grid 4 0 fast_blend transparent }
+  anim liquid/acid {
+    key 0 liquid/acid_wave1
+    key 100 liquid/acid_wave2
+    key 200 liquid/acid_wave3
+    key 300 liquid/acid_wave4
+    end 400
+  }
+  
+//==============================================================================
+  use_surface sprites/spectile/jng.png
+
+  sprite jng1 { rect 0 0 160 94 transparent }
+  sprite jng2 { rect 0 94 89 86 transparent }
+  sprite jng3 { rect 89 94 46 30 transparent }
+
+//==============================================================================
+  use_surface sprites/spectile/mech1.png
+
+  sprite cogwheelA_1 { grid 0 0 in_editor 0 }
+  sprite cogwheelA_2 { grid 1 0 in_editor 0 }
+  sprite cogwheelA_3 { grid 2 0 in_editor 0 }
+  sprite cogwheelA_4 { grid 3 0 in_editor 0 }
+  anim cogwheelA {
+    time_step 100
+    skey cogwheelA_1
+    skey cogwheelA_2
+    skey cogwheelA_3
+    skey cogwheelA_4
+    send
+  }
+
+  sprite cogwheelB_1 { grid 0 1 in_editor 0 }
+  sprite cogwheelB_2 { grid 1 1 in_editor 0 }
+  sprite cogwheelB_3 { grid 2 1 in_editor 0 }
+  sprite cogwheelB_4 { grid 3 1 in_editor 0 }
+  sprite cogwheelB_5 { grid 0 2 in_editor 0 }
+  sprite cogwheelB_6 { grid 1 2 in_editor 0 }
+  sprite cogwheelB_7 { grid 2 2 in_editor 0 }
+  sprite cogwheelB_8 { grid 3 2 in_editor 0 }
+  anim cogwheelB {
+    time_step 100
+    skey cogwheelB_1
+    skey cogwheelB_2
+    skey cogwheelB_3
+    skey cogwheelB_4
+    skey cogwheelB_5
+    skey cogwheelB_6
+    skey cogwheelB_7
+    skey cogwheelB_8
+    send
+  }
+
+  sprite pistyV_1 { grid 0 3 gsize 1 2 in_editor 0 }
+  sprite pistyV_2 { grid 1 3 gsize 1 2 in_editor 0 }
+  sprite pistyV_3 { grid 2 3 gsize 1 2 in_editor 0 }
+  sprite pistyV_4 { grid 3 3 gsize 1 2 in_editor 0 }
+  anim pistyV { time_step 80 skey pistyV_1 skey pistyV_2 skey pistyV_3 skey pistyV_4 skey pistyV_3 skey pistyV_2 send }
+
+//==============================================================================
+  use_surface sprites/spectile/mech2.png
+
+  sprite pistyH_1 { grid 0 2 gsize 2 1 in_editor 0 }
+  sprite pistyH_2 { grid 0 3 gsize 2 1 in_editor 0 }
+  sprite pistyH_3 { grid 0 4 gsize 2 1 in_editor 0 }
+  sprite pistyH_4 { grid 2 4 gsize 2 1 in_editor 0 }
+  anim pistyH { time_step 80 skey pistyH_1 skey pistyH_2 skey pistyH_3 skey pistyH_4 skey pistyH_3 skey pistyH_2 send }
+
+  sprite bigcogwheel_1 { grid 0 0 gsize 2 2 in_editor 0 }
+  sprite bigcogwheel_2 { grid 2 0 gsize 2 2 in_editor 0 }
+  sprite bigcogwheel_3 { grid 2 2 gsize 2 2 in_editor 0 }
+
+  use_surface sprites/spectile/mech3.png
+  sprite bigcogwheel_4 { grid 0 0 gsize 2 2 in_editor 0 }
+
+  anim bigcogwheel {
+    time_step 70
+    skey bigcogwheel_1
+    skey bigcogwheel_2
+    skey bigcogwheel_3
+    skey bigcogwheel_4
+    skey bigcogwheel_3
+    skey bigcogwheel_2
+    send
+  }
+  
+
+//==============================================================================
+  use_surface sprites/spectile/sign1.png
+
+  transparent
+
+  grid_size 31 32
+
+  sprite sign/number1 { grid 0 0 pivot -5 -5 }
+  sprite sign/number2 { grid 1 0 pivot -5 -5 }
+  sprite sign/number3 { grid 2 0 pivot -5 -5 }
+  sprite sign/number4 { grid 3 0 pivot -5 -5 }
+  sprite sign/number5 { rect 127 114 31 32 pivot -5 -5 }
+  sprite sign/number6 { rect 127 146 31 32 pivot -5 -5 }
+  sprite sign/nuke    { grid 4 0 pivot -5 -5 }
+
+  sprite sign/arrow1 { grid 0 1 pivot -5 -5 }
+  sprite sign/arrow2 { grid 1 1 pivot -5 -5 }
+  sprite sign/arrow3 { grid 2 1 pivot -5 -5 }
+  sprite sign/arrow4 { grid 3 1 pivot -5 -5 }
+  sprite sign/electricity { grid 4 1 pivot -5 -5 }
+
+  sprite sign/gaugeB1 { grid 0 2 size 31 25 in_editor 0 pivot -4 -8 }
+  sprite sign/gaugeB2 { grid 1 2 size 31 25 in_editor 0 pivot -4 -8 }
+  sprite sign/gaugeB3 { grid 2 2 size 31 25 in_editor 0 pivot -4 -8 }
+  anim sign/gaugeB    {
+    time_step 50
+    skey sign/gaugeB1 skey sign/gaugeB2 skey sign/gaugeB3 skey sign/gaugeB2 skey sign/gaugeB1
+    send
+  }
+  sprite sign/grate_round { rect 93 64 25 25 pivot -8 -8 }
+  sprite sign/lab { rect 118 64 40 25 pivot 0 -8 }
+  sprite sign/info  { rect 0 114 31 32 pivot -5 -5 }
+  sprite sign/exit  { rect 22 168 31 18 pivot -5 -11 transparent }
+  sprite sign/bridge { rect 0 89 24 25 pivot -8 -8 }
+  sprite sign/doorV  { rect 24 89 24 25 pivot -8 -8 }
+  sprite sign/doorH  { rect 48 89 24 25 pivot -8 -8 }
+  sprite sign/gaugeA1 { rect 72 89 25 25 pivot -8 -8 in_editor 0 }
+  sprite sign/gaugeA2 { rect 97 89 25 25 pivot -8 -8 in_editor 0 }
+  sprite sign/gaugeA3 { rect 122 89 25 25 pivot -8 -8 in_editor 0 }
+  anim sign/gaugeA    {
+    time_step 70
+    skey sign/gaugeA1 skey sign/gaugeA2 skey sign/gaugeA3 skey sign/gaugeA2 skey sign/gaugeA1
+    send
+  }
+
+  sprite sign/acid1 { rect 31 114 31 32 pivot -5 -5 }
+  sprite sign/acid2 { rect 62 114 25 32 pivot -9 -8 }
+
+  sprite sign/stripe1 { rect  0 146 11 40 }
+  sprite sign/stripe2 { rect 11 146 11 40 pivot -29 0 }
+  sprite sign/stripe3 { rect 22 146 40 11 }
+  sprite sign/stripe4 { rect 22 157 40 11 pivot 0 -29 }
+
+  sprite sign/eye1 { rect 87 114 20 20 pivot -10 -10 in_editor 0 }
+  sprite sign/eye2 { rect 107 114 20 20 pivot -10 -10 in_editor 0 }
+  sprite sign/eye3 { rect 87 134 20 20 pivot -10 -10 in_editor 0 }
+  sprite sign/eye4 { rect 107 134 20 20 pivot -10 -10 in_editor 0 }
+
+  anim sign/eye {
+    key 0000 sign/eye1
+    key 0300 sign/eye2
+    key 0400 sign/eye4
+    key 1300 sign/eye3
+    key 1500 sign/eye4
+    key 2200 sign/eye1
+    key 2400 sign/eye3
+    key 3700 sign/eye2
+    end 4000
+  }
+
+  sprite sign/storage { rect 62 154 65 24 }
+
+//==============================================================================
+  use_surface sprites/spectile/crane.png
+  
+  grid_size 40 40
+
+  sprite crane01  { grid 0 0 transparent }
+  sprite crane02  { grid 1 0 transparent }
+  sprite crane03  { grid 2 0 transparent }
+  sprite crane04  { grid 3 0 transparent }
+  
+  sprite crane05  { grid 0 1 transparent }
+  sprite crane06  { grid 0 2 transparent }
+  sprite crane07  { grid 0 3 transparent }
+  sprite crane08  { grid 0 4 transparent }
+
+  sprite crane10  { grid 2 2 size 40 26 transparent }
+  sprite crane_platform  { grid 1 3 transparent }
+  sprite crane09  { grid 1 2 size 40 26 transparent }
+
+  sprite crane11  { rect 130 40 30 40 pivot -5 0 }
+  sprite crane12  { grid 3 2 transparent }
+  sprite crane13  { grid 3 3 transparent }
+  sprite crane14  { grid 3 4 transparent }
+  sprite crane15  { grid 2 1 transparent }
+  sprite crane16  { rect 80 40 40 26 }
+
+  sprite crane_grab  { grid 1 1 transparent }
+  sprite crane_rope  { rect 120 40 6 40 }
+  sprite crane_magnet { rect 40 106 40 14 transparent }
+
+//==============================================================================
+  use_surface sprites/spectile/rocket.png
+
+  //trup
+  sprite deco_rocket01 { grid 0 0 size 40 80 transparent }
+  sprite deco_rocket02 { grid 0 2 }
+  sprite deco_rocket03 { grid 0 3 size 40 80 transparent }
+  //kridla
+  sprite deco_rocket04 { rect 134 92 26 54 pivot 0 -13 }
+  sprite deco_rocket05 { rect 134 146 26 54 pivot -14 -13 }
+  sprite deco_rocket06 { rect 120 88 13 16 pivot 0 -8 }
+  sprite deco_rocket07 { rect 120 104 13 16 pivot -27 -8 }
+  sprite deco_argo { rect 80 80 13 40 }
+
+  sprite deco_robot1 { grid 1 0 size 40 80 transparent }
+  sprite deco_robot2 { grid 2 0 size 80 80 transparent }
+  sprite robot_head1 { grid 1 2 transparent in_editor 0 pivot -1 0 }
+  sprite robot_head2 { grid 1 2 transparent in_editor 0 pivot 1 0 }
+  anim robot_head { time_step 50 skey robot_head1 skey robot_head2 send }
+  sprite robot_boot1 { rect 40 120 47 80 transparent }
+  sprite robot_boot2 { rect 87 120 47 80 transparent }
+
+//==============================================================================
+  use_surface sprites/spectile/wire.png
+  
+  transparent
+
+  sprite wire_1N { rect 133 0 13 27    pivot -13 -13  }
+  sprite wire_1E { rect 133 27 26 13   pivot 0 -13 }
+  sprite wire_1S { rect 146 0 13 27    pivot -13 0 }
+  sprite wire_1W { rect 0 53 27 13     pivot -13 -13 }
+  sprite wire_2H { rect 0 66 40 7      pivot 0 -16 }
+  sprite wire_2V { rect 40 40 7 40     pivot -16 0 }
+  sprite wire_2N { rect 53 40 27 26    pivot -13 0 }
+  sprite wire_2E { rect 106 40 27 27   pivot -13 -13 }
+  sprite wire_2S { rect 133 40 26 27   pivot 0 -13 }
+  sprite wire_2W { rect 80 40 26 26    pivot 0 0 }
+  sprite wire_3N { rect 0 0 40 26      pivot 0 0 }
+  sprite wire_3E { rect 106 0 27 40    pivot -13 0 }
+  sprite wire_3S { rect 0 26 40 27     pivot 0 -13 }
+  sprite wire_3W { rect 80 0 26 40     pivot 0 0 }
+  sprite wire_4  { rect 40 0 40 40     pivot 0 0 }
+
+
+//==============================================================================
+  use_surface sprites/spectile/bigeye.png
+  
+  sprite bigeye1 { grid 0 0 transparent in_editor 0 }
+  sprite bigeye2 { grid 1 0 transparent in_editor 0 }
+  sprite bigeye3 { grid 0 1 transparent in_editor 0 }
+  sprite bigeye4 { grid 1 1 transparent in_editor 0 }
+  
+  anim bigeye {
+    key 0000 bigeye1
+    key 0300 bigeye2
+    key 0400 bigeye4
+    key 1300 bigeye3
+    key 1500 bigeye4
+    key 2200 bigeye1
+    key 2400 bigeye3
+    key 3700 bigeye2
+    end 4000
+  }
+
+//==============================================================================
+  use_surface doc/credits_boovie.png
+  sprite boovie { rect 0 0 56 54 }
+  use_surface doc/credits_tovy.png
+  sprite tovy { rect 0 0 50 62 }
+  use_surface doc/credits_undead.png
+  sprite undead { rect 0 0 60 56 }
+
+
+
+// EOF //

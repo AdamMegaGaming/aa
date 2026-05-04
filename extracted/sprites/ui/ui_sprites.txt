@@ -1,0 +1,57 @@
+//==============================================================================
+// USER INTERFACE
+//==============================================================================
+
+
+
+// == CURSOR ==
+
+  use_surface sprites/ui/cursor.png
+  grid_size 16 16
+  transparent
+  sprite ui/cursor { grid 0 0 }
+  sprite ui/eraser { grid 1 0 }
+  sprite ui/stamp  { grid 2 0 }
+  sprite ui/picker { grid 3 0 pivot 2 14 }
+
+// == EDITOR ICONS ==
+
+  use_surface sprites/ui/editor.png
+  transparent
+  grid_size 16 16
+
+  // Button frame.
+
+  sprite ui/aqua_frame_top_left      { rect 0 64 3 3 }
+  sprite ui/aqua_frame_top           { rect 3 64 16 3 }
+  sprite ui/aqua_frame_top_right     { rect 19 64 3 3 }
+
+  sprite ui/aqua_frame_left          { rect 0 67 3 16 }
+  sprite ui/aqua_frame_fill          { rect 3 67 16 16 }
+  sprite ui/aqua_frame_fill_dark     { rect 22 64 16 16 } // Hack to make text visible.
+  sprite ui/aqua_frame_right         { rect 19 67 3 16 }
+
+  sprite ui/aqua_frame_bottom_left   { rect 0 83 3 3 }
+  sprite ui/aqua_frame_bottom        { rect 3 83 16 3 }
+  sprite ui/aqua_frame_bottom_right  { rect 19 83 3 3 }
+
+  sprite editor/layer_hidden      { grid 2 2 }
+  sprite editor/layer_selected    { grid 3 2 }
+
+  sprite editor/sprites           { grid 0 0 }
+  sprite editor/decorations       { grid 1 0 }
+  sprite editor/entities          { grid 2 0 }
+  sprite editor/material          { grid 3 0 }
+
+  sprite invalid { grid2 0 2 2 2 }
+
+
+  use_surface sprites/ui/gamepad.png
+  sprite gamepad_action 		{ rect 0 0 18 18 pivot 0 18 }
+  sprite gamepad_telescope 		{ rect 18 0 18 18 pivot 0 18 }
+  sprite gamepad_break 			{ rect 36 0 18 18 pivot 0 18 }
+  sprite gamepad_look 			{ rect 72 0 17 24 pivot 0 21 }
+  sprite gamepad_start 			{ rect 0 18 32 14 pivot 0 15 }
+
+
+// EOF //

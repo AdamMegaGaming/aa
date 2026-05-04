@@ -1,0 +1,53 @@
+sprite_table {
+ wall_stoneA_03 1
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name Main
+offset 0 0
+cells_offset 240 520
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 13
+height 3
+cells
+2 0 0 0 0 0 0 0 0 0 0 0 2 
+2 0 0 0 0 0 0 0 0 0 0 0 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 
+sprite_cells
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 
+decorations 0
+
+} // layers
+
+entities { 
+Crate/solid 1 {
+position_in_layer 500 580
+layer_index 0
+}
+Crate/solid 2 {
+position_in_layer 340 580
+layer_index 0
+}
+Crate/solid 3 {
+position_in_layer 660 580
+layer_index 0
+}
+walk/indy 4 {
+position_in_layer 392 454
+layer_index 0
+}
+walk/indy 5 {
+position_in_layer 574 457
+layer_index 0
+}
+hero/Magneto 6 {
+position_in_layer 480 520
+layer_index 0
+}
+} // entities

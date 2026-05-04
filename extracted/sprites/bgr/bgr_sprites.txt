@@ -1,0 +1,477 @@
+  grid_size 40 40
+  opaque
+
+  use_surface sprites/entity/entity1.png
+  sprite INVISIBLE { rect 0 0 1 1 transparent }
+
+//==============================================================================
+  use_surface sprites/bgr/sewer1.png
+
+  sprite bgr/hugegrate { grid 2 0 gsize 2 2 transparent }
+  sprite bgr/plate_wire_1 { grid 0 0 gsize 1 2 }
+  sprite bgr/plate_wire_2 { grid 0 4 gsize 2 1 }
+
+  sprite bgr/plate_01 { grid 0 2 }
+  sprite bgr/plate_02 { grid 0 3 }
+  sprite bgr/plate_03 { grid 1 2 gsize 2 2 }
+  sprite bgr/plate_04 { grid 3 2 gsize 1 2 }
+  sprite bgr/plate_05 { grid 1 0 gsize 1 2 }
+  sprite bgr/plate_06 { grid 2 4 gsize 2 1 }
+
+//==============================================================================
+  use_surface sprites/bgr/sewer2.png
+
+  sprite bgr/hugepipe01 { grid 0 0 gsize 2 1 }
+  sprite bgr/hugepipe02 { grid 2 0 gsize 1 2 }
+  sprite bgr/hugepipe03 { grid 1 2 gsize 2 1 }
+  sprite bgr/hugepipe04 { grid 0 1 gsize 1 2 }
+
+  sprite bgr/plate_07 { grid 1 1 }
+  sprite bgr/plate_08 { grid 3 0 }
+  sprite bgr/plate_09 { grid 3 2 }
+  sprite bgr/plate_10 { grid 3 1 }
+  sprite bgr/plate_11 { grid 0 3 }
+
+  sprite bgr/plate_13 { grid 1 3 gsize 2 2 }
+  sprite bgr/bulkhead { grid 3 3 gsize 1 2 }
+
+//==============================================================================
+  use_surface sprites/bgr/okr.png
+
+  sprite bgr/okr_01 { grid 0 0 gsize 1 2 }
+  sprite bgr/okr_02 { grid 1 0 gsize 1 2 }
+  sprite bgr/okr_03 { grid 2 0 gsize 1 2 }
+  sprite bgr/okr_04 { grid 3 0 gsize 1 2 }
+  sprite bgr/okr_05 { grid 0 2 }
+  sprite bgr/okr_06 { grid 0 3 }
+  sprite bgr/okr_07 { grid 1 2 gsize 1 2 }
+  sprite bgr/okr_08 { grid 2 2 transparent }
+  sprite bgr/okr_09 { grid 3 2 transparent }
+  sprite bgr/okr_10 { grid 3 3 transparent }
+  sprite bgr/okr_11 { grid 2 3 transparent }
+  sprite bgr/okr_12 { grid 0 4 gsize 2 1 }
+  sprite bgr/okr_13 { grid 2 4 }
+  sprite bgr/okr_14 { grid 3 4 }
+
+//==============================================================================
+  use_surface sprites/bgr/mix.png
+
+  sprite bgr/mix_futro01 { rect 0 0 10 80 }
+  sprite bgr/mix_futro02a { rect 10 0 10 40 in_editor 0 }
+  sprite bgr/mix_futro02b { rect 10 40 10 40 in_editor 0 }
+  anim bgr/mix_futro02 { time_step 100 skey bgr/mix_futro02a skey bgr/mix_futro02b send }
+  sprite bgr/mix_futro03 { rect 40 0 80 10 }
+  sprite bgr/mix_futro04a { rect 40 10 40 10 in_editor 0 }
+  sprite bgr/mix_futro04b { rect 80 10 40 10 in_editor 0 }
+  anim bgr/mix_futro04 { time_step 100 skey bgr/mix_futro04a skey bgr/mix_futro04b send }
+
+  sprite bgr/mix_arrow01 { rect 20 40 24 18 transparent }
+  sprite bgr/mix_arrow02 { rect 44 40 24 18 transparent }
+  sprite bgr/mix_arrow03 { rect 142 0 18 24 transparent }
+  sprite bgr/mix_arrow04 { rect 142 24 18 24 transparent }
+
+  sprite bgr/mix_tech01 { rect 20 0 20 10 }
+  sprite bgr/mix_tech02 { rect 80 20 10 20 }
+  sprite bgr/mix_tech03 { rect 20 10 20 30 }
+  sprite bgr/mix_tech04 { rect 90 20 30 20 }
+  sprite bgr/mix_tech05 { rect 40 20 40 19 }
+  sprite bgr/mix_tech06 { rect 120 0 22 40 }
+
+
+
+//==============================================================================
+  use_surface sprites/bgr/rock.png
+
+  sprite bgr/rock_01 { grid 0 0 gsize 2 2 }
+  sprite bgr/rock_02 { grid 2 0 gsize 2 2 }
+  sprite bgr/rock_03 { grid 0 2 gsize 1 2 }
+  sprite bgr/rock_04 { grid 1 2 gsize 1 2 }
+  sprite bgr/rock_05 { grid 2 2 gsize 2 1 }
+  sprite bgr/rock_06 { grid 2 3 gsize 2 1 }
+  sprite bgr/rock_07 { grid 0 4 gsize 2 1 }
+  sprite bgr/rock_08 { grid 2 4 gsize 2 1 }
+
+//==============================================================================
+  use_surface sprites/bgr/deco.png
+
+  transparent
+
+  sprite imp_dn1 { rect 0 0 17 25 in_editor 0 }
+  sprite imp_dn2 { rect 17 0 17 25 in_editor 0 }
+  sprite imp_dn3 { rect 34 0 17 20 in_editor 0 }
+  sprite imp_dn4 { rect 51 0 17 15 in_editor 0 }
+  sprite imp_dn5 { rect 68 0 17 10 in_editor 0 }
+  sprite imp_dn6 { rect 85 0 17 5 in_editor 0 }
+
+  anim imp_dn {
+    key 0 imp_dn6
+    key 100 imp_dn5
+    key 200 imp_dn4
+    key 300 imp_dn3
+    key 400 imp_dn2
+    key 500 imp_dn1
+    key 600 imp_dn2
+    key 700 imp_dn1
+    key 800 imp_dn2
+    key 900 imp_dn1
+    key 1000 imp_dn2
+    key 1100 imp_dn3
+    key 1200 imp_dn4
+    key 1300 imp_dn5
+    key 1400 imp_dn6
+    key 1500 INVISIBLE
+    end 8000
+  }
+
+  sprite imp_up1 { rect 119 0 17 25 in_editor 0 }
+  sprite imp_up2 { rect 102 0 17 25 in_editor 0 }
+  sprite imp_up3 { rect 85 5 17 20 in_editor 0  pivot 0 -5 }
+  sprite imp_up4 { rect 68 10 17 15 in_editor 0  pivot 0 -10 }
+  sprite imp_up5 { rect 51 15 17 10 in_editor 0  pivot 0 -15 }
+  sprite imp_up6 { rect 34 20 17 5 in_editor 0   pivot 0 -20 }
+
+  anim imp_up {
+    key 0 imp_up6
+    key 100 imp_up5
+    key 200 imp_up4
+    key 300 imp_up3
+    key 400 imp_up2
+    key 500 imp_up1
+    key 600 imp_up2
+    key 700 imp_up1
+    key 800 imp_up2
+    key 900 imp_up1
+    key 1000 imp_up2
+    key 1100 imp_up3
+    key 1200 imp_up4
+    key 1300 imp_up5
+    key 1400 imp_up6
+    key 1500 INVISIBLE
+    end 8000
+  }
+
+  sprite bgr/eyes_big1 { rect 136 0 23 7 in_editor 0 }
+  sprite bgr/eyes_big2 { rect 136 7 23 7 in_editor 0 }
+  anim bgr/eyes_big {
+    key 0 INVISIBLE
+    key 100 bgr/eyes_big2
+    key 200 bgr/eyes_big1
+    key 2000 bgr/eyes_big2
+    key 2100 INVISIBLE
+    end 5500
+  }
+
+  sprite bgr/eyes1 { rect   0 25 31 28 in_editor 0 }
+  sprite bgr/eyes2 { rect  31 25 31 28 in_editor 0 }
+  sprite bgr/eyes3 { rect  62 25 31 28 in_editor 0 }
+  sprite bgr/eyes4 { rect  93 25 31 28 in_editor 0 }
+  sprite bgr/eyes5 { rect 124 25 31 28 in_editor 0 }
+  anim bgr/eyes {
+    key 0 INVISIBLE
+    key 100 bgr/eyes1
+    key 200 bgr/eyes2
+    key 300 bgr/eyes3
+    key 400 bgr/eyes4
+    key 500 bgr/eyes5
+    key 3000 bgr/eyes4
+    key 3100 bgr/eyes3
+    key 3200 bgr/eyes2
+    key 3300 bgr/eyes1
+    key 3400 INVISIBLE
+    end 5000
+  }
+
+  sprite bgr/diode_a { rect 136 14 5 5 in_editor 0 }
+  sprite bgr/diode_b { rect 141 14 5 5 in_editor 0 }
+  sprite bgr/diode_c { rect 146 14 5 5 in_editor 0 }
+
+  anim bgr/diode01 { time_step 100 skey bgr/diode_a skey bgr/diode_b send }
+  anim bgr/diode02 { time_step 250 skey bgr/diode_a skey bgr/diode_c send }
+  anim bgr/diode03 { time_step 500 skey bgr/diode_a skey bgr/diode_b send }
+
+  sprite bgr/diode_d1 { rect 142 186 6 14 in_editor 0 }
+  sprite bgr/diode_d2 { rect 148 186 6 14 in_editor 0 }
+  sprite bgr/diode_d3 { rect 154 186 6 14 in_editor 0 }
+  anim bgr/diode04 { time_step 100 skey bgr/diode_d1 skey bgr/diode_d2 skey bgr/diode_d3 send }
+
+  sprite bgr/diode_e1 { rect 142 186 2 3 in_editor 0 pivot 0 0 }
+  sprite bgr/diode_e2 { rect 142 186 2 3 in_editor 0 pivot -4 0 }
+  sprite bgr/diode_e3 { rect 142 186 2 3 in_editor 0 pivot -8 0 }
+  sprite bgr/diode_e4 { rect 142 186 2 3 in_editor 0 pivot -12 0 }
+  sprite bgr/diode_e5 { rect 142 186 2 3 in_editor 0 pivot 0 0 }
+  sprite bgr/diode_e6 { rect 142 186 2 3 in_editor 0 pivot 0 -4 }
+  sprite bgr/diode_e7 { rect 142 186 2 3 in_editor 0 pivot 0 -8 }
+  sprite bgr/diode_e8 { rect 142 186 2 3 in_editor 0 pivot 0 -12 }
+  anim bgr/diode05H { time_step 100 skey bgr/diode_e1 skey bgr/diode_e2 skey bgr/diode_e3 skey bgr/diode_e4 send }
+  anim bgr/diode05V { time_step 100 skey bgr/diode_e5 skey bgr/diode_e6 skey bgr/diode_e7 skey bgr/diode_e8 send }
+
+
+  opaque
+
+
+//==============================================================================
+  use_surface sprites/bgr/bluetech.png
+
+  sprite bluetech_01 { grid 0 0 gsize 2 2 }
+  sprite bluetech_02 { grid 1 3 }
+  sprite bluetech_03 { grid 3 0 }
+  sprite bluetech_04 { grid 3 1 }
+  sprite bluetech_05 { grid 3 2 }
+  sprite bluetech_06 { grid 3 3 }
+  sprite bluetech_07 { grid 1 2 }
+  sprite bluetech_08 { grid 0 3 }
+  sprite bluetech_09 { grid 0 2 }
+  sprite bluetech_10 { grid 0 4 }
+  sprite bluetech_11 { grid 1 4 }
+  sprite bluetech_12 { grid 2 4 }
+  sprite bluetech_13 { grid 3 4 }
+  sprite bluetech_14 { grid 2 2 gsize 1 2 }
+  sprite bluetech_15 { grid 2 0 }
+  sprite bluetech_16 { grid 2 1 }
+
+
+
+
+
+
+
+
+
+
+
+
+//==============================================================================
+  use_surface sprites/bgr/dirt2.png
+
+  sprite dirt { grid 0 0 gsize 2 2 }
+  sprite dirt_small { grid 0 0 }
+  sprite dirt/hole1 { grid 0 2 in_editor 0 }
+  sprite dirt/hole2 { grid 1 2 in_editor 0 }
+  anim dirt/hole { key 0 dirt/hole1 key 2000 dirt/hole2 end 2100 }
+  sprite dirt/skull { grid 2 1 }
+  sprite dirt/bone { grid 2 2 gsize 2 1 }
+  sprite dirt/tablet { grid 3 0 gsize 1 2 }
+  sprite dirt/head { grid 2 0 }
+
+//==============================================================================
+  use_surface sprites/bgr/dirt1.png
+
+  sprite dirt/rat { grid 0 0 }
+  sprite dirt/bike { grid 1 0 gsize 2 2 }
+  sprite dirt/chest { grid 3 0 }
+  sprite dirt/rubik { grid 0 1 }
+  sprite dirt/rocket { grid 3 1 }
+  sprite dirt/boulder1 { grid 0 2 }
+  sprite dirt/boulder2 { grid 0 3 }
+  sprite dirt/boulder3 { grid 0 4 }
+  sprite dirt/boulder4 { grid 2 3 }
+  sprite dirt/stargate1 { grid 1 2 gsize 2 1 }
+  sprite dirt/stargate2 { grid 3 2 gsize 1 2 }
+  sprite dirt/stargate3 { grid 2 4 gsize 2 1 }
+  sprite dirt/stargate4 { grid 1 3 gsize 1 2 }
+
+
+//==============================================================================
+  use_surface sprites/bgr/brick1.png
+
+  sprite bgr/wall_brick { grid 0 0 gsize 2 2 }
+  sprite bgr/wall_brick2 { grid 0 0 }
+
+  sprite bgr/column1 { grid 2 0 }
+  sprite bgr/column2 { grid 2 1 }
+  sprite bgr/column3 { grid 2 2 }
+
+  sprite bgr/win1 { grid 0 3 gsize 1 2 }
+  sprite bgr/win2 { grid 1 3 gsize 1 2 }
+  sprite bgr/win3 { grid 2 3 gsize 1 2 }
+
+  sprite bgr/plate1 { grid 3 0 }
+  sprite bgr/plate2 { grid 3 2 }
+  sprite bgr/plate3 { grid 3 1 }
+  sprite bgr/plate4 { grid 3 3 }
+  sprite bgr/hole1 { grid 3 4 }
+  sprite bgr/rig { grid 0 2 gsize 2 1 }
+
+  sprite bgr/win_imp_0 { grid 0 4 in_editor 0 }
+
+//==============================================================================
+  use_surface sprites/bgr/brick2.png
+
+  sprite bgr/pipe1 { grid 0 3 }
+  sprite bgr/pipe2 { grid 1 3 }
+  sprite bgr/pipe3 { grid 0 4 }
+  sprite bgr/pipe4 { grid 1 4 }
+  sprite bgr/pipe5 { grid 2 4 }
+  sprite bgr/pipe6 { grid 3 4 }
+
+  sprite bgr/wire1 { grid 2 3 }
+  sprite bgr/wire2 { grid 3 3 }
+
+  sprite bgr/grate  { grid 0 2 }
+
+  sprite bgr/futro_V1 { grid 0 0 in_editor 0 }
+  sprite bgr/futro_V2 { grid 1 0 in_editor 0 }
+  sprite bgr/futro_V3 { grid 2 0 in_editor 0 }
+  sprite bgr/futro_V4 { grid 3 0 in_editor 0 }
+  anim bgr/futro_V {
+    time_step 100
+    skey bgr/futro_V1 skey bgr/futro_V2 skey bgr/futro_V3 skey bgr/futro_V4
+    send
+  }
+  sprite bgr/futro_H1 { grid 0 1 in_editor 0 }
+  sprite bgr/futro_H2 { grid 1 1 in_editor 0 }
+  sprite bgr/futro_H3 { grid 2 1 in_editor 0 }
+  sprite bgr/futro_H4 { grid 3 1 in_editor 0 }
+  anim bgr/futro_H {
+    time_step 100
+    skey bgr/futro_H1 skey bgr/futro_H2 skey bgr/futro_H3 skey bgr/futro_H4
+    send
+  }
+
+//==============================================================================
+  use_surface sprites/bgr/arc1.png
+
+  sprite bgr/bigarc_top1 { grid 0 0 }
+  sprite bgr/bigarc_top2 { grid 1 0 }
+  sprite bgr/bigarc_top3 { grid 2 0 }
+  sprite bgr/bigarc_top_gothic { grid 1 3 gsize 2 1 }
+  sprite bgr/bigarc_left_curve { grid 0 1 gsize 2 2 }
+  //sprite bgr/bigarc_left_fix { grid 1 1 gsize 1 2 }
+  sprite bgr/bigarc_right_curve { grid 2 1 gsize 2 2 }
+  sprite bgr/bigarc_double { grid 0 3 gsize 1 2 pivot 40 0 }
+  sprite bgr/bigarc_left { grid 2 4 }
+  sprite bgr/bigarc_right { grid 1 4 }
+  sprite bgr/bigarc_double2 { grid 3 0 }
+
+//==============================================================================
+  use_surface sprites/bgr/arc2.png
+
+  sprite bgr/arc_top1 { grid 0 0 }
+  sprite bgr/arc_top2 { grid 1 0 }
+  sprite bgr/arc_top3 { grid 2 0 }
+  sprite bgr/arc_top4 { grid 3 0 }
+  sprite bgr/arc_left { grid 0 1 }
+  sprite bgr/arc_right { grid 2 1 }
+  sprite bgr/arc_double { grid 3 1 }
+  sprite bgr/exit_gate1 { grid 0 2 gsize 2 2 }
+  sprite bgr/exit_gate2 { grid 2 2 gsize 1 2 }
+
+
+
+//==============================================================================
+  use_surface sprites/bgr/blueplate.png
+  
+  sprite blueplate_00 { grid 0 2 }
+  
+  sprite blueplate_01 { grid 0 0 gsize 1 2 }
+  sprite blueplate_02 { grid 1 0 gsize 1 2 }
+  sprite blueplate_03 { grid 2 0 gsize 1 2 transparent }
+  sprite blueplate_04 { grid 3 0 gsize 1 2 transparent }
+  
+  sprite blueplate_05 { grid 1 2 }
+  sprite blueplate_06 { grid 2 2 }
+  sprite blueplate_07 { grid 3 2 }
+  
+  sprite blueplate_08 { grid 0 3 gsize 2 1 }
+  sprite blueplate_09 { grid 2 3 }
+  sprite blueplate_10 { grid 3 3 }
+  
+  sprite blueplate_11a { grid 0 4 in_editor 0 }
+  sprite blueplate_11b { grid 1 4 in_editor 0 }
+  sprite blueplate_11c { grid 2 4 in_editor 0 }
+  anim blueplate_11 { time_step 100 skey blueplate_11a skey blueplate_11b skey blueplate_11c send }
+  
+  sprite blueplate_bridge { grid 3 4 }
+
+//==============================================================================
+  use_surface sprites/bgr/blueplate2.png
+  
+  sprite blueplate_12 { grid 1 2 }
+  sprite blueplate_13 { grid 0 0 gsize 1 2 }
+  sprite blueplate_14a { grid 1 0 gsize 1 2 in_editor 0 }
+  sprite blueplate_14b { grid 2 0 gsize 1 2 in_editor 0 }
+  sprite blueplate_14c { grid 3 0 gsize 1 2 in_editor 0 }
+  anim blueplate_14 { time_step 100 skey blueplate_14a skey blueplate_14b skey blueplate_14c send }
+  sprite blueplate_15 { grid 0 2 gsize 1 2 }
+  sprite blueplate_16 { grid 1 2 gsize 1 2 }
+  sprite blueplate_17 { grid 2 2 gsize 1 2 }
+  sprite blueplate_18 { grid 3 2 }
+  sprite blueplate_19 { grid 3 3 }
+
+  sprite blueplate_20 { grid 0 4 }
+  sprite blueplate_21 { grid 1 4 }
+  sprite blueplate_22 { grid 2 4 }
+  sprite blueplate_23 { grid 3 4 }
+
+
+//==============================================================================
+  use_surface sprites/bgr/accel.png
+
+  sprite blueplate_accelW1 { grid 2 0 in_editor 0 }
+  sprite blueplate_accelW2 { grid 1 0 in_editor 0 }
+  sprite blueplate_accelW3 { grid 0 0 in_editor 0 }
+  sprite blueplate_accelE1 { grid 0 1 in_editor 0 }
+  sprite blueplate_accelE2 { grid 1 1 in_editor 0 }
+  sprite blueplate_accelE3 { grid 2 1 in_editor 0 }
+  sprite blueplate_accelN1 { grid 0 2 in_editor 0 }
+  sprite blueplate_accelN2 { grid 1 2 in_editor 0 }
+  sprite blueplate_accelN3 { grid 2 2 in_editor 0 }
+  sprite blueplate_accelS1 { grid 0 3 in_editor 0 }
+  sprite blueplate_accelS2 { grid 1 3 in_editor 0 }
+  sprite blueplate_accelS3 { grid 2 3 in_editor 0 }
+
+  anim blueplate_accelN {
+    time_step 80    skey blueplate_accelN1    skey blueplate_accelN2    skey blueplate_accelN3    send
+  }
+  anim blueplate_accelE {
+    time_step 80    skey blueplate_accelE1    skey blueplate_accelE2    skey blueplate_accelE3    send
+  }
+  anim blueplate_accelS {
+    time_step 80    skey blueplate_accelS1    skey blueplate_accelS2    skey blueplate_accelS3    send
+  }
+  anim blueplate_accelW {
+    time_step 80    skey blueplate_accelW1    skey blueplate_accelW2    skey blueplate_accelW3    send
+  }
+
+//==============================================================================
+  use_surface sprites/bgr/skull.png
+  transparent
+
+  sprite skull_1 { rect 0 0 105 114 pivot 0 0 in_editor 0 }
+  sprite skull_2 { rect 105 0 105 114 pivot 0 0 in_editor 0 }
+  sprite skull_3 { rect 0 114 105 114 pivot 0 0 in_editor 0 }
+  sprite skullw_1 { rect 105 114 18 18 pivot 0 0 in_editor 0 }
+  sprite skullw_2 { rect 123 114 18 18 pivot 0 0 in_editor 0 }
+  sprite skullw_3 { rect 141 114 18 18 pivot 0 0 in_editor 0 }
+  sprite skullw_4 { rect 159 114 18 18 pivot 0 0 in_editor 0 }
+  anim skull {
+    time_step 100
+    skey skull_1
+    skey skull_2
+    skey skull_3
+    send
+  }
+  anim skullw {
+    key 000 skullw_1
+    key 050 skullw_2
+    key 100 skullw_3
+    key 150 skullw_4
+    key 200 skullw_1
+    key 250 skullw_2
+    key 300 skullw_3
+    key 350 skullw_4
+    key 400 skullw_1
+    key 450 skullw_2
+    key 500 skullw_3
+    key 550 skullw_4
+    key 600 skullw_1
+    key 650 skullw_2
+    key 700 skullw_3
+    key 750 skullw_4
+    key 800 skullw_1
+    end 3000
+  }
+
+
+// EOF //
+

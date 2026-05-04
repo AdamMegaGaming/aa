@@ -1,0 +1,12 @@
+// All urls must be in ASCII encoding.
+// game url
+
+"http://archibald.rakeingrass.com/iphone.php"
+
+// buy url
+
+"http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=300194705&mt=8"
+
+// don't wont to buy
+
+"http://archibald.rakeingrass.com/no_order.php"

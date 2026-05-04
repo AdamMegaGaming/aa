@@ -1,0 +1,466 @@
+  transparent
+
+//==============================================================================
+// CURSORS
+//==============================================================================
+
+  grid_size 32 32
+  use_surface sprites/hero/cursor.png
+
+  sprite cursor_left    { grid 0 0 pivot 16 16 }
+  sprite cursor_up      { grid 1 0 pivot 16 16 }
+  sprite cursor_right   { grid 2 0 pivot 16 16 }
+  sprite cursor_down    { grid 3 0 pivot 16 16 }
+  sprite cursor_arrow   { grid 4 0 pivot 4 4 }
+  sprite cursor_magnet  { grid 5 0 pivot 16 16 }
+  
+  sprite cursor_kill    { grid 0 1 pivot 16 16 }
+  sprite cursor_grab    { grid 1 1 pivot 16 16 }
+  sprite cursor_drop    { grid 2 1 pivot 16 16 }
+  sprite cursor_break   { grid 3 1 pivot 16 16 }
+  sprite cursor_balloon { grid 4 1 pivot 16 16 }
+
+//==============================================================================
+// SKATER
+//==============================================================================
+
+  use_surface sprites/hero/skater.png
+
+  sprite boy_ride_1L { rect 121 50 27 41 pivot 12 21 in_editor 0 }
+  sprite boy_ride_2L { rect 148 50 27 41 pivot 12 21 in_editor 0 }
+  sprite boy_ride_3L { rect 175 50 27 41 pivot 12 21 in_editor 0 }
+  sprite boy_ride_4L { rect 202 50 27 41 pivot 12 21 in_editor 0 }
+  sprite boy_ride_5L { rect 229 50 27 41 pivot 12 21 in_editor 0 }
+
+  sprite boy_ride_1R { rect 121 91 27 41 pivot 12 21 in_editor 0 }
+  sprite boy_ride_2R { rect 148 91 27 41 pivot 12 21 in_editor 0 }
+  sprite boy_ride_3R { rect 175 91 27 41 pivot 12 21 in_editor 0 }
+  sprite boy_ride_4R { rect 202 91 27 41 pivot 12 21 in_editor 0 }
+  sprite boy_ride_5R { rect 229 91 25 41 pivot 12 21 in_editor 0 }
+
+  anim boy_rideL {
+    time_step 100
+    skey boy_ride_1L skey boy_ride_2L skey boy_ride_3L skey boy_ride_4L skey boy_ride_5L skey boy_ride_1L
+    end 10
+  }
+
+  anim boy_rideR {
+    time_step 100
+    skey boy_ride_1R skey boy_ride_2R skey boy_ride_3R skey boy_ride_4R skey boy_ride_5R skey boy_ride_1R
+    end 10
+  }
+
+  sprite boy_climb_1L { rect 0 0 30 50 pivot 10 32 in_editor 0 }
+  sprite boy_climb_2L { rect 30 0 30 50 pivot 10 32 in_editor 0 }
+  sprite boy_climb_3L { rect 60 0 30 50 pivot 10 32 in_editor 0 }
+  sprite boy_climb_4L { rect 90 0 30 50 pivot 10 32 in_editor 0 }
+  sprite boy_climb_5L { rect 120 0 30 50 pivot 10 32 in_editor 0 }
+  sprite boy_climb_6L { rect 150 0 30 50 pivot 10 32 in_editor 0 }
+
+  sprite boy_climb_6R { rect 180 0 30 50 pivot 10 32 in_editor 0 }
+  sprite boy_climb_5R { rect 210 0 30 50 pivot 10 32 in_editor 0 }
+  sprite boy_climb_4R { rect 0 50 30 50 pivot 10 32 in_editor 0 }
+  sprite boy_climb_3R { rect 30 50 30 50 pivot 10 32 in_editor 0 }
+  sprite boy_climb_2R { rect 60 50 30 50 pivot 10 32 in_editor 0 }
+  sprite boy_climb_1R { rect 90 50 30 50 pivot 10 32 in_editor 0 }
+
+  sprite boy_climb_0L { rect 200 132 28 47 pivot 10 28 in_editor 0 }
+  sprite boy_climb_0R { rect 228 132 28 47 pivot 10 28 in_editor 0 }
+
+  anim boy_climbL {
+    time_step 75
+    skey boy_climb_0L
+    skey boy_climb_1L skey boy_climb_5L skey boy_climb_2L skey boy_climb_6L
+    skey boy_climb_1L skey boy_climb_4L skey boy_climb_2L skey boy_climb_1L
+    send
+  }
+
+  anim boy_climbR {
+    time_step 75
+    skey boy_climb_0R
+    skey boy_climb_1R skey boy_climb_5R skey boy_climb_2R skey boy_climb_6R
+    skey boy_climb_1R skey boy_climb_4R skey boy_climb_2R skey boy_climb_1R
+    send
+  }
+
+  sprite boy_jumpL { rect 134 132 33 42 pivot 22 28 }
+  sprite boy_jumpR { rect 167 132 33 42 pivot 10 28 }
+
+  sprite boy_death_0 { rect 0 100 23 34 in_editor 0 pivot 10 13 }
+  sprite boy_death_1 { rect 22 100 23 34 in_editor 0 pivot 10 13 }
+  sprite boy_death_2 { rect 44 100 23 34 in_editor 0 pivot 10 13 }
+
+  anim boy_death {
+    time_step 100
+    skey boy_death_0 skey boy_death_1 skey boy_death_2
+    skey boy_death_0 skey boy_death_1 skey boy_death_2
+    skey boy_death_0 skey boy_death_1 skey boy_death_2
+    skey boy_death_0 skey boy_death_1 skey boy_death_2
+    send
+  }
+
+  sprite boyIN_basic   { rect 67  99 18 35 pivot 8 22 }
+  sprite boyIN_laugh_1 { rect 85  99 18 35 pivot 8 22 in_editor 0 }
+  sprite boyIN_laugh_2 { rect 103 99 18 35 pivot 8 22 in_editor 0 }
+  anim boyIN_laugh {
+    time_step 75
+    skey boyIN_laugh_1 skey boyIN_laugh_2 skey boyIN_laugh_1 skey boyIN_laugh_2 skey boyIN_laugh_1 skey boyIN_laugh_2 skey boyIN_laugh_1 skey boyIN_laugh_2
+    send
+  }
+
+  anim boyIN_face { key 0 boyIN_laugh_2 end 1000 }
+
+  sprite boyIN_gum_1 { rect 0  134 24 34 pivot 14 21 in_editor 0 }
+  sprite boyIN_gum_2 { rect 24 134 24 34 pivot 14 21 in_editor 0 }
+  sprite boyIN_gum_3 { rect 48 134 24 34 pivot 14 21 in_editor 0 }
+  sprite boyIN_gum_4 { rect 72 134 24 34 pivot 14 21 in_editor 0 }
+  sprite boyIN_gum_5 { rect 96 134 24 34 pivot 14 21 in_editor 0 }
+  anim boyIN_gum {
+    time_step 75
+    skey boyIN_gum_1 skey boyIN_gum_2 skey boyIN_gum_3 skey boyIN_gum_4 key 7 boyIN_gum_5
+    end 8
+  }
+
+  sprite boyIN_whistle_1 { rect 0  168  26 34 pivot 16 21 in_editor 0 }
+  sprite boyIN_whistle_2 { rect 26 168  26 34 pivot 16 21 in_editor 0 }
+  sprite boyIN_whistle_3 { rect 52 168  26 34 pivot 16 21 in_editor 0 }
+  sprite boyIN_whistle_4 { rect 78 168  26 34 pivot 16 21 in_editor 0 }
+  sprite boyIN_whistle_5 { rect 104 168 26 34 pivot 16 21 in_editor 0 }
+  sprite boyIN_whistle_6 { rect 0 202   26 34 pivot 16 21 in_editor 0 }
+
+  anim boyIN_whistle {
+   time_step 150
+   skey boyIN_whistle_1 skey boyIN_whistle_2 skey boyIN_whistle_3
+   skey boyIN_whistle_4 skey boyIN_whistle_5 skey boyIN_whistle_6
+   skey boyIN_whistle_1 skey boyIN_whistle_2 skey boyIN_whistle_3
+   skey boyIN_whistle_4 skey boyIN_whistle_5 skey boyIN_whistle_6
+   send
+  }
+
+  sprite boyIN_salute_1 { rect 130 174 23 23 pivot 8 21 in_editor 0 }
+  sprite boyIN_salute_2 { rect 153 174 23 23 pivot 8 21 in_editor 0 }
+  anim boyIN_salute { key 0 boyIN_salute_1 key 500 boyIN_salute_2 end 1000 }
+
+  sprite boyIN_tenis_1 { rect 26 202 17 45 pivot 8 21 in_editor 1 }
+  sprite boyIN_tenis_2 { rect 43 202 17 45 pivot 8 21 in_editor 1 }
+  sprite boyIN_tenis_3 { rect 60 202 17 45 pivot 8 21 in_editor 1 }
+  sprite boyIN_tenis_4 { rect 77 202 17 45 pivot 8 21 in_editor 1 }
+  sprite boyIN_tenis_5 { rect 94 202 17 45 pivot 8 21 in_editor 1 }
+  sprite boyIN_tenis_6 { rect 111 202 17 45 pivot 8 21 in_editor 1 }
+
+  anim boyIN_tenis {
+    key 0 boyIN_tenis_1
+    key 200 boyIN_tenis_2
+    key 400 boyIN_tenis_3
+    key 1000 boyIN_tenis_2
+
+    key 1100 boyIN_tenis_4
+    key 1200 boyIN_tenis_5
+    key 1300 boyIN_tenis_6
+    key 1400 boyIN_tenis_5
+    key 1500 boyIN_tenis_4
+    key 1600 boyIN_tenis_5
+    key 1700 boyIN_tenis_6
+    key 1800 boyIN_tenis_5
+    key 1900 boyIN_tenis_4
+    key 2000 boyIN_tenis_5
+    key 2100 boyIN_tenis_6
+    key 2200 boyIN_tenis_5
+    key 2300 boyIN_tenis_4
+
+    key 2400 boyIN_tenis_2
+    key 2600 boyIN_tenis_3
+    key 3200 boyIN_tenis_2
+    key 3400 boyIN_tenis_1
+
+    end 3600
+  }
+
+
+//==============================================================================
+// MAGNETO
+//==============================================================================
+
+  grid_size 40 40
+  use_surface sprites/hero/magneto.png
+
+  sprite magneto_still { grid 0 0 }
+
+  sprite bubble/magneto_01 { grid 0 0 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_02 { grid 1 0 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_03 { grid 2 0 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_04 { grid 3 0 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_05 { grid 4 0 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_06 { grid 5 0 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_07 { grid 0 1 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_08 { grid 1 1 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_09 { grid 2 1 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_10 { grid 3 1 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_11 { grid 4 1 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_12 { grid 5 1 pivot 20 20 in_editor 0 }
+
+  sprite bubble/magneto_01s { grid 0 2 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_02s { grid 1 2 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_03s { grid 2 2 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_04s { grid 3 2 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_05s { grid 4 2 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_06s { grid 5 2 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_07s { grid 0 3 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_08s { grid 1 3 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_09s { grid 2 3 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_10s { grid 3 3 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_11s { grid 4 3 pivot 20 20 in_editor 0 }
+  sprite bubble/magneto_12s { grid 5 3 pivot 20 20 in_editor 0 }
+
+  sprite magneto/death_01 { grid 0 4 pivot 20 20 in_editor 0 }
+  sprite magneto/death_02 { grid 1 4 pivot 20 20 in_editor 0 }
+  sprite magneto/death_03 { grid 2 4 pivot 20 20 in_editor 0 }
+  sprite magneto/death_04 { grid 3 4 pivot 20 20 in_editor 0 }
+  sprite magneto/death_05 { grid 4 4 pivot 20 20 in_editor 0 }
+  sprite magneto/death_06 { grid 5 4 pivot 20 20 in_editor 0 }
+  sprite magneto/death_07 { grid 0 5 pivot 20 20 in_editor 0 }
+  sprite magneto/death_08 { grid 1 5 pivot 20 20 in_editor 0 }
+  sprite magneto/death_09 { grid 2 5 pivot 20 20 in_editor 0 }
+  sprite magneto/death_10 { grid 3 5 pivot 20 20 in_editor 0 }
+  sprite magneto/death_11 { grid 4 5 pivot 20 20 in_editor 0 }
+  sprite magneto/death_12 { grid 5 5 pivot 20 20 in_editor 0 }
+
+  anim hero/magneto {
+      time_step 70
+      skey bubble/magneto_12
+      skey bubble/magneto_11
+      skey bubble/magneto_10
+      skey bubble/magneto_09
+      skey bubble/magneto_08
+      skey bubble/magneto_07
+      skey bubble/magneto_06
+      skey bubble/magneto_05
+      skey bubble/magneto_04
+      skey bubble/magneto_03
+      skey bubble/magneto_02
+      skey bubble/magneto_01
+      send
+  }
+
+  anim hero/magneto/stick {
+      time_step 70
+      skey bubble/magneto_12s
+      skey bubble/magneto_11s
+      skey bubble/magneto_10s
+      skey bubble/magneto_09s
+      skey bubble/magneto_08s
+      skey bubble/magneto_07s
+      skey bubble/magneto_06s
+      skey bubble/magneto_05s
+      skey bubble/magneto_04s
+      skey bubble/magneto_03s
+      skey bubble/magneto_02s
+      skey bubble/magneto_01s
+      send
+  }
+
+  anim hero/magneto/death {
+      key 0 magneto/death_01
+      key 50 magneto/death_02
+      key 100 magneto/death_03
+      key 150 magneto/death_04
+      key 200 magneto/death_05
+      key 280 magneto/death_06
+      key 360 magneto/death_07
+      key 440 magneto/death_08
+      key 540 magneto/death_09
+      key 640 magneto/death_10
+      key 740 magneto/death_11
+      key 840 magneto/death_12
+      end 940
+  }
+
+  use_surface sprites/hero/telescope.png
+  sprite telescope_stick { rect 25 0 10 40 }
+  sprite telescope_magnet { rect 0 20 25 20 }
+
+//==============================================================================
+// BALOON
+//==============================================================================
+
+  //use_surface sprites/hero/balloon.png
+  //grid_size 30 45
+  use_surface sprites/hero/bubble.png
+
+  sprite bubble_0 { rect   0 0 36 36 pivot 18 18 in_editor 0 }
+  sprite bubble_1 { rect  36 0 36 36 pivot 18 18 in_editor 0 }
+  sprite bubble_2 { rect  72 0 36 36 pivot 18 18 in_editor 0 }
+  sprite bubble_3 { rect 108 0 36 36 pivot 18 18 in_editor 0 }
+  sprite bubble_4 { rect 144 0 36 36 pivot 18 18 in_editor 0 }
+
+  sprite bubble_grab_0 { rect   0 36 36 40 pivot 18 18 in_editor 0 }
+  sprite bubble_grab_1 { rect  36 36 36 40 pivot 18 18 in_editor 0 }
+  sprite bubble_grab_2 { rect  72 36 36 40 pivot 18 18 in_editor 0 }
+  sprite bubble_grab_3 { rect 108 36 36 40 pivot 18 18 in_editor 0 }
+  sprite bubble_grab_4 { rect 144 36 36 40 pivot 18 18 in_editor 0 }
+
+  sprite bubble_stick_0 { rect   0 76 36 39 pivot 18 18 in_editor 0 }
+  sprite bubble_stick_1 { rect  36 76 36 39 pivot 18 18 in_editor 0 }
+  sprite bubble_stick_2 { rect  72 76 36 39 pivot 18 18 in_editor 0 }
+  sprite bubble_stick_3 { rect 108 76 36 39 pivot 18 18 in_editor 0 }
+  sprite bubble_stick_4 { rect 144 76 36 39 pivot 18 18 in_editor 0 }
+  sprite bubble_stick_5 { rect 180 76 36 39 pivot 18 18 in_editor 0 }
+
+  // aaa HACK
+  sprite hero/pixel { rect 15 15 2 2 pivot center in_editor 0 }
+
+  anim hero/bubble {
+      time_step 150
+      skey bubble_0 skey bubble_1 skey bubble_2 skey bubble_3
+      skey bubble_4 skey bubble_3 skey bubble_2 skey bubble_1
+      send
+  }
+
+  anim hero/bubble/grab {
+      time_step 150
+      skey bubble_grab_0 skey bubble_grab_1 skey bubble_grab_2 skey bubble_grab_3
+      skey bubble_grab_4 skey bubble_grab_3 skey bubble_grab_2 skey bubble_grab_1
+      send
+  }
+
+  anim hero/bubble/stick {
+      time_step 100
+      skey bubble_stick_5 skey bubble_stick_4 skey bubble_stick_3
+      skey bubble_stick_2 skey bubble_stick_1 skey bubble_stick_0
+      send
+  }
+
+  use_surface sprites/hero/bubble2.png
+  sprite bubble/splash1 { rect   1  0 45 59 pivot 22 20 in_editor 0 }
+  sprite bubble/splash2 { rect  47  0 45 59 pivot 22 20 in_editor 0 }
+  sprite bubble/splash3 { rect  93  0 45 59 pivot 22 20 in_editor 0 }
+  sprite bubble/splash4 { rect 139  0 45 59 pivot 22 20 in_editor 0 }
+  sprite bubble/splash5 { rect   1 60 45 59 pivot 22 20 in_editor 0 }
+  sprite bubble/splash6 { rect  47 60 45 59 pivot 22 20 in_editor 0 }
+  sprite bubble/splash7 { rect  93 60 45 59 pivot 22 20 in_editor 0 }
+  sprite bubble/splash8 { rect 139 60 45 59 pivot 22 20 in_editor 0 }
+  sprite bubble/splash9 { rect 185 60 45 59 pivot 22 20 in_editor 0 }
+  sprite bubble/splash10 { rect 185 60 1 1 pivot 0 0 in_editor 0 }
+
+  anim hero/bubble/death {
+   key 0 bubble/splash1
+   key 100 bubble/splash2
+   key 200 bubble/splash3
+   key 300 bubble/splash4
+   key 400 bubble/splash5
+   key 500 bubble/splash6
+   key 600 bubble/splash7
+   key 700 bubble/splash8
+   key 800 bubble/splash9
+   key 900 bubble/splash10
+   end 1000
+  }
+
+//==============================================================================
+// PROFA
+//==============================================================================
+
+  use_surface sprites/hero/profaR.png
+
+  sprite profa_jpR1 { rect   0 0 46 46 pivot 20 26 in_editor 0 }
+  sprite profa_jpR2 { rect  46 0 46 46 pivot 20 26 in_editor 0 }
+  sprite profa_jpR3 { rect  92 0 46 46 pivot 20 26 in_editor 0 }
+  sprite profa_jpR4 { rect 138 0 46 46 pivot 20 26 in_editor 0 }
+  sprite profa_jpR5 { rect 184 0 46 46 pivot 20 26 in_editor 0 }
+  sprite profa_jpR6 { rect 230 0 46 46 pivot 20 26 in_editor 0 }
+
+  sprite profa_jpR_grab1 { rect   0 46 46 46 pivot 20 22 in_editor 0 }
+  sprite profa_jpR_grab2 { rect  46 46 46 46 pivot 20 22 in_editor 0 }
+  sprite profa_jpR_grab3 { rect  92 46 46 46 pivot 20 22 in_editor 0 }
+  sprite profa_jpR_grab4 { rect 138 46 46 46 pivot 20 22 in_editor 0 }
+  sprite profa_jpR_grab5 { rect 184 46 46 46 pivot 20 22 in_editor 0 }
+  sprite profa_jpR_grab6 { rect 230 46 46 46 pivot 20 22 in_editor 0 }
+
+  anim profa_jpR {
+    time_step 50
+    skey profa_jpR1 skey profa_jpR2 skey profa_jpR3 skey profa_jpR4
+    skey profa_jpR5 skey profa_jpR6 skey profa_jpR3 skey profa_jpR4
+    send
+  }
+  anim profa_jpR_grab {
+    time_step 50
+    skey profa_jpR_grab1 skey profa_jpR_grab2 skey profa_jpR_grab3 skey profa_jpR_grab4
+    skey profa_jpR_grab5 skey profa_jpR_grab6 skey profa_jpR_grab3 skey profa_jpR_grab4
+    send
+  }
+
+
+  use_surface sprites/hero/profaL.png
+
+  sprite profa_jpL1 { rect   0 0 46 46 pivot 20 26 in_editor 0 }
+  sprite profa_jpL2 { rect  46 0 46 46 pivot 20 26 in_editor 0 }
+  sprite profa_jpL3 { rect  92 0 46 46 pivot 20 26 in_editor 0 }
+  sprite profa_jpL4 { rect 138 0 46 46 pivot 20 26 in_editor 0 }
+  sprite profa_jpL5 { rect 184 0 46 46 pivot 20 26 in_editor 0 }
+  sprite profa_jpL6 { rect 230 0 46 46 pivot 20 26 in_editor 0 }
+
+  sprite profa_jpL_grab1 { rect   0 46 46 46 pivot 20 22 in_editor 0 }
+  sprite profa_jpL_grab2 { rect  46 46 46 46 pivot 20 22 in_editor 0 }
+  sprite profa_jpL_grab3 { rect  92 46 46 46 pivot 20 22 in_editor 0 }
+  sprite profa_jpL_grab4 { rect 138 46 46 46 pivot 20 22 in_editor 0 }
+  sprite profa_jpL_grab5 { rect 184 46 46 46 pivot 20 22 in_editor 0 }
+  sprite profa_jpL_grab6 { rect 230 46 46 46 pivot 20 22 in_editor 0 }
+
+  anim profa_jpL {
+    time_step 50
+    skey profa_jpL1 skey profa_jpL2 skey profa_jpL3 skey profa_jpL4
+    skey profa_jpL5 skey profa_jpL6 skey profa_jpL3 skey profa_jpL4
+    send
+  }
+  anim profa_jpL_grab {
+    time_step 50
+    skey profa_jpL_grab1 skey profa_jpL_grab2 skey profa_jpL_grab3 skey profa_jpL_grab4
+    skey profa_jpL_grab5 skey profa_jpL_grab6 skey profa_jpL_grab3 skey profa_jpL_grab4
+    send
+  }
+
+//==============================================================================
+// PROBE
+//==============================================================================
+
+  use_surface sprites/hero/probe.png
+  grid_size 40 40
+  transparent
+
+  sprite magneto_probe_1 { grid 0 0 in_editor 0 pivot 20 20 }
+  sprite magneto_probe_2 { grid 1 0 in_editor 0 pivot 20 20 }
+  sprite magneto_probe_3 { grid 2 0 in_editor 0 pivot 20 20 }
+  anim magneto_probe { time_step 100    skey magneto_probe_1    skey magneto_probe_2    skey magneto_probe_3    send  }
+
+  sprite magneto_probeS_1 { grid 0 1 in_editor 0 pivot 20 20 }
+  sprite magneto_probeS_2 { grid 1 1 in_editor 0 pivot 20 20 }
+  sprite magneto_probeS_3 { grid 2 1 in_editor 0 pivot 20 20 }
+  anim magneto_probeS { time_step 100    skey magneto_probeS_1    skey magneto_probeS_2    skey magneto_probeS_3    send  }
+
+  sprite magneto_probeF_1 { rect 0 160 40 44 pivot 20 22 in_editor 0 }
+  sprite magneto_probeF_2 { rect 40 160 40 44 pivot 20 22 in_editor 0 }
+  sprite magneto_probeF_3 { rect 80 160 40 44 pivot 20 22 in_editor 0 }
+  anim magneto_probeF { time_step 100    skey magneto_probeF_1    skey magneto_probeF_2    skey magneto_probeF_3    send  }
+
+  sprite magneto_probe_death_1 { grid 0 2 in_editor 0 pivot 20 20 }
+  sprite magneto_probe_death_2 { grid 1 2 in_editor 0 pivot 20 20 }
+  sprite magneto_probe_death_3 { grid 2 2 in_editor 0 pivot 20 20 }
+  sprite magneto_probe_death_4 { grid 3 2 in_editor 0 pivot 20 20 }
+  sprite magneto_probe_death_5 { grid 0 3 in_editor 0 pivot 20 20 }
+  sprite magneto_probe_death_6 { grid 1 3 in_editor 0 pivot 20 20 }
+  sprite magneto_probe_death_7 { grid 2 3 in_editor 0 pivot 20 20 }
+  sprite magneto_probe_death_8 { grid 3 3 in_editor 0 pivot 20 20 }
+  anim magneto_probe_death {
+    time_step 100
+    skey magneto_probe_death_1
+    skey magneto_probe_death_2
+    skey magneto_probe_death_3
+    skey magneto_probe_death_4
+    skey magneto_probe_death_5
+    skey magneto_probe_death_6
+    skey magneto_probe_death_7
+    skey magneto_probe_death_8
+    send
+  }
+  
+// EOF //

@@ -1,0 +1,12 @@
+// All urls must be in ASCII encoding.
+// game url
+
+"http://archibald.rakeingrass.com"
+
+// buy url
+
+"http://archibald.rakeingrass.com/order.php"
+
+// don't wont to buy
+
+"http://archibald.rakeingrass.com/no_order.php"

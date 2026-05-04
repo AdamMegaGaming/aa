@@ -1,0 +1,20 @@
+dialogue    intro/06.jpg    en/intro/06b.png    180 20
+dialogue    intro/09.jpg    en/intro/09a.png    26 16
+bg          intro/10.jpg
+dialogue    intro/11.jpg    en/intro/11a.png   217 16
+bg          intro/12.jpg
+bg          intro/13.jpg
+bg          intro/14.jpg
+dialogue    intro/15.jpg    en/intro/15a.png   68 25
+dialogue    intro/15.jpg    en/intro/15b.png   156 3
+dialogue    intro/16.jpg    en/intro/16a.png   328 256
+dialogue    intro/16.jpg    en/intro/16b.png   269 42
+dialogue    intro/16.jpg    en/intro/16c.png   288 95
+dialogue    intro/16.jpg    en/intro/16d.png   306 138
+dialogue    intro/16.jpg    en/intro/16e.png   318 188
+dialogue    intro/16.jpg    en/intro/16f.png   280 55
+dialogue    intro/17.jpg    en/intro/17a.png   344 0
+dialogue    intro/17.jpg    en/intro/17b.png   325 283
+dialogue    intro/16.jpg    en/intro/16g.png   310 49
+dialogue    intro/18.jpg    en/intro/18a.png   272 166
+dialogue    intro/18.jpg    en/intro/18b.png   297 214

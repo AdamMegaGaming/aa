@@ -1,0 +1,306 @@
+  grid_size 40 40
+  opaque
+
+//==============================================================================
+  use_surface sprites/tile/stone1.png
+
+  sprite wall_stoneA_00 { grid 0 0 gsize 2 2 }
+  sprite wall_stoneA_01 { grid 2 0 gsize 2 2 }
+  sprite wall_stoneA_02 { grid 0 3 gsize 1 2 }
+  sprite wall_stoneA_05 { grid 0 2 gsize 2 1 }
+  sprite wall_stoneA_03 { grid 1 3 solid 1 }
+  sprite wall_stoneA_04 { grid 1 4 }
+  sprite wall_stoneA_10 { grid 2 2 }
+  
+  sprite wall_stoneA_11 { grid 3 2 }
+  sprite wall_stoneA_12 { grid 2 3 }
+  sprite wall_stoneA_13 { grid 3 3 }
+  sprite wall_stoneA_14 { grid 2 4 transparent }
+  sprite wall_stoneA_15 { grid 3 4 transparent }
+
+//==============================================================================
+  use_surface sprites/tile/stone2.png
+
+  sprite zabradli { rect 120 120 40 20 pivot 0 -20 transparent }
+  sprite wall_stoneA_06 { grid 1 2 }
+  sprite wall_stoneA_07 { grid 1 1 }
+  sprite wall_stoneA_08 { grid 2 2 }
+  sprite wall_stoneA_09 { grid 2 1 }
+
+  sprite columnA_top    { grid 3 0 transparent }
+  sprite columnA_middle { grid 3 1 transparent }
+  sprite columnA_bottom { grid 3 2 transparent }
+
+  sprite wall_arc_01 { grid 0 0 transparent }
+  sprite wall_arc_02 { grid 1 0 transparent }
+  sprite wall_arc_03 { grid 2 0 transparent }
+  sprite wall_arc_chain_01 { grid 0 1 gsize 1 1 transparent }
+
+  sprite wall_half_01 { rect 0 0 40 20 pivot 0 0 }
+  sprite wall_half_02 { rect 20 80 20 40 pivot -20 0 }
+  sprite wall_half_03 { rect 20 80 20 40 pivot 0 0 }
+  sprite wall_half_04 { rect 40 100 20 20 pivot -20 0 }
+  sprite wall_half_05 { rect 40 100 20 20 pivot 0 0 }
+
+  sprite photo1 { rect 0 80 6 6 transparent in_editor 0 }
+  sprite photo0 { rect 0 86 6 6 transparent in_editor 0 }
+  anim   photo  { time_step 100 skey photo0 skey photo1 send }
+
+  sprite wall_noidea_10 { grid 0 4 transparent }
+  sprite wall_noidea_11 { grid 1 4 transparent }
+  sprite wall_noidea_12 { grid 2 4 transparent }
+  sprite wall_noidea_13 { grid 3 4 transparent }
+
+//==============================================================================
+  use_surface sprites/tile/red.png
+
+  sprite redwall_00 { grid 0 0 }
+  sprite redwall_01 { grid 1 0 }
+  sprite redwall_02 { grid 2 0 }
+  sprite redwall_03 { grid 3 0 }
+  sprite redwall_04 { grid 0 1 }
+  sprite redwall_05 { grid 1 1 }
+  sprite redwall_06 { grid 2 1 }
+  sprite redwall_07 { grid 3 1 }
+
+//==============================================================================
+  use_surface sprites/tile/stone3.png
+
+  sprite wall_brick01 { grid 1 0 }
+  sprite wall_brick02 { grid 0 0 }
+  sprite wall_brick03 { grid 2 0 }
+  sprite wall_brick04 { grid 3 0 }
+
+  sprite wall_stoneB_00 { grid 3 1 gsize 1 2 transparent }
+  sprite wall_stoneB_01 { grid 1 1 gsize 2 1 transparent }
+  sprite wall_stoneB_02 { grid 0 1 transparent }
+  
+  sprite brownpipe1 { grid 0 2 }
+  sprite brownpipe2 { grid 1 2 }
+
+//==============================================================================
+  use_surface sprites/tile/wall_yellow.png
+  
+  sprite wall_yellow_01 { grid 0 0 gsize 2 2 }
+  sprite wall_yellow_02 { grid 2 0 gsize 1 2 }
+  sprite wall_yellow_03 { grid 0 2 gsize 2 1 }
+  sprite wall_yellow_04 { grid 2 2 }
+  sprite wall_yellow_05 { grid 3 1 }
+  sprite wall_yellow_06 { grid 3 2 }
+  sprite wall_yellow_07 { grid 0 3 }
+  sprite wall_yellow_08 { grid 1 3 }
+  sprite wall_yellow_09 { grid 2 3 }
+  sprite wall_yellow_09b { grid 3 3 }
+  sprite wall_yellow_10 { grid 0 4 }
+  sprite wall_yellow_11 { grid 1 4 }
+  sprite wall_yellow_12 { grid 2 4 }
+  sprite wall_yellow_13 { grid 3 4 }
+  
+  sprite yellow_half_1 { rect 0 140 40 20 }
+  sprite yellow_half_2 { rect 120 0 20 40 pivot -20 0 }
+  sprite yellow_half_3 { rect 120 0 20 40 }
+  sprite yellow_half_4 { rect 140 0 20 20 pivot -20 0 }
+  sprite yellow_half_5 { rect 140 0 20 20 }
+
+  use_surface sprites/tile/stone3.png
+  sprite wall_yellowx_1 { grid 0 3 }
+  sprite wall_yellowx_2 { grid 0 4 }
+  
+  sprite wall_yellowx_3 { grid 1 4 transparent }
+  sprite wall_yellowx_4 { grid 2 4 transparent }
+  sprite wall_yellowx_5 { grid 3 4 transparent }
+  
+  sprite wall_yellowx_6 { grid 2 2 }
+  sprite wall_yellowx_7 { grid 1 3 }
+  sprite wall_yellowx_8 { grid 2 3 }
+  
+//==============================================================================
+  use_surface sprites/tile/tech01.png
+
+  sprite wall_tech_01 { grid 0 0 transparent }
+  sprite wall_tech_02 { grid 1 0 transparent }
+  sprite wall_tech_03 { grid 2 0 transparent }
+  sprite wall_tech_04 { grid 3 0 transparent }
+  
+  sprite wall_tech_05 { grid 0 1 }
+  sprite wall_tech_06 { grid 1 1 }
+  sprite wall_tech_07 { grid 2 1 }
+  sprite wall_tech_08 { grid 3 1 }
+  
+  sprite wall_tech_09 { grid 0 2 }
+  sprite wall_tech_10 { grid 1 2 }
+  sprite wall_tech_11 { grid 2 2 }
+  sprite wall_tech_12 { grid 3 2 }
+
+  sprite wall_tech_13 { grid 0 3 }
+  sprite wall_tech_14 { grid 1 3 }
+  sprite wall_tech_15 { grid 2 3 }
+  sprite wall_tech_16 { grid 3 3 }
+
+  sprite wall_tech_17 { grid 0 4 }
+  sprite wall_tech_18 { grid 1 4 }
+  sprite wall_tech_19 { grid 2 4 }
+  sprite wall_tech_20 { grid 3 4 }
+
+  use_surface sprites/tile/tech02.png
+
+  sprite wall_tech_21 { grid 0 0 }
+  sprite wall_tech_22 { grid 2 0 }
+  sprite wall_tech_23 { grid 2 2 }
+  sprite wall_tech_25 { grid 0 2 }
+  
+  sprite wall_tech_26 { grid 1 0 }
+  sprite wall_tech_27 { grid 2 1 }
+  sprite wall_tech_28 { grid 1 2 }
+  sprite wall_tech_29 { grid 0 1 }
+  
+  sprite wall_tech_30 { grid 1 1 }
+
+  sprite wall_tech_31 { grid 3 0 }
+  sprite wall_tech_32 { grid 3 3 }
+  sprite wall_tech_33 { grid 3 2 }
+  sprite wall_tech_34 { grid 2 4 }
+  sprite wall_tech_35 { grid 3 1 }
+  sprite wall_tech_36 { grid 3 4 }
+
+  sprite wall_tech_37 { grid 2 3 }
+  sprite wall_tech_38 { grid 0 3 gsize 2 2 }
+
+  use_surface sprites/tile/tech03.png
+  
+  sprite wall_tech_39 { grid 0 0 }
+  sprite wall_tech_40 { grid 0 2 }
+  sprite wall_tech_41 { grid 1 2 }
+  sprite wall_tech_42 { grid 2 2 }
+  sprite wall_tech_43 { grid 3 2 }
+  sprite wall_tech_44 { grid 1 1 }
+  sprite wall_tech_45 { grid 1 0 }
+  sprite wall_tech_46 { grid 0 1 }
+
+  sprite wall_tech_47 { grid 2 0 gsize 2 2 }
+
+  sprite tech_light_1 { grid 3 3 }
+  sprite tech_light_2 { grid 3 4 }
+  sprite tech_light_3 { grid 2 4 }
+  anim tech_light {
+    time_step 100
+    skey tech_light_1    skey tech_light_2   skey tech_light_3    skey tech_light_2
+    send
+  }
+
+  sprite wall_tech_48 { rect 0 168 40 20 }
+  sprite wall_tech_49 { rect 88 120 20 40 }
+  sprite wall_tech_50 { rect 40 160 20 20 }
+
+  sprite wall_green_24a { rect 0 120 40 40 }
+  sprite wall_green_24b { rect 0 128 40 40 }
+  sprite wall_green_25a { rect 40 120 40 40 }
+  sprite wall_green_25b { rect 48 120 40 40 }
+
+
+
+//==============================================================================
+  use_surface sprites/tile/metal.png
+
+  sprite wall_metalA_00 { grid 0 0 gsize 2 2 }
+  sprite wall_metalA_01 { grid 2 0 gsize 1 2 }
+  sprite wall_metalA_03 { grid 0 2 gsize 2 1 }
+  sprite wall_metalA_02 { grid 3 0 }
+
+  sprite metal_ramp_01 { grid 0 3 transparent }
+  sprite metal_ramp_02 { grid 0 3 size 40 21 }
+  sprite metal_ramp_03 { grid 2 3 transparent }
+  sprite metal_grate { grid 0 4 transparent }
+  sprite metal_pipeend { grid 1 4 transparent }
+  sprite metal_quadpipe { grid 2 4 transparent }
+  sprite metal_quadpipe2 { grid 3 4 transparent }
+
+  sprite metal_ring1 { rect 80 80 7 40 }
+  //sprite metal_ring2 { rect 80 80 7 40 pivot -33 0 }
+  sprite metal_ring3 { rect 40 153 40 7 }
+  //sprite metal_ring4 { rect 40 153 40 7 pivot 0 -33 }
+  
+  sprite metal_frame { rect 87 80 33 30 pivot -5 0 transparent }
+  
+//==============================================================================
+  use_surface sprites/tile/pipes.png
+
+  sprite metal_pipejoint_01 { grid 0 0 transparent }
+  sprite metal_pipejoint_02 { grid 1 0 transparent }
+  sprite metal_pipejoint_03 { grid 2 0 transparent }
+  sprite metal_pipejoint_04 { grid 3 0 transparent }
+  sprite metal_pipe_01 { grid 0 1 transparent }
+  sprite metal_pipe_02 { grid 1 1 transparent }
+  sprite metal_pipe_03 { grid 2 1 transparent }
+  sprite metal_pipe_04 { grid 3 1 transparent }
+  sprite metal_pipe_05 { rect 40 80 20 40 transparent }
+  sprite metal_pipe_06 { rect 0 80 40 20 transparent }
+  sprite metal_pipe_07 { rect 60 80 20 40 pivot -20 0 transparent }
+  sprite metal_pipe_08 { rect 0 100 40 20 pivot 0 -20 transparent }
+  sprite metal_pipe_09 { grid 0 2 transparent }
+  sprite metal_pipe_10 { grid 1 2 transparent }
+  sprite metal_fatpipe_01 { grid 2 2 }
+  sprite metal_fatpipe_02 { grid 3 2 }
+  sprite metal_fatpipe_03 { grid 0 3 transparent }
+  sprite metal_fatpipe_04 { grid 1 3 transparent }
+  sprite metal_fatpipe_05 { grid 2 3 transparent }
+  sprite metal_fatpipe_06 { grid 3 3 transparent }
+  sprite metal_fatpipe_07 { grid 0 4 transparent }
+  sprite metal_fatpipe_08 { grid 1 4 transparent }
+  sprite metal_fatpipe_09 { grid 2 4 transparent }
+  sprite metal_fatpipe_10 { grid 3 4 transparent }
+
+//==============================================================================
+  use_surface sprites/tile/pipes2.png
+
+  sprite pipeend_1 { grid 0 0 transparent }
+  sprite pipeend_2 { grid 1 0 transparent }
+  sprite pipeend_3 { grid 2 0 transparent }
+  sprite pipeend_4 { grid 3 0 transparent }
+
+  grid_size 20 20
+  sprite halfplate_01 { grid 0 2 gsize 1 2 transparent pivot -20 0 }
+  sprite halfplate_02 { grid 1 2 gsize 1 2 transparent pivot -20 0 }
+  sprite halfplate_03 { grid 2 2 gsize 1 2 transparent pivot -20 0 }
+  sprite halfplate_04 { grid 3 2 gsize 1 2 transparent pivot -20 0 }
+  sprite halfplate_05 { grid 4 2 gsize 1 2 transparent }
+  sprite halfplate_06 { grid 5 2 gsize 1 2 transparent }
+  sprite halfplate_07 { grid 6 2 gsize 1 2 transparent }
+  sprite halfplate_04b { grid 3 2 gsize 1 2 transparent }
+  sprite halfplate_08 { grid 0 4 gsize 2 1 transparent }
+  sprite halfplate_09 { grid 2 4 gsize 2 1 transparent }
+  sprite halfplate_12 { grid 0 5 gsize 2 1 transparent }
+  sprite halfplate_13 { grid 2 5 gsize 2 1 transparent }
+  sprite halfplate_10 { grid 4 4 gsize 2 1 transparent pivot 0 -20 }
+  sprite halfplate_11 { grid 6 4 gsize 2 1 transparent pivot 0 -20 }
+  sprite halfplate_14 { grid 4 5 gsize 2 1 transparent pivot 0 -20 }
+  sprite halfplate_13b { grid 2 5 gsize 2 1 transparent pivot 0 -20 }
+  grid_size 40 40
+  sprite halfplate_box { grid 0 3 transparent }
+
+//==============================================================================
+  use_surface sprites/tile/glowing.png
+
+  sprite glowing_0 { grid 0 0 in_editor 0 }
+  sprite glowing_1 { grid 1 0 in_editor 0 }
+  sprite glowing_2 { grid 2 0 in_editor 0 }
+  sprite glowing_3 { grid 3 0 in_editor 0 }
+  anim glowing { time_step 100 skey glowing_0 skey glowing_1 skey glowing_2 skey glowing_3 send }
+
+  sprite bouncing_wall_0 { grid 0 1 in_editor 0 transparent }
+  sprite bouncing_wall_1 { grid 1 1 in_editor 0 transparent }
+  sprite bouncing_wall_2 { grid 2 1 in_editor 0 transparent }
+  sprite bouncing_wall_3 { grid 3 1 in_editor 0 transparent }
+  anim bouncing_wall { time_step 100 skey bouncing_wall_0 skey bouncing_wall_1 skey bouncing_wall_2 skey bouncing_wall_3 send }
+
+  sprite steelspikes_omni { grid 0 2 transparent }
+  sprite dirt_top { grid 1 2 }
+
+//==============================================================================
+  use_surface sprites/tile/deathray2.png
+
+  sprite wall_metalX_1    { grid 0 0 in_editor 0 }
+  sprite wall_metalX_2    { grid 0 1 in_editor 0 }
+  anim wall_metalX { key 0 wall_metalX_1 key 500 wall_metalX_2 end 580 }
+
+// EOF //

@@ -1,0 +1,297 @@
+sprite_table {
+ wall_stoneA_03 1
+ wall_metalA_02 2
+ comp04a 3
+ comp04b 4
+ comp03 5
+ comp02 6
+ dirt/skull 7
+ invalid 8
+ wall_stoneA_04 9
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name Main
+offset 0 0
+cells_offset 520 0
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 20
+height 14
+cells
+0 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 0 0 
+2 2 2 2 2 2 2 2 2 2 0 2 0 2 0 2 2 2 0 0 
+2 0 0 0 2 2 2 2 2 2 0 2 0 2 0 2 2 2 0 0 
+2 0 0 0 0 0 0 0 2 2 0 2 0 2 0 2 0 2 2 0 
+2 2 2 2 2 2 2 0 0 0 0 0 0 0 0 0 0 0 2 0 
+2 0 0 0 0 0 2 2 2 2 2 2 2 2 2 12290 13826 0 2 0 
+2 2 2 2 0 0 2 2 2 2 2 2 2 2 2 0 0 0 2 0 
+2 2 2 2 0 0 2 2 2 2 2 2 2 2 2 0 0 0 2 0 
+2 2 2 2 0 0 2 0 2 0 2 2 2 14042 0 0 0 0 2 2 
+2 2 2 2 2 0 2 0 2 0 2 2 2 0 0 0 2 0 2 2 
+0 0 0 0 2 0 2 0 2 0 2 0 0 0 0 2 2 0 2 2 
+0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 2 2 2 2 2 
+0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 
+1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 1 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 1 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 1 0 0 0 
+1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+1 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 2 0 2 0 0 0 1 0 0 0 
+1 0 3 0 0 0 4 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 
+1 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 
+1 0 5 0 0 0 6 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 1 0 1 0 2 0 0 0 0 0 0 0 0 0 1 0 1 0 
+1 0 1 0 1 0 1 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 
+0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 0 
+0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 
+0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 
+0 0 0 0 0 0 0 0 1 0 1 0 1 0 7 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 
+decorations 1
+599 256 8 0
+
+layer // layer 1
+name noname
+offset 0 0
+cells_offset 1000 160
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 8
+height 9
+no_cells
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 0 0 9 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 9 0 0 0 
+0 0 9 0 9 0 0 0 0 0 0 0 9 0 0 0 
+0 0 0 0 9 0 0 0 0 0 0 0 9 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 9 0 9 0 
+9 0 0 0 0 0 0 0 9 0 0 0 0 0 0 0 
+0 0 0 0 0 0 9 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 9 0 0 0 0 0 
+0 0 9 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 0
+
+} // layers
+
+entities { 
+hero/Magneto 1 {
+position_in_layer 920 440
+layer_index 0
+}
+buchar_S 12 {
+start_delay 200 200
+paused true
+position_in_layer 800 320
+layer_index 0
+}
+buchar_S 13 {
+start_delay 3000 3000
+paused true
+position_in_layer 880 320
+layer_index 0
+}
+Spec/Region 16 {
+operate 17
+position_in_layer 800 440
+layer_index 0
+}
+Spec/Actions 17 {
+a1_target 12
+a1_action start
+a2_target 13
+a2_action start
+position_in_layer 780 640
+layer_index 0
+}
+spikes40_N 19 {
+delay_to_fwd 500
+delay_to_bwd 500
+paused true
+position_in_layer 1040 480
+layer_index 0
+}
+spikes40_E 20 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 500 500
+paused true
+position_in_layer 1000 360
+layer_index 0
+}
+spikes40_S 21 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 1200 1200
+paused true
+position_in_layer 1080 280
+layer_index 0
+}
+spikes40_N 22 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 1900 1900
+paused true
+position_in_layer 1120 400
+layer_index 0
+}
+spikes_W 26 {
+delay_to_fwd 500
+delay_to_bwd 500
+paused true
+position_in_layer 1240 320
+layer_index 0
+}
+spikes_E 29 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 100 100
+paused true
+position_in_layer 1040 240
+layer_index 0
+}
+spikes40_N 32 {
+paused true
+position_in_layer 1200 440
+layer_index 0
+}
+spikes40_W 34 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 1000 1000
+paused true
+position_in_layer 1240 200
+layer_index 0
+}
+spikes40_W 35 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 1000 1000
+paused true
+position_in_layer 1240 280
+layer_index 0
+}
+spikes40_W 36 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 1000 1000
+paused true
+position_in_layer 1240 240
+layer_index 0
+}
+spikes40_W 37 {
+delay_to_fwd 500
+delay_to_bwd 500
+start_delay 1000 1000
+paused true
+position_in_layer 1240 160
+layer_index 0
+}
+buchar_S 38 {
+start_delay 300 300
+paused true
+position_in_layer 1160 40
+layer_index 0
+}
+Spec/Region 39 {
+operate 40
+position_in_layer 1160 160
+layer_index 0
+}
+Spec/Actions 40 {
+a1_target 38
+a1_action start
+a2_target 41
+a2_action start
+a3_target 42
+a3_action start
+a4_target 43
+a4_action start
+position_in_layer 1335 -80
+layer_index 0
+}
+buchar_S 41 {
+start_delay 800 800
+paused true
+position_in_layer 1080 40
+layer_index 0
+}
+buchar_S 42 {
+start_delay 1000 1000
+paused true
+position_in_layer 1000 40
+layer_index 0
+}
+buchar_S 43 {
+start_delay 1400 1400
+paused true
+position_in_layer 920 40
+layer_index 0
+}
+spikes40_W 47 {
+paused true
+position_in_layer 1120 400
+layer_index 0
+}
+spikes40_E 50 {
+paused true
+position_in_layer 1080 280
+layer_index 0
+}
+spikes40_E 51 {
+paused true
+position_in_layer 1160 360
+layer_index 0
+}
+Spec/LevelExit 52 {
+position_in_layer 600 120
+layer_index 0
+}
+Device/FloorPermanent 54 {
+operate 55
+position_in_layer 1000 480
+layer_index 0
+}
+Spec/Actions 55 {
+a1_target 19
+a1_action start
+a2_target 20
+a2_action start
+a3_target 47
+a3_action start
+a4_target 22
+a4_action start
+a5_target 32
+a5_action start
+a6_target 51
+a6_action start
+a7_target 26
+a7_action start
+a8_target 56
+a8_action run
+position_in_layer 1126 658
+layer_index 0
+}
+Spec/Actions 56 {
+a1_target 50
+a1_action start
+a2_target 21
+a2_action start
+a3_target 29
+a3_action start
+a4_target 35
+a4_action start
+a5_target 36
+a5_action start
+a6_target 34
+a6_action start
+a7_target 37
+a7_action start
+position_in_layer 1406 324
+layer_index 0
+}
+} // entities

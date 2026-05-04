@@ -1,0 +1,122 @@
+//==============================================================================
+// INTRO, MAIN MENU, MAPS
+//==============================================================================
+
+  opaque
+
+// == STREET MENU ==
+
+  use_surface sprites/menu/street_bgr.png
+
+  sprite intro/sky1 { rect 0 0 40 160 }
+  sprite intro/sky2 { rect 40 0 40 160 }
+  sprite intro/sky3 { rect 80 0 40 160 }
+  sprite intro/road1 { rect 120 0 64 180 }
+  sprite intro/grass1 { rect 184 0 40 40 }
+  sprite intro/grate { rect 0 160 33 14 transparent }
+  sprite intro/hills { rect 0 195 256 62 transparent }
+
+  sprite street_fence { rect 184 40 48 46 transparent }
+  sprite street_plank { rect 224 8 32 32 transparent }
+  sprite street_grass { rect 0 174 17 17 transparent }
+  sprite street_poster1 { rect 232 40 24 33 }
+  sprite street_poster2 { rect 232 72 24 32 }
+  sprite street_poster3 { rect 232 103 24 35 }
+  sprite street_poster4 { rect 184 85 49 26 }
+  sprite street_poster5 { rect 184 110 49 28 }
+  sprite street_poster6 { rect 184 138 37 32 }
+  sprite street_poster7 { rect 220 137 36 28 }
+  sprite street_poster8 { rect 220 164 36 26 }
+
+// == DECORATIONS ==
+
+  use_surface sprites/menu/tree1.png
+  sprite intro/tree1 { rect 0 0 221 232 transparent pivot 0 232 }
+  use_surface sprites/menu/tree2.png
+  sprite intro/tree2 { rect 0 0 227 191 transparent pivot 0 191 }
+  use_surface sprites/menu/tree3.png
+  sprite intro/tree3 { rect 0 0 191 186 transparent pivot 0 186 }
+
+  use_surface sprites/menu/deco1.png
+  sprite intro/cloud1 { rect 0 0 128 38 transparent }
+  sprite intro/cloud2 { rect 128 0 128 49 transparent }
+  sprite intro/cloud3 { rect 0 38 111 64 transparent }
+  sprite intro/ufo { rect 111 49 50 21 transparent }
+
+// == CARS ==
+
+  use_surface sprites/menu/car1.png
+  sprite intro/car1 { rect 0 0 512 128 transparent pivot 0 128 }
+  use_surface sprites/menu/car2.png
+  sprite intro/car2 { rect 0 0 216 90 transparent pivot 0 90 }
+  use_surface sprites/menu/car3.png
+  sprite intro/car3 { rect 0 0 238 71 transparent pivot 0 71 }
+  use_surface sprites/menu/car4.png
+  sprite intro/car4 { rect 0 0 176 66 transparent pivot 0 66 }
+  use_surface sprites/menu/tir_ad_1.png
+  sprite intro/tir_ad_1 { rect 0 0 230 59 transparent }
+  use_surface sprites/menu/tir_ad_2.png
+  sprite intro/tir_ad_2 { rect 0 0 247 62 transparent }
+  use_surface sprites/menu/tir_ad_3.png
+  sprite intro/tir_ad_3 { rect 0 0 237 65 transparent }
+
+
+//==============================================================================
+// BOYZ
+//==============================================================================
+
+  use_surface sprites/menu/skaters.png
+  transparent
+
+  sprite cartman1 { rect 0 0 29 36 in_editor 0 }
+  sprite cartman2 { rect 29 0 29 36 in_editor 0 }
+  sprite cartman3 { rect 58 0 29 36 in_editor 0 }
+  sprite cartman4 { rect 87 0 29 36 in_editor 0 }
+  sprite cartman5 { rect 116 0 29 36 in_editor 0 }
+  anim cartman {
+    key 0 cartman1
+    key 100 cartman2
+    key 200 cartman3
+    key 300 cartman4
+    key 400 cartman5
+    key 500 cartman1
+    end 800
+  }
+
+  sprite edison1 { rect 0 36 28 47 in_editor 0 }
+  sprite edison2 { rect 28 36 28 47 in_editor 0 }
+  sprite edison3 { rect 56 36 28 47 in_editor 0 }
+  sprite edison4 { rect 84 36 28 47 in_editor 0 }
+  sprite edison5 { rect 112 36 28 47 in_editor 0 }
+  anim edison {
+    key 0 edison1
+    key 70 edison2
+    key 140 edison3
+    key 210 edison4
+    key 280 edison5
+    key 350 edison1
+    end 500
+  }
+
+
+//=====
+// Misc
+//=====
+
+  use_surface sprites/menu/menu_arrows.png
+  transparent
+
+  sprite menu/arrow_R { rect 0 0 39 27 in_editor 0 }
+  sprite menu/arrow_L { rect 39 0 39 27 in_editor 0 }
+
+  use_surface sprites/menu/menu_button.png
+  transparent
+
+  sprite menu/button_N { rect 0 0 40 40 in_editor 0 }
+  sprite menu/button_H { rect 0 40 40 40 in_editor 0 }
+
+  use_surface sprites/menu/volume.png
+  sprite volume_frame { rect 0 0 350 52 }
+  sprite volume_bar   { rect 0 52 340 42 }
+
+// EOF //

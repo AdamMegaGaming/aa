@@ -1,0 +1,248 @@
+sprite_table {
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name noname
+offset 0 0
+cells_offset 0 0
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 0
+height 0
+no_cells
+no_sprite_cells
+decorations 0
+
+layer // layer 1
+name Main
+offset 0 0
+cells_offset 0 0
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 0
+height 0
+no_cells
+no_sprite_cells
+decorations 0
+
+} // layers
+
+entities { 
+Scroller 3 {
+sprite intro/road1
+length 64
+speed 120
+position_in_layer 180 800
+draw_order -2
+layer_index 0
+}
+Scroller 15 {
+sprite intro/sky1
+speed 120
+position_in_layer 180 160
+draw_order -2
+layer_index 0
+}
+Scroller 16 {
+sprite intro/sky2
+speed 120
+position_in_layer 180 320
+draw_order -2
+layer_index 0
+}
+Scroller 17 {
+sprite intro/sky3
+speed 120
+position_in_layer 180 480
+draw_order -2
+layer_index 0
+}
+Scroller 19 {
+sprite intro/grass1
+speed 120
+position_in_layer 180 680
+draw_order -2
+layer_index 0
+}
+Scroller 20 {
+sprite intro/grass1
+speed 120
+position_in_layer 180 720
+draw_order -2
+layer_index 0
+}
+Scroller 21 {
+sprite intro/grass1
+speed 120
+position_in_layer 180 760
+draw_order -2
+layer_index 0
+}
+Scroller 22 {
+sprite intro/hills
+length 256
+speed 40
+position_in_layer 180 620
+draw_order -2
+layer_index 0
+}
+SpriteShooter 5 {
+sprite1 intro/tree1
+sprite2 intro/tree2
+sprite3 intro/tree3
+speed 100 100
+fire_delay 3000 4000
+height 20
+time_skip 30000
+position_in_layer 122 757
+layer_index 0
+}
+SpriteShooter 6 {
+sprite1 intro/cloud1
+sprite2 intro/cloud2
+sprite3 intro/cloud3
+speed 40 60
+fire_delay 2000 4000
+height 380
+time_skip 40000
+position_in_layer 79 180
+draw_order -1
+layer_index 0
+}
+SpriteShooter 9 {
+entity1 intro/car2
+entity2 intro/car3
+entity3 intro/tir1
+entity4 intro/car4
+entity5 intro/tir2
+entity6 intro/car2
+entity7 intro/car3
+entity8 intro/tir3
+entity9 intro/car4
+entity10 intro/car2
+speed -100 -150
+fire_delay 5500 14000
+height 20
+time_skip 30000
+position_in_layer 1253 884
+draw_order 20
+layer_index 1
+}
+SpriteShooter 10 {
+entity1 intro/car2
+entity2 intro/car3
+entity3 intro/tir1
+entity4 intro/car4
+entity5 intro/tir2
+entity6 intro/car2
+entity7 intro/car3
+entity8 intro/tir3
+entity9 intro/car4
+entity10 intro/car3
+speed -100 -150
+fire_delay 5500 14000
+height 20
+time_skip 30000
+position_in_layer 1255 947
+draw_order 21
+layer_index 1
+}
+MapCursor 14 {
+position_in_layer 664 585
+layer_index 1
+}
+Spec/Region 23 {
+on_sprite boy_rideL
+off_sprite boy_rideL
+position_in_layer 772 801
+draw_order 10
+layer_index 1
+}
+Scroller 32 {
+sprite street_fence
+length 48
+speed 120
+position_in_layer 341 748
+draw_order -2
+layer_index 1
+}
+SpriteShooter 26 {
+sprite1 street_grass
+speed 120 120
+fire_delay 2000 4000
+height 1
+sync_scroller 32
+position_in_layer 70 778
+draw_order 1
+layer_index 1
+}
+SpriteShooter 27 {
+sprite2 street_poster1
+sprite3 street_poster2
+sprite4 street_poster3
+sprite5 street_poster4
+speed 120 120
+fire_delay 400 1600
+height 5
+time_skip 10000
+sync_scroller 32
+position_in_layer 69 752
+layer_index 1
+}
+SpriteShooter 28 {
+sprite2 street_poster5
+sprite3 street_poster6
+sprite4 street_poster7
+sprite5 street_poster8
+speed 120 120
+fire_delay 250 1000
+height 5
+time_skip 10000
+sync_scroller 32
+position_in_layer 50 752
+layer_index 1
+}
+Spec/Region 29 {
+on_sprite cartman
+off_sprite cartman
+position_in_layer 820 790
+draw_order 10
+layer_index 1
+}
+Spec/Region 30 {
+on_sprite edison
+off_sprite edison
+position_in_layer 860 780
+draw_order 10
+layer_index 1
+}
+SpriteShooter 31 {
+sprite1 intro/ufo
+sprite2 intro/cloud2
+sprite3 intro/cloud3
+sprite4 intro/cloud2
+sprite5 intro/cloud3
+speed 40 60
+fire_delay 8000 10000
+height 380
+time_skip 40000
+position_in_layer 32 179
+draw_order -2
+layer_index 0
+}
+SpriteShooter 33 {
+sprite1 street_plank
+speed 120 120
+fire_delay 300 1300
+height 5
+time_skip 10000
+sync_scroller 32
+position_in_layer 3 752
+draw_order -1
+layer_index 1
+}
+} // entities

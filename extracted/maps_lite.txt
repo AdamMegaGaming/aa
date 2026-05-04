@@ -1,0 +1,126 @@
+
+intro {
+  title intro2lite
+  sprite levelset0
+  button_text replay_intro
+}
+
+map {
+  //skater
+  title skaterlite
+  sprite levelset1
+  level levels/set1/skater01.txt
+  level levels/set1/skater02.txt
+  level levels/set1/skater03.txt
+  level levels/set1/skater04.txt
+  level levels/set1/skater05.txt
+  
+  level levels/set1/skater06.txt
+  level levels/set1/skater07.txt
+  level levels/set1/skater08.txt
+  level levels/set1/skater09.txt
+  level levels/set1/skater10.txt
+  
+  level levels/set1/skater11.txt
+  level levels/set1/skater12.txt
+  level levels/set1/skater13.txt
+  level levels/set1/skater14.txt
+  level levels/set1/skater15.txt
+
+  level levels/set1/skater16.txt
+  bonus 2
+}
+
+map {
+  //skater'n'bubble
+  title bubblelite
+  sprite levelset2
+  level levels/set2/lev01.txt
+  level levels/set2/lev02.txt
+  level levels/set2/lev03.txt
+  level levels/set2/lev04.txt
+  level levels/set2/lev05.txt
+  
+  level levels/set2/lev06.txt
+  level levels/set2/lev07.txt
+  level levels/set2/lev08.txt
+  level levels/set2/lev09.txt
+  level levels/set2/lev10.txt
+  
+  // level levels/set2/lev11.txt
+  // level levels/set2/lev12.txt
+  // level levels/set2/lev13.txt
+  // level levels/set2/lev14.txt
+
+  // level levels/set2/bonus1.txt
+  // level levels/set2/bonus2.txt
+  // bonus 2
+}
+
+map {
+  //magneto - begginer
+  title m_beginlite
+  sprite levelset3
+  level levels/set3/lev01.txt
+  level levels/set3/lev02.txt
+  level levels/set3/lev03.txt
+  level levels/set3/lev04.txt
+  level levels/set3/lev05.txt
+
+  level levels/set3/lev06.txt
+  level levels/set3/lev07.txt
+  level levels/set3/lev08.txt
+  // level levels/set3/lev09.txt
+  // level levels/set3/lev10.txt
+
+  // level levels/set3/lev11.txt
+  // level levels/set3/lev12.txt
+  // level levels/set3/lev13.txt
+  // level levels/set3/lev14.txt
+
+  // level levels/set3/bonus1.txt
+  // level levels/set3/bonus2.txt
+  // bonus 2
+}
+
+map {
+  title addon_fun1
+  sprite addon_fun1
+  
+level levels/addon5/lev01.txt
+level levels/addon5/lev02.txt
+level levels/addon5/lev03.txt
+level levels/addon5/lev04.txt
+level levels/addon5/lev05.txt
+
+level levels/addon5/lev06.txt
+level levels/addon5/lev07.txt
+level levels/addon5/lev08.txt
+//level levels/addon5/lev09.txt
+//level levels/addon5/lev10.txt
+
+//level levels/addon5/lev11.txt
+//level levels/addon5/lev12.txt
+//level levels/addon5/lev13.txt
+//level levels/addon5/lev14.txt
+
+//level levels/addon5/bumper.txt
+//level levels/addon5/lev16.txt
+
+//  bonus 2
+}
+
+map {
+  final
+  title finallite
+  sprite levelset7
+  button_text lite_button_locked
+  button_text_locked lite_button_locked
+  
+  // Keep the map non-empty to prevent crashes, even if the level can't be played in lite version.
+  level levels/set3/bonus1.txt
+  
+  bonus 0
+}
+
+// EOF //

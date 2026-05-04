@@ -1,0 +1,480 @@
+sprite_table {
+ bluetech_02 1
+ bluetech_14 2
+ bgr/okr_05 3
+ bgr/okr_02 4
+ bgr/okr_03 5
+ bgr/okr_04 6
+ wall_green_24a 7
+ bluetech_12 8
+ wall_green_24b 9
+ bluetech_03 10
+ bluetech_05 11
+ bluetech_04 12
+ bluetech_06 13
+ wall_tech_20 14
+ bluetech_08 15
+ bluetech_11 16
+ bluetech_07 17
+ bluetech_09 18
+ bgr/plate3 19
+ bluetech_13 20
+ bgr/okr_01 21
+ bluetech_10 22
+ bgr/okr_12 23
+ bluetech_01 24
+ bgr/okr_09 25
+ bgr/okr_11 26
+ bgr/okr_10 27
+ blueplate_bridge 28
+ bgr/okr_06 29
+ bgr/diode04 30
+ bgr/diode05H 31
+ bgr/diode05V 32
+ bgr/okr_08 33
+ bgr/diode03 34
+ bgr/diode01 35
+ bgr/diode02 36
+ wall_tech_37 37
+ shadow_fix_01 38
+ shadow_fix_02 39
+ wall_tech_13 40
+ wall_tech_31 41
+ wall_tech_01 42
+ wall_tech_05 43
+ wall_tech_02 44
+ wall_green_25a 45
+ wall_metalA_03 46
+ wall_metalA_02 47
+ wall_tech_35 48
+ wall_tech_08 49
+ wall_tech_44 50
+ wall_tech_06 51
+ wall_metalA_01 52
+ wall_tech_04 53
+ wall_tech_07 54
+ wall_tech_03 55
+ wall_tech_41 56
+ wall_tech_30 57
+ wall_tech_46 58
+ tech_light 59
+ metal_fatpipe_10 60
+ metal_fatpipe_03 61
+ metal_fatpipe_09 62
+ wall_tech_43 63
+ wall_tech_19 64
+ wall_stoneA_03 65
+ metal_pipeend 66
+ wall_tech_47 67
+ wall_stoneA_05 68
+ wall_tech_21 69
+ wall_tech_22 70
+ wall_tech_29 71
+ wall_tech_27 72
+ wall_tech_25 73
+ wall_tech_23 74
+ wall_tech_11 75
+ wall_tech_12 76
+ wall_stoneA_04 77
+ wall_stoneA_02 78
+ spikes_N 79
+ wall_tech_33 80
+ halfplate_14 81
+ halfplate_05 82
+ halfplate_11 83
+ halfplate_01 84
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name noname
+offset 0 0
+cells_offset 240 -240
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 13
+height 30
+no_cells
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 1 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 3 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 0 0 0 0 
+0 0 0 0 0 0 0 0 4 0 5 0 6 0 6 0 6 0 0 0 0 0 0 0 0 0 
+7 0 8 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 8 0 7 0 
+9 0 10 0 11 0 0 0 3 0 3 0 0 0 3 0 3 0 0 0 12 0 13 0 9 0 
+14 0 14 0 15 0 0 0 4 0 6 0 6 0 5 0 6 0 0 0 15 0 14 0 14 0 
+14 0 14 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 14 0 14 0 
+16 0 17 0 18 0 0 0 3 0 3 0 19 0 3 0 3 0 0 0 18 0 17 0 20 0 
+1 0 1 0 15 0 0 0 4 0 5 0 6 0 6 0 6 0 0 0 15 0 1 0 1 0 
+0 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 0 0 
+0 0 0 0 15 0 0 0 3 0 3 0 3 0 3 0 3 0 0 0 15 0 0 0 0 0 
+0 0 0 0 15 0 21 0 3 0 3 0 3 0 3 0 3 0 21 0 15 0 0 0 0 0 
+0 0 0 0 22 0 0 0 3 0 3 0 3 0 3 0 3 0 0 0 22 0 0 0 0 0 
+0 0 0 0 0 0 0 0 23 0 0 0 0 0 23 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 0 0 0 0 0 0 
+0 0 0 0 0 0 3 0 3 0 1 0 24 0 25 0 3 0 3 0 0 0 0 0 0 0 
+0 0 0 0 0 0 3 0 3 0 1 0 0 0 0 0 3 0 3 0 0 0 0 0 0 0 
+0 0 0 0 3 0 3 0 3 0 24 0 0 0 24 0 3 0 3 0 3 0 0 0 0 0 
+0 0 3 0 3 0 3 0 3 0 26 0 0 0 27 0 3 0 3 0 3 0 3 0 0 0 
+0 0 3 0 3 0 3 0 3 0 3 0 28 0 3 0 3 0 3 0 3 0 3 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 4 0 6 0 6 0 5 0 29 0 6 0 29 0 5 0 6 0 6 0 6 0 0 0 
+0 0 0 0 0 0 0 0 0 0 29 0 0 0 29 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 3 0 3 0 29 0 3 0 29 0 3 0 3 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 3 0 29 0 3 0 29 0 3 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 29 0 0 0 29 0 0 0 0 0 0 0 0 0 0 0 
+decorations 17
+711 201 30 0
+280 179 31 0
+677 181 31 0
+670 56 31 0
+738 173 32 0
+324 76 32 0
+481 529 32 0
+504 530 31 0
+440 480 33 0
+453 -211 30 0
+531 -217 31 0
+298 17 34 0
+469 -181 35 0
+543 -205 36 0
+543 -196 36 0
+465 546 30 0
+507 596 31 0
+
+layer // layer 1
+name noname
+offset 15 15
+cells_offset 200 -280
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 14
+height 31
+shadow
+no_cells
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 37 0 37 0 37 0 37 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 37 0 37 0 37 0 37 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 37 0 37 0 37 0 37 0 37 0 37 0 37 0 37 0 37 0 37 0 0 0 0 0 
+0 0 0 0 37 0 0 0 38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 37 0 37 0 37 0 37 0 0 0 0 0 0 0 0 0 0 0 37 0 37 0 37 0 0 0 
+0 0 37 0 0 0 0 0 37 0 0 0 0 0 38 0 0 0 0 0 37 0 0 0 0 0 0 0 
+0 0 37 0 38 0 0 0 37 0 0 0 39 0 37 0 0 0 0 0 37 0 0 0 0 0 0 0 
+0 0 0 0 37 0 0 0 37 0 0 0 0 0 0 0 0 0 0 0 37 0 0 0 0 0 0 0 
+37 0 37 0 37 0 0 0 37 0 0 0 0 0 38 0 0 0 0 0 37 0 39 0 37 0 37 0 
+37 0 0 0 0 0 0 0 37 0 0 0 39 0 37 0 0 0 0 0 37 0 0 0 0 0 0 0 
+37 0 0 0 38 0 0 0 37 0 0 0 0 0 0 0 0 0 0 0 37 0 0 0 0 0 0 0 
+0 0 0 0 37 0 0 0 37 0 0 0 0 0 38 0 0 0 0 0 37 0 0 0 0 0 0 0 
+0 0 0 0 37 0 39 0 37 0 0 0 39 0 37 0 0 0 39 0 37 0 0 0 0 0 0 0 
+0 0 0 0 37 0 0 0 40 0 0 0 0 0 0 0 0 0 0 0 22 0 0 0 0 0 0 0 
+0 0 0 0 37 0 0 0 40 0 0 0 0 0 38 0 0 0 0 0 22 0 0 0 0 0 0 0 
+0 0 0 0 0 0 37 0 37 0 0 0 39 0 37 0 0 0 39 0 37 0 0 0 0 0 0 0 
+0 0 0 0 0 0 37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 37 0 37 0 37 0 0 0 0 0 0 0 0 0 0 0 0 0 39 0 37 0 37 0 0 0 
+0 0 37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 37 0 0 0 0 0 0 0 0 0 38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 37 0 37 0 37 0 37 0 37 0 37 0 39 0 37 0 37 0 37 0 37 0 37 0 0 0 
+0 0 37 0 38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 37 0 38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 37 0 38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 37 0 38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 0
+
+layer // layer 2
+name Main
+offset 0 0
+cells_offset 200 -280
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 15
+height 32
+cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 2 2 2 12290 12290 12290 12290 12290 2 2 2 0 0 
+0 0 2 0 0 0 0 0 0 0 0 0 2 0 0 
+0 0 2 2 2 0 0 0 0 0 2 2 2 0 0 
+0 0 0 0 2 0 0 0 0 0 2 0 0 0 0 
+0 0 0 0 2 0 0 14042 0 0 2 0 0 0 0 
+0 0 0 0 2 0 0 0 0 0 2 0 0 0 0 
+0 0 0 0 2 0 0 0 0 0 2 0 0 0 0 
+0 0 0 0 2 0 0 14042 0 0 2 0 0 0 0 
+0 0 0 0 2 0 0 0 0 0 2 0 0 0 0 
+0 0 2 0 2 0 0 0 0 0 2 0 2 0 0 
+0 0 2 0 2 0 0 14042 0 0 2 0 2 0 0 
+0 0 2 0 2 0 0 0 0 0 2 0 2 0 0 
+0 0 2 0 2 0 0 0 0 0 2 0 2 0 0 
+0 0 2 2 2 0 0 14042 0 0 2 2 2 0 0 
+0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 2 2 2 0 0 0 0 0 0 0 2 2 2 0 
+0 2 0 0 0 0 0 0 0 0 0 0 0 2 0 
+0 2 0 0 0 0 0 0 0 0 0 0 0 2 0 
+0 2 2 2 2 2 1538 0 194 2 2 2 2 2 0 
+0 2 12290 12290 12290 12290 12290 0 12290 12290 12290 12290 12290 2 0 
+0 2 0 0 0 0 0 0 0 0 0 0 0 2 0 
+0 0 2 0 0 0 0 0 0 0 0 0 2 0 0 
+0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 
+0 0 0 0 2 0 0 0 0 0 2 0 0 0 0 
+0 0 0 0 0 2 0 0 0 2 0 0 0 0 0 
+0 0 0 0 0 0 2 2 2 0 0 0 0 0 0 
+sprite_cells
+41 0 42 0 43 0 44 0 45 0 46 0 0 0 47 0 46 0 0 0 45 0 42 0 43 0 44 0 41 0 
+48 0 49 0 50 0 51 0 45 0 52 0 0 0 0 0 0 0 52 0 45 0 49 0 50 0 51 0 48 0 
+48 0 53 0 54 0 55 0 45 0 0 0 0 0 0 0 0 0 0 0 45 0 53 0 54 0 55 0 48 0 
+48 0 56 0 57 0 57 0 57 0 46 0 0 0 47 0 46 0 0 0 57 0 57 0 57 0 56 0 48 0 
+48 0 58 0 57 0 59 0 59 0 47 0 60 0 61 0 62 0 47 0 59 0 59 0 57 0 58 0 48 0 
+48 0 58 0 57 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57 0 58 0 48 0 
+48 0 63 0 64 0 65 0 64 0 0 0 0 0 0 0 0 0 0 0 64 0 65 0 64 0 63 0 48 0 
+48 0 7 0 0 0 0 0 40 0 0 0 0 0 0 0 0 0 0 0 40 0 0 0 0 0 7 0 48 0 
+48 0 9 0 0 0 0 0 40 0 0 0 0 0 66 0 0 0 0 0 40 0 0 0 0 0 9 0 48 0 
+48 0 14 0 14 0 0 0 40 0 0 0 0 0 0 0 0 0 0 0 40 0 0 0 14 0 14 0 48 0 
+48 0 14 0 14 0 0 0 40 0 0 0 0 0 0 0 0 0 0 0 40 0 0 0 14 0 14 0 48 0 
+48 0 0 0 0 0 0 0 40 0 0 0 0 0 47 0 0 0 0 0 40 0 0 0 0 0 0 0 48 0 
+48 0 0 0 0 0 0 0 40 0 0 0 0 0 0 0 0 0 0 0 40 0 0 0 0 0 0 0 48 0 
+48 0 67 0 0 0 0 0 40 0 0 0 0 0 0 0 0 0 0 0 40 0 0 0 67 0 0 0 48 0 
+48 0 0 0 0 0 0 0 40 0 0 0 0 0 47 0 0 0 0 0 40 0 0 0 0 0 0 0 48 0 
+48 0 67 0 0 0 0 0 40 0 0 0 0 0 0 0 0 0 0 0 40 0 0 0 67 0 0 0 48 0 
+48 0 0 0 0 0 0 0 40 0 0 0 0 0 0 0 0 0 0 0 40 0 0 0 0 0 0 0 48 0 
+48 0 68 0 0 0 68 0 0 0 0 0 0 0 47 0 0 0 0 0 68 0 0 0 68 0 0 0 48 0 
+48 0 69 0 70 0 51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49 0 69 0 70 0 48 0 
+48 0 71 0 72 0 51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49 0 71 0 72 0 48 0 
+48 0 73 0 74 0 51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49 0 73 0 74 0 48 0 
+48 0 75 0 54 0 55 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53 0 54 0 76 0 48 0 
+48 0 51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49 0 48 0 
+48 0 51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49 0 48 0 
+48 0 68 0 0 0 77 0 65 0 69 0 70 0 0 0 69 0 70 0 65 0 77 0 68 0 0 0 48 0 
+48 0 78 0 47 0 61 0 61 0 47 0 74 0 0 0 73 0 47 0 61 0 61 0 47 0 78 0 48 0 
+48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 0 
+48 0 78 0 65 0 79 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79 0 65 0 78 0 48 0 
+48 0 0 0 68 0 0 0 0 0 79 0 0 0 0 0 0 0 79 0 0 0 68 0 0 0 0 0 48 0 
+48 0 42 0 43 0 44 0 65 0 0 0 0 0 0 0 0 0 0 0 65 0 42 0 43 0 44 0 48 0 
+48 0 49 0 50 0 51 0 78 0 77 0 0 0 0 0 0 0 77 0 78 0 49 0 50 0 51 0 48 0 
+80 0 53 0 54 0 55 0 0 0 68 0 0 0 77 0 68 0 0 0 0 0 53 0 54 0 55 0 80 0 
+decorations 4
+440 720 81 0
+520 680 82 0
+520 720 83 0
+439 681 84 0
+
+} // layers
+
+entities { 
+hero/Magneto 1 {
+position_in_layer 480 440
+layer_index 2
+}
+ortho/crocodile 2 {
+position_in_layer 359 482
+layer_index 2
+}
+ortho/crocodile 3 {
+position_in_layer 359 561
+layer_index 2
+}
+ortho/crocodile 4 {
+forward false
+position_in_layer 561 522
+layer_index 2
+}
+ortho/crocodile 5 {
+forward false
+position_in_layer 560 602
+layer_index 2
+}
+DoorH 6 {
+position_in_layer 400 400
+layer_index 2
+}
+DoorH 7 {
+position_in_layer 520 400
+layer_index 2
+}
+Spec/SignalPlexor 8 {
+operate_1 6
+operate_2 7
+position_in_layer 481 527
+layer_index 2
+}
+Spec/SignalCombiner 9 {
+threshold 2
+operate 8
+position_in_layer 481 596
+layer_index 2
+}
+Device/FloorPermanent 10 {
+operate 9
+position_in_layer 360 680
+layer_index 2
+}
+Device/FloorPermanent 11 {
+operate 9
+position_in_layer 600 680
+layer_index 2
+}
+Device/Respawn 12 {
+position_in_layer 280 640
+layer_index 2
+}
+Device/Respawn 13 {
+position_in_layer 680 640
+layer_index 2
+}
+happyblue 14 {
+speed 120 120
+angle 45 45
+position_in_layer 476 77
+layer_index 2
+}
+happyblue 15 {
+speed 120 120
+angle 225 225
+position_in_layer 484 244
+layer_index 2
+}
+Device/Respawn 17 {
+position_in_layer 480 360
+layer_index 2
+}
+Spec/Region 18 {
+trigger_once true
+operate 19
+off_signal_enabled false
+position_in_layer 480 360
+layer_index 2
+}
+Spec/SignalPlexor 19 {
+operate_1 7
+operate_2 6
+invert true
+position_in_layer 480 399
+layer_index 2
+}
+Break/Bridge 20 {
+broken false
+position_in_layer 480 640
+layer_index 2
+}
+Break/Wall 23 {
+position_in_layer 480 680
+layer_index 2
+}
+Device/FloorPermanent 24 {
+operate 25
+position_in_layer 320 -40
+layer_index 2
+}
+Spec/SignalCombiner 25 {
+threshold 2
+operate 31
+position_in_layer 478 -151
+layer_index 2
+}
+Device/FloorPermanent 27 {
+operate 25
+position_in_layer 640 -40
+layer_index 2
+}
+Device/Respawn 30 {
+position_in_layer 480 0
+layer_index 2
+}
+Spec/Actions 31 {
+a1_target 18
+a1_action camera
+a2_delay 300
+a2_action close
+a3_action close
+a4_target 6
+a4_action open
+a5_target 7
+a5_action open
+a6_delay 800
+a6_target 20
+a6_action camera
+a7_delay 300
+a7_target 20
+a7_action signal0
+a8_delay 800
+a8_action camera_back
+position_in_layer 478 -86
+layer_index 2
+}
+Spec/LevelExit 32 {
+opened false
+position_in_layer 480 920
+layer_index 2
+}
+Spec/Region 33 {
+balloon true
+killer true
+magneto_killer true
+position_in_layer 320 800
+layer_index 2
+}
+Spec/Region 34 {
+balloon true
+killer true
+magneto_killer true
+position_in_layer 640 800
+layer_index 2
+}
+Spec/Region 39 {
+size 40 80
+balloon true
+killer true
+magneto_killer true
+position_in_layer 400 840
+layer_index 2
+}
+Spec/Region 40 {
+size 40 80
+balloon true
+killer true
+magneto_killer true
+position_in_layer 560 840
+layer_index 2
+}
+Device/FloorPermanent 41 {
+operate 45
+position_in_layer 280 800
+layer_index 2
+}
+Spec/SignalCombiner 45 {
+threshold 4
+operate 32
+position_in_layer 487 1016
+layer_index 2
+}
+Device/FloorPermanent 46 {
+operate 45
+position_in_layer 360 880
+layer_index 2
+}
+Device/FloorPermanent 47 {
+operate 45
+position_in_layer 600 880
+layer_index 2
+}
+Device/FloorPermanent 48 {
+operate 45
+position_in_layer 680 800
+layer_index 2
+}
+} // entities

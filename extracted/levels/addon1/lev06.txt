@@ -1,0 +1,1008 @@
+sprite_table {
+ bgr/pipe2 1
+ bgr/wall_brick 2
+ bgr/win1 3
+ bgr/wall_brick2 4
+ bgr/wire1 5
+ bgr/plate3 6
+ bluetech_01 7
+ bluetech_12 8
+ bgr/futro_V 9
+ bgr/pipe1 10
+ bgr/pipe5 11
+ bluetech_08 12
+ bgr/pipe3 13
+ bluetech_11 14
+ bluetech_07 15
+ bluetech_06 16
+ bgr/wire2 17
+ bgr/plate2 18
+ bgr/column1 19
+ bgr/pipe6 20
+ bgr/column3 21
+ bgr/arc_top1 22
+ bgr/arc_top2 23
+ bgr/arc_top3 24
+ bluetech_02 25
+ bgr/bigarc_left 26
+ bgr/bigarc_right 27
+ bgr/plate4 28
+ bgr/win2 29
+ wall_metalA_02 30
+ bgr/grate 31
+ bgr/rig 32
+ bgr/plate1 33
+ bluetech_09 34
+ bluetech_04 35
+ bluetech_10 36
+ bluetech_14 37
+ bgr/win3 38
+ bgr/column2 39
+ bluetech_16 40
+ bluetech_05 41
+ wall_metalA_03 42
+ wall_metalA_01 43
+ shadow_fix_02 44
+ shadow_fix_01 45
+ wall_metalX 46
+ metal_fatpipe_08 47
+ wall_stoneA_02 48
+ metal_fatpipe_09 49
+ metal_fatpipe_04 50
+ crane_platform 51
+ metal_fatpipe_03 52
+ wall_green_24a 53
+ wall_green_24b 54
+ metal_pipe_01 55
+ metal_pipe_02 56
+ metal_pipejoint_03 57
+ metal_pipe_07 58
+ wall_arc_01 59
+ wall_arc_02 60
+ wall_arc_03 61
+ metal_pipe_06 62
+ metal_pipe_03 63
+ metal_pipe_04 64
+ metal_pipe_08 65
+ metal_pipe_05 66
+ pipeend_3 67
+ wall_stoneA_06 68
+ wall_stoneA_07 69
+ wall_stoneA_08 70
+ wall_stoneA_03 71
+ teleOUT_dn 72
+ wall_stoneA_09 73
+ wall_stoneA_05 74
+ wall_stoneA_04 75
+ wall_tech_20 76
+ metal_pipe_09 77
+ wind_field_S 78
+ wall_stoneA_10 79
+ metal_fatpipe_07 80
+ brownpipe2 81
+ wall_metalA_00 82
+ metal_pipejoint_04 83
+ brownpipe1 84
+ mandi 85
+ wall_brick01 86
+ wall_brick03 87
+ tractor1 88
+ tractor3 89
+ tractor2 90
+ tractor4 91
+ metal_fatpipe_01 92
+ metal_pipeend 93
+ metal_fatpipe_10 94
+ bigcogwheel 95
+ metal_grate 96
+ metal_fatpipe_02 97
+ wall_tech_40 98
+ wall_tech_45 99
+ wall_tech_42 100
+ metal_pipe_10 101
+ pistyV 102
+ wall_tech_17 103
+ pipeend_2 104
+ wall_tech_11 105
+ wall_tech_07 106
+ wall_tech_12 107
+ halfplate_13b 108
+ wall_tech_06 109
+ tech_light 110
+ wall_tech_08 111
+ wall_tech_10 112
+ wall_tech_05 113
+ wall_tech_09 114
+ columnA_top 115
+ columnA_middle 116
+ columnA_bottom 117
+ teleIN_up 118
+ metal_quadpipe 119
+ yellow_half_1 120
+ sign/arrow3 121
+ sign/exit 122
+ metal_ring3 123
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name noname
+offset 0 0
+cells_offset 240 -80
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 54
+height 23
+no_cells
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 3 0 1 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 5 0 4 0 5 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 6 0 0 0 7 0 0 0 8 0 0 0 2 0 0 0 9 0 4 0 9 0 2 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 1 0 5 0 4 0 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 0 11 0 4 0 0 0 0 0 0 0 12 0 0 0 0 0 0 0 9 0 0 0 9 0 0 0 0 0 0 0 0 0 
+2 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 13 0 11 0 5 0 4 0 5 0 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 4 0 4 0 0 0 14 0 15 0 16 0 0 0 4 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 1 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 17 0 17 0 0 0 0 0 7 0 0 0 0 0 4 0 5 0 4 0 4 0 0 0 0 0 0 0 0 0 0 0 
+2 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 0 10 0 11 0 0 0 0 0 0 0 0 0 0 0 10 0 10 0 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 17 0 6 0 17 0 17 0 0 0 0 0 0 0 0 0 0 0 
+17 0 17 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 4 0 18 0 0 0 0 0 0 0 0 0 0 0 2 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14 0 0 0 4 0 5 0 4 0 4 0 5 0 2 0 19 0 0 0 0 0 
+17 0 17 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 0 10 0 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 4 0 4 0 4 0 0 0 7 0 0 0 0 0 4 0 5 0 4 0 4 0 5 0 0 0 21 0 0 0 0 0 
+17 0 17 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 17 0 17 0 0 0 0 0 0 0 0 0 0 0 17 0 17 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 17 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 17 0 6 0 17 0 0 0 0 0 0 0 
+22 0 23 0 24 0 5 0 2 0 2 0 0 0 5 0 22 0 23 0 24 0 5 0 2 0 0 0 2 0 5 0 22 0 23 0 24 0 5 0 2 0 0 0 4 0 5 0 2 0 0 0 22 0 23 0 24 0 9 0 5 0 5 0 5 0 5 0 5 0 9 0 4 0 4 0 4 0 4 0 0 0 7 0 0 0 25 0 0 0 0 0 4 0 2 0 0 0 5 0 4 0 5 0 2 0 19 0 
+26 0 0 0 27 0 5 0 28 0 29 0 0 0 5 0 26 0 0 0 27 0 5 0 0 0 29 0 0 0 5 0 26 0 0 0 27 0 5 0 0 0 0 0 4 0 5 0 0 0 0 0 26 0 0 0 27 0 9 0 5 0 5 0 5 0 5 0 5 0 9 0 13 0 10 0 10 0 10 0 0 0 0 0 0 0 7 0 0 0 25 0 30 0 31 0 0 0 5 0 4 0 5 0 0 0 21 0 
+26 0 0 0 27 0 5 0 4 0 0 0 4 0 5 0 26 0 0 0 27 0 5 0 4 0 0 0 4 0 5 0 26 0 0 0 27 0 5 0 2 0 0 0 4 0 5 0 32 0 0 0 26 0 0 0 27 0 9 0 5 0 5 0 5 0 5 0 5 0 9 0 1 0 4 0 4 0 18 0 0 0 7 0 0 0 0 0 0 0 25 0 0 0 0 0 0 0 0 0 17 0 6 0 17 0 0 0 
+6 0 6 0 6 0 0 0 4 0 4 0 4 0 0 0 0 0 0 0 0 0 0 0 17 0 17 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 0 0 0 17 0 17 0 17 0 0 0 0 0 0 0 25 0 25 0 25 0 0 0 2 0 0 0 5 0 4 0 5 0 2 0 19 0 
+6 0 6 0 6 0 0 0 6 0 6 0 6 0 6 0 0 0 0 0 0 0 0 0 2 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 7 0 0 0 7 0 0 0 0 0 7 0 0 0 8 0 0 0 25 0 8 0 25 0 8 0 8 0 0 0 0 0 28 0 2 0 0 0 0 0 7 0 0 0 7 0 0 0 25 0 4 0 0 0 0 0 5 0 4 0 5 0 0 0 21 0 
+6 0 6 0 33 0 0 0 6 0 0 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 13 0 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 0 0 0 15 0 34 0 15 0 34 0 34 0 15 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 17 0 6 0 17 0 0 0 0 0 0 0 
+28 0 6 0 6 0 0 0 6 0 0 0 6 0 0 0 0 0 0 0 0 0 0 0 10 0 11 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 0 0 0 0 0 35 0 15 0 16 0 0 0 25 0 36 0 7 0 36 0 36 0 7 0 0 0 0 0 0 0 4 0 0 0 7 0 0 0 7 0 0 0 2 0 5 0 2 0 0 0 5 0 2 0 0 0 0 0 0 0 
+6 0 6 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 4 0 0 0 17 0 17 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 0 7 0 37 0 0 0 0 0 0 0 4 0 4 0 4 0 0 0 0 0 17 0 17 0 17 0 0 0 0 0 0 0 0 0 0 0 0 0 5 0 0 0 4 0 5 0 31 0 0 0 0 0 0 0 
+6 0 6 0 6 0 0 0 19 0 38 0 4 0 5 0 4 0 38 0 4 0 5 0 4 0 38 0 4 0 0 0 0 0 7 0 0 0 7 0 0 0 0 0 0 0 0 0 25 0 0 0 36 0 0 0 0 0 0 0 2 0 0 0 22 0 23 0 24 0 18 0 4 0 22 0 23 0 24 0 0 0 25 0 0 0 0 0 0 0 17 0 6 0 17 0 17 0 0 0 0 0 0 0 0 0 0 0 
+6 0 33 0 6 0 0 0 39 0 0 0 4 0 5 0 4 0 0 0 28 0 5 0 4 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 0 7 0 0 0 0 0 40 0 40 0 40 0 0 0 0 0 0 0 26 0 0 0 27 0 4 0 4 0 26 0 0 0 27 0 0 0 0 0 0 0 0 0 0 0 4 0 5 0 2 0 0 0 4 0 19 0 4 0 4 0 0 0 
+6 0 6 0 6 0 0 0 21 0 31 0 4 0 5 0 4 0 31 0 4 0 5 0 4 0 31 0 4 0 0 0 0 0 14 0 15 0 41 0 25 0 0 0 25 0 0 0 0 0 0 0 7 0 0 0 25 0 0 0 2 0 0 0 26 0 0 0 27 0 31 0 31 0 26 0 0 0 27 0 2 0 0 0 9 0 4 0 31 0 4 0 5 0 0 0 0 0 4 0 21 0 4 0 31 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 0 0 0 12 0 7 0 0 0 7 0 0 0 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 0
+
+layer // layer 1
+name noname
+offset 15 15
+cells_offset 200 -80
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 55
+height 22
+shadow
+no_cells
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 42 0 0 0 42 0 0 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 43 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 44 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+43 0 42 0 0 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 44 0 42 0 0 0 42 0 0 0 0 0 0 0 0 0 0 0 
+43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42 0 0 0 0 0 0 0 0 0 0 0 0 0 46 0 0 0 0 0 44 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 44 0 0 0 0 0 47 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 0 30 0 43 0 0 0 0 0 0 0 44 0 42 0 0 0 30 0 0 0 0 0 
+43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+43 0 0 0 0 0 44 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 0 0 0 0 0 0 44 0 42 0 0 0 42 0 0 0 0 0 0 0 0 0 44 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 46 0 0 0 0 0 0 0 44 0 42 0 0 0 30 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 42 0 0 0 49 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 43 0 0 0 50 0 0 0 0 0 0 0 0 0 45 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45 0 0 0 0 0 0 0 0 0 0 0 0 0 42 0 0 0 0 0 42 0 0 0 42 0 0 0 0 0 0 0 44 0 46 0 
+43 0 51 0 51 0 51 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 43 0 0 0 0 0 0 0 43 0 52 0 43 0 49 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53 0 0 0 43 0 0 0 0 0 43 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+43 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 0 55 0 0 0 56 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 43 0 0 0 43 0 0 0 43 0 42 0 0 0 0 0 0 0 0 0 44 0 46 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 57 0 56 0 43 0 0 0 0 0 0 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+43 0 0 0 0 0 0 0 43 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58 0 0 0 0 0 0 0 0 0 0 0 43 0 42 0 0 0 59 0 60 0 61 0 42 0 0 0 0 0 0 0 0 0 43 0 42 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 55 0 62 0 62 0 0 0 42 0 0 0 57 0 63 0 43 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 0 42 0 0 0 42 0 0 0 0 0 
+43 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 0 65 0 65 0 0 0 43 0 66 0 58 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 0 30 0 42 0 0 0 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 67 0 0 0 64 0 63 0 0 0 43 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 0
+
+layer // layer 2
+name Main
+offset 0 0
+cells_offset 160 -120
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 57
+height 25
+cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2 2 0 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 2 0 0 0 2 2 2 2 2 2 2 2 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 0 0 0 0 0 2 2 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 2 0 0 0 2 0 0 0 0 0 0 2 0 0 0 
+0 2 2 2 2 2 0 0 0 0 0 0 0 0 2 2 0 0 0 0 0 0 0 2 2 0 0 0 0 0 0 0 0 0 0 0 2 2 2 0 0 0 2 0 0 0 2 0 0 0 0 0 0 2 0 0 0 
+0 2 0 0 0 2 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 2 0 2 2 2 2 0 2 0 0 0 
+0 2 0 0 0 2 0 0 0 0 0 0 0 2 2 0 0 0 2 2 2 0 0 0 2 2 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 0 0 0 2 0 0 0 
+0 2 0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 2 2 0 2 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 0 2 2 2 2 0 0 
+0 2 0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 2 0 0 
+0 2 0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 2 0 0 
+0 2 0 0 0 2 2 2 2 2 2 2 2 2 0 0 0 2 2 2 2 2 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 2 0 0 0 2 2 2 0 0 0 0 2 2 2 2 
+0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2 2 2 0 0 0 0 0 2 0 0 0 0 0 2 0 0 0 0 0 0 0 2 
+0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 2 0 0 0 0 0 0 0 2 
+0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2 2 2 0 0 0 0 0 2 0 0 0 0 0 2 2 2 2 0 0 0 2 2 
+0 2 2 2 2 2 0 0 0 2 2 2 2 2 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 2 0 0 0 0 0 2 0 0 0 0 0 0 0 2 
+0 2 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 0 0 2 0 0 0 0 0 0 0 2 
+0 2 0 0 0 2 0 2 0 2 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 2 2 2 0 0 0 0 2 2 2 2 
+0 2 0 0 0 2 0 2 0 2 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 2 0 0 
+0 2 0 0 0 2 2 2 2 2 2 2 2 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 2 0 0 
+0 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 0 2 2 2 2 2 0 
+0 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 2 2 2 2 2 0 0 0 0 0 0 0 0 2 0 
+0 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 
+0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68 0 69 0 69 0 70 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 55 0 62 0 62 0 62 0 62 0 42 0 0 0 30 0 42 0 0 0 62 0 62 0 62 0 62 0 56 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71 0 72 0 68 0 70 0 0 0 73 0 71 0 74 0 0 0 74 0 0 0 73 0 74 0 0 0 75 0 74 0 0 0 74 0 0 0 74 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 76 0 77 0 77 0 77 0 74 0 0 0 46 0 30 0 46 0 74 0 0 0 77 0 77 0 77 0 76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 0 0 0 0 0 0 0 78 0 0 0 74 0 0 0 74 0 0 0 71 0 74 0 0 0 71 0 79 0 71 0 42 0 0 0 42 0 0 0 43 0 
+0 0 0 0 0 0 80 0 81 0 81 0 47 0 0 0 0 0 0 0 0 0 0 0 53 0 71 0 74 0 0 0 71 0 0 0 0 0 0 0 0 0 0 0 71 0 74 0 0 0 71 0 53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 0 0 0 79 0 0 0 0 0 0 0 71 0 0 0 0 0 0 0 0 0 0 0 0 0 82 0 0 0 50 0 0 0 
+0 0 43 0 30 0 83 0 30 0 43 0 84 0 0 0 0 0 0 0 0 0 0 0 54 0 48 0 71 0 71 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71 0 71 0 48 0 54 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71 0 71 0 48 0 0 0 78 0 0 0 48 0 0 0 0 0 0 0 79 0 0 0 0 0 0 0 85 0 0 0 0 0 0 0 0 0 50 0 30 0 
+0 0 0 0 0 0 0 0 0 0 0 0 84 0 0 0 0 0 0 0 0 0 0 0 54 0 0 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 0 0 0 54 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 86 0 87 0 0 0 0 0 78 0 0 0 0 0 0 0 0 0 0 0 71 0 0 0 46 0 30 0 30 0 30 0 0 0 82 0 0 0 50 0 43 0 
+0 0 43 0 0 0 0 0 0 0 43 0 84 0 0 0 0 0 0 0 0 0 0 0 54 0 71 0 0 0 0 0 0 0 0 0 46 0 30 0 46 0 0 0 0 0 0 0 0 0 71 0 54 0 0 0 0 0 0 0 0 0 88 0 89 0 0 0 0 0 0 0 86 0 87 0 46 0 0 0 78 0 0 0 46 0 52 0 47 0 0 0 71 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50 0 0 0 
+43 0 0 0 0 0 0 0 0 0 0 0 84 0 0 0 0 0 0 0 0 0 0 0 54 0 48 0 0 0 0 0 0 0 30 0 42 0 0 0 42 0 0 0 0 0 0 0 0 0 71 0 54 0 0 0 0 0 0 0 0 0 90 0 91 0 0 0 0 0 0 0 86 0 87 0 30 0 0 0 78 0 0 0 80 0 92 0 93 0 52 0 46 0 0 0 0 0 0 0 0 0 46 0 42 0 0 0 43 0 50 0 30 0 
+0 0 46 0 0 0 0 0 0 0 46 0 94 0 47 0 0 0 0 0 0 0 0 0 54 0 0 0 0 0 0 0 0 0 43 0 95 0 0 0 43 0 30 0 0 0 0 0 0 0 48 0 54 0 74 0 0 0 74 0 0 0 74 0 0 0 74 0 0 0 75 0 86 0 87 0 30 0 0 0 0 0 0 0 30 0 42 0 0 0 0 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50 0 43 0 
+96 0 46 0 0 0 0 0 0 0 46 0 42 0 84 0 42 0 0 0 42 0 0 0 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 0 0 0 0 0 0 54 0 75 0 74 0 0 0 74 0 0 0 74 0 0 0 74 0 0 0 86 0 87 0 30 0 0 0 0 0 0 0 94 0 92 0 47 0 0 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 50 0 0 0 
+43 0 46 0 0 0 0 0 0 0 46 0 30 0 97 0 30 0 46 0 30 0 30 0 30 0 46 0 0 0 0 0 0 0 46 0 30 0 30 0 30 0 46 0 0 0 0 0 0 0 46 0 74 0 0 0 71 0 74 0 0 0 98 0 99 0 99 0 99 0 99 0 99 0 100 0 46 0 0 0 0 0 0 0 46 0 52 0 93 0 47 0 30 0 30 0 46 0 0 0 0 0 0 0 0 0 46 0 42 0 0 0 43 0 
+0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 50 0 94 0 93 0 92 0 49 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 50 0 0 0 50 0 0 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 
+0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 50 0 80 0 93 0 47 0 30 0 42 0 0 0 46 0 0 0 0 0 0 0 46 0 30 0 
+0 0 0 0 51 0 51 0 51 0 46 0 0 0 0 0 0 0 46 0 30 0 30 0 30 0 46 0 0 0 0 0 0 0 46 0 30 0 42 0 0 0 30 0 71 0 0 0 71 0 71 0 71 0 74 0 0 0 74 0 0 0 98 0 99 0 99 0 99 0 99 0 99 0 100 0 46 0 0 0 0 0 0 0 46 0 52 0 93 0 49 0 0 0 101 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 
+0 0 43 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 82 0 0 0 95 0 0 0 30 0 0 0 0 0 0 0 30 0 102 0 43 0 102 0 43 0 53 0 0 0 53 0 0 0 0 0 43 0 0 0 0 0 0 0 73 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 0 0 0 0 30 0 0 0 50 0 0 0 0 0 94 0 47 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 0 0 0 0 30 0 0 0 0 0 0 0 0 0 54 0 55 0 103 0 56 0 0 0 0 0 0 0 0 0 0 0 73 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 0 0 0 0 30 0 0 0 50 0 0 0 30 0 30 0 46 0 0 0 0 0 0 0 0 0 46 0 42 0 0 0 43 0 
+0 0 43 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 30 0 43 0 50 0 50 0 30 0 0 0 0 0 0 0 30 0 42 0 0 0 104 0 57 0 105 0 106 0 107 0 57 0 56 0 43 0 0 0 0 0 0 0 73 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 0 0 0 0 30 0 0 0 50 0 0 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 50 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 108 0 30 0 108 0 46 0 0 0 94 0 49 0 46 0 0 0 0 0 0 0 46 0 52 0 52 0 52 0 52 0 109 0 110 0 111 0 58 0 58 0 0 0 0 0 0 0 0 0 48 0 74 0 0 0 59 0 60 0 61 0 71 0 46 0 0 0 0 0 0 0 46 0 52 0 93 0 0 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50 0 30 0 
+0 0 43 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 43 0 55 0 62 0 62 0 112 0 113 0 114 0 57 0 63 0 43 0 0 0 0 0 0 0 0 0 115 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 96 0 52 0 46 0 0 0 0 0 0 0 0 0 46 0 42 0 0 0 30 0 42 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 64 0 65 0 65 0 83 0 50 0 66 0 58 0 0 0 0 0 0 0 0 0 0 0 71 0 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 30 0 30 0 30 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53 0 30 0 
+0 0 43 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 43 0 0 0 0 0 0 0 67 0 50 0 64 0 63 0 0 0 43 0 0 0 0 0 0 0 48 0 117 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 0 30 0 
+0 0 0 0 30 0 30 0 30 0 0 0 30 0 30 0 30 0 46 0 30 0 30 0 30 0 46 0 30 0 30 0 30 0 30 0 0 0 0 0 0 0 0 0 0 0 50 0 0 0 0 0 0 0 0 0 68 0 69 0 70 0 0 0 74 0 0 0 118 0 71 0 74 0 0 0 30 0 42 0 0 0 71 0 42 0 0 0 42 0 0 0 42 0 0 0 46 0 42 0 0 0 30 0 42 0 0 0 42 0 0 0 30 0 
+0 0 0 0 94 0 119 0 119 0 96 0 77 0 77 0 77 0 96 0 77 0 77 0 77 0 96 0 77 0 77 0 77 0 77 0 77 0 77 0 77 0 77 0 77 0 96 0 0 0 0 0 0 0 43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 94 0 49 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 7
+1039 460 120 0
+1119 460 120 0
+1080 40 121 0
+2160 71 122 0
+399 40 123 0
+401 194 123 0
+399 120 123 0
+
+} // layers
+
+entities { 
+DeathRayV 1 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 0 5000
+sound_radius 80
+position_in_layer 520 600
+layer_index 2
+}
+DeathRayH 2 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 0 5000
+operate 96
+looping_sound none
+sound_radius 80
+position_in_layer 680 600
+layer_index 2
+}
+hero/profa_jetpack 8 {
+position_in_layer 482 706
+layer_index 2
+}
+DeathRayV 9 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 0 5000
+operate 96
+looping_sound none
+sound_radius 80
+position_in_layer 680 600
+layer_index 2
+}
+DeathRayH 10 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 0 5000
+operate 90
+looping_sound none
+sound_radius 80
+position_in_layer 680 440
+layer_index 2
+}
+DeathRayH 11 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 0 5000
+operate 90
+looping_sound none
+sound_radius 80
+position_in_layer 680 280
+layer_index 2
+}
+DeathRayV 12 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 0 5000
+operate 90
+looping_sound none
+sound_radius 80
+position_in_layer 680 280
+layer_index 2
+}
+DeathRayV 13 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 0 5000
+operate 90
+looping_sound none
+sound_radius 80
+position_in_layer 840 280
+layer_index 2
+}
+DeathRayV 14 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+size 5
+start_delay 0 0
+operate 100
+looping_sound none
+position_in_layer 1000 280
+layer_index 2
+}
+Spec/SignalPlexor 18 {
+operate_1 14
+operate_2 19
+operate_3 40
+position_in_layer 1080 363
+layer_index 2
+}
+DeathRayV 19 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+size 5
+start_delay 0 0
+operate 100
+looping_sound none
+position_in_layer 1160 280
+layer_index 2
+}
+DeathRayV 20 {
+on_duration 1500
+off_duration 1500
+start_delay 1000 1000
+operate 102
+looping_sound none
+position_in_layer 1520 320
+layer_index 2
+}
+DeathRayV 21 {
+on_duration 1500
+off_duration 1500
+start_delay 500 500
+operate 102
+looping_sound none
+position_in_layer 1480 320
+layer_index 2
+}
+DeathRayV 22 {
+on_duration 1500
+off_duration 1500
+operate 102
+looping_sound none
+position_in_layer 1440 320
+layer_index 2
+}
+DeathRayV 23 {
+on_duration 1500
+off_duration 1500
+start_delay 1500 1500
+operate 102
+looping_sound none
+position_in_layer 1560 320
+layer_index 2
+}
+DeathRayV 24 {
+on_duration 1500
+off_duration 1500
+start_delay 2000 2000
+operate 102
+looping_sound none
+position_in_layer 1600 320
+layer_index 2
+}
+AcidPool 27 {
+size 3 3
+position_in_layer 400 480
+layer_index 2
+}
+DeathRayV 28 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 0 5000
+operate 92
+looping_sound none
+sound_radius 80
+position_in_layer 520 280
+layer_index 2
+}
+DeathRayH 29 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 0 5000
+operate 92
+looping_sound none
+sound_radius 80
+position_in_layer 360 440
+layer_index 2
+}
+steelspikes_omni 31 {
+position_in_layer 360 320
+layer_index 2
+}
+DeathRayV 37 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 0 5000
+operate 99
+looping_sound none
+position_in_layer 880 -40
+layer_index 2
+}
+DeathRayV 38 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 0 5000
+operate 99
+looping_sound none
+position_in_layer 960 -40
+layer_index 2
+}
+DeathRayH 40 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+size 5
+start_delay 0 0
+operate 100
+looping_sound none
+position_in_layer 1000 280
+layer_index 2
+}
+Device/Respawn 41 {
+bubble true
+position_in_layer 1300 400
+layer_index 2
+}
+DeathRayH 43 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 0 0
+operate 94
+looping_sound none
+sound_radius 80
+position_in_layer 200 280
+layer_index 2
+}
+Device/Respawn 44 {
+bubble true
+position_in_layer 280 400
+layer_index 2
+}
+DeathRayH 45 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 300 300
+operate 94
+looping_sound none
+sound_radius 80
+position_in_layer 200 240
+layer_index 2
+}
+DeathRayH 46 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 600 600
+operate 94
+looping_sound none
+sound_radius 80
+position_in_layer 200 200
+layer_index 2
+}
+CrateSpawner 47 {
+crate 48
+position_in_layer 440 320
+layer_index 2
+}
+Crate 48 {
+broken true
+position_in_layer 480 160
+layer_index 2
+}
+Device/Lever_S 49 {
+operate 115
+position_in_layer 280 80
+layer_index 2
+}
+steelspikes_omni 52 {
+anim_left glowing
+crate_killer true
+position_in_layer 1040 420
+layer_index 2
+}
+steelspikes_omni 53 {
+anim_left glowing
+crate_killer true
+position_in_layer 1120 420
+layer_index 2
+}
+Crate 54 {
+position_in_layer 1780 740
+layer_index 2
+}
+Device/FloorButton 55 {
+operate 56
+position_in_layer 1800 760
+layer_index 2
+}
+DoorSingleV 56 {
+position_in_layer 1920 720
+layer_index 2
+}
+Device/Teleport 57 {
+target 58
+position_in_layer 1520 720
+layer_index 2
+}
+Device/Teleport 58 {
+position_in_layer 1640 -40
+layer_index 2
+}
+DeathRayH 63 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1000
+off_duration 2000
+size 5
+start_delay 0 0
+sound_radius 100
+position_in_layer 1680 120
+layer_index 2
+}
+DeathRayH 64 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1000
+off_duration 2000
+size 5
+start_delay 1000 1000
+sound_radius 100
+position_in_layer 1680 280
+layer_index 2
+}
+DeathRayH 65 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1000
+off_duration 2000
+size 5
+start_delay 2000 2000
+sound_radius 100
+position_in_layer 1680 440
+layer_index 2
+}
+DeathRayH 66 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1000
+off_duration 2000
+size 5
+start_delay 3000 3000
+sound_radius 100
+position_in_layer 1680 600
+layer_index 2
+}
+Device/Respawn 67 {
+bubble true
+position_in_layer 1600 720
+layer_index 2
+}
+DeathRayH 70 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 6
+start_delay 0 5000
+operate 109
+looping_sound none
+sound_radius 80
+position_in_layer 2000 640
+layer_index 2
+}
+DeathRayV 71 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 7
+start_delay 0 5000
+operate 109
+looping_sound none
+sound_radius 80
+position_in_layer 2080 520
+layer_index 2
+}
+DeathRayH 72 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 6
+start_delay 0 5000
+operate 110
+looping_sound none
+sound_radius 80
+position_in_layer 2080 520
+layer_index 2
+}
+DeathRayV 74 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 7
+start_delay 0 5000
+operate 110
+looping_sound none
+sound_radius 80
+position_in_layer 2200 400
+layer_index 2
+}
+Device/Respawn 75 {
+bubble true
+position_in_layer 2280 720
+layer_index 2
+}
+DeathRayV 79 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 7
+start_delay 0 5000
+operate 104
+looping_sound none
+sound_radius 80
+position_in_layer 2280 280
+layer_index 2
+}
+DeathRayH 80 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 5
+start_delay 0 5000
+operate 104
+looping_sound none
+sound_radius 80
+position_in_layer 2200 400
+layer_index 2
+}
+DeathRayV 82 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 7
+start_delay 0 5000
+operate 107
+looping_sound none
+sound_radius 80
+position_in_layer 2200 160
+layer_index 2
+}
+DeathRayH 83 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 6
+start_delay 0 5000
+operate 107
+looping_sound none
+sound_radius 80
+position_in_layer 2080 280
+layer_index 2
+}
+DeathRayH 84 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 6
+start_delay 0 5000
+operate 114
+looping_sound none
+sound_radius 80
+position_in_layer 2000 160
+layer_index 2
+}
+Spec/LevelExit 85 {
+closed_sprite none
+opened_sprite none
+position_in_layer 2160 40
+layer_index 2
+}
+DeathRayV 87 {
+part1_sprite INVISIBLE
+part2_sprite INVISIBLE
+on_duration 1500
+off_duration 1500
+size 6
+start_delay 0 5000
+operate 114
+looping_sound none
+sound_radius 80
+position_in_layer 2080 80
+layer_index 2
+}
+SoundDeathRay 89 {
+size 160 160
+radius 100
+position_in_layer 695 303
+layer_index 2
+}
+Spec/SignalCombiner 90 {
+threshold 1
+operate 89
+position_in_layer 741 325
+layer_index 2
+}
+SoundDeathRay 91 {
+size 100 100
+radius 80
+position_in_layer 439 361
+layer_index 2
+}
+Spec/SignalCombiner 92 {
+threshold 1
+operate 91
+position_in_layer 471 327
+layer_index 2
+}
+SoundDeathRay 93 {
+size 140 90
+radius 100
+position_in_layer 229 215
+layer_index 2
+}
+Spec/SignalCombiner 94 {
+threshold 1
+operate 93
+position_in_layer 99 165
+layer_index 2
+}
+Spec/SignalCombiner 96 {
+threshold 1
+operate 97
+position_in_layer 945 609
+layer_index 2
+}
+SoundDeathRay 97 {
+size 100 100
+radius 100
+position_in_layer 703 623
+layer_index 2
+}
+Spec/SignalCombiner 98 {
+threshold 1
+operate 99
+position_in_layer 949 -103
+layer_index 2
+}
+SoundDeathRay 99 {
+size 80 140
+position_in_layer 899 -19
+layer_index 2
+}
+Spec/SignalCombiner 100 {
+threshold 1
+operate 101
+position_in_layer 1249 109
+layer_index 2
+}
+SoundDeathRay 101 {
+size 140 120
+radius 100
+position_in_layer 1029 301
+layer_index 2
+}
+Spec/SignalCombiner 102 {
+threshold 1
+operate 103
+position_in_layer 1495 217
+layer_index 2
+}
+SoundDeathRay 103 {
+size 180 80
+radius 100
+position_in_layer 1449 337
+layer_index 2
+}
+Spec/SignalCombiner 104 {
+threshold 1
+position_in_layer 2517 367
+layer_index 2
+}
+SoundDeathRay 105 {
+size 90 160
+radius 80
+position_in_layer 2259 341
+layer_index 2
+}
+SoundDeathRay 106 {
+size 90 160
+radius 80
+position_in_layer 2165 219
+layer_index 2
+}
+Spec/SignalCombiner 107 {
+threshold 1
+operate 106
+position_in_layer 2355 161
+layer_index 2
+}
+SoundDeathRay 108 {
+size 90 160
+radius 80
+position_in_layer 2067 589
+layer_index 2
+}
+Spec/SignalCombiner 109 {
+threshold 1
+operate 108
+position_in_layer 2179 829
+layer_index 2
+}
+Spec/SignalCombiner 110 {
+threshold 1
+operate 111
+position_in_layer 2423 589
+layer_index 2
+}
+SoundDeathRay 111 {
+size 90 160
+radius 80
+position_in_layer 2161 461
+layer_index 2
+}
+SoundDeathRay 113 {
+size 90 160
+radius 80
+position_in_layer 2069 121
+layer_index 2
+}
+Spec/SignalCombiner 114 {
+threshold 1
+operate 113
+position_in_layer 2299 57
+layer_index 2
+}
+Spec/Actions/Camera 115 {
+run_once false
+a1_target 47
+a2_target 47
+a2_action signal1
+position_in_layer 388 144
+layer_index 2
+}
+Spec/Region 116 {
+size 157 39
+balloon true
+trigger_once true
+operate 117
+position_in_layer 223 146
+layer_index 2
+}
+Spec/SignalPlexor 117 {
+operate_1 46
+operate_2 45
+operate_3 43
+position_in_layer 120 82
+layer_index 2
+}
+steelspikes_omni 118 {
+anim_left glowing
+crate_killer true
+position_in_layer 400 580
+draw_order 101
+layer_index 2
+}
+steelspikes_omni 119 {
+anim_left glowing
+crate_killer true
+position_in_layer 480 580
+draw_order 101
+layer_index 2
+}
+fly/greenbat 120 {
+position_in_layer 269 576
+layer_index 2
+}
+SoundMachine 121 {
+radius 250
+position_in_layer 613 500
+layer_index 2
+}
+SoundMachine 122 {
+radius 250
+position_in_layer 920 496
+layer_index 2
+}
+SoundMachine 123 {
+position_in_layer 902 218
+layer_index 2
+}
+Device/FloorPermanent 125 {
+operate 18
+position_in_layer 1080 440
+layer_index 2
+}
+Spec/Region 127 {
+size 40 240
+position_in_layer 1760 -40
+layer_index 2
+}
+FanS 128 {
+region 127
+force_multiplier 300
+position_in_layer 1760 -80
+layer_index 2
+}
+} // entities

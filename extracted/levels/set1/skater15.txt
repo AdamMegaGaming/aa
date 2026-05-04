@@ -1,0 +1,378 @@
+sprite_table {
+ dirt 1
+ bgr/plate_13 2
+ bgr/plate_01 3
+ bgr/plate_07 4
+ bgr/plate_06 5
+ bgr/plate_03 6
+ bgr/plate_05 7
+ bgr/plate_wire_1 8
+ bgr/plate_04 9
+ dirt/bike 10
+ dirt/skull 11
+ wall_stoneA_05 12
+ wall_stoneA_02 13
+ wall_metalA_01 14
+ shadow_fix_01 15
+ wall_stoneA_04 16
+ shadow_fix_02 17
+ wall_arc_01 18
+ wall_arc_02 19
+ wall_arc_03 20
+ metal_fatpipe_07 21
+ metal_fatpipe_08 22
+ metal_fatpipe_01 23
+ metal_quadpipe 24
+ metal_fatpipe_02 25
+ wall_stoneA_15 26
+ wall_stoneA_10 27
+ metal_grate 28
+ wall_stoneA_03 29
+ teleOUT_dn 30
+ metal_fatpipe_04 31
+ teleOUT_up 32
+ teleIN_dn 33
+ wall_stoneA_00 34
+ bgr/hugegrate 35
+ wall_stoneA_11 36
+ wall_stoneA_12 37
+ wall_stoneA_13 38
+ teleIN_up 39
+ wall_tech_38 40
+ metal_fatpipe_10 41
+ wall_tech_44 42
+ wall_green_25a 43
+ metal_pipeend 44
+ metal_fatpipe_09 45
+ metal_frame 46
+ sign/acid1 47
+ wall_brick01 48
+ wall_brick02 49
+ wall_brick03 50
+ wall_metalA_03 51
+ wall_brick04 52
+ brownpipe1 53
+ wall_metalA_00 54
+ wall_metalA_02 55
+ metal_ring3 56
+ sign/nuke 57
+ sign/arrow3 58
+ sign/gaugeB 59
+ sign/number1 60
+ sign/number2 61
+ sign/number4 62
+ sign/number3 63
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name noname
+offset 0 0
+cells_offset 200 120
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 20
+height 10
+no_cells
+sprite_cells
+1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 
+1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 3 0 0 0 0 0 4 0 
+3 0 3 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5 0 0 0 5 0 0 0 
+6 0 0 0 6 0 0 0 7 0 2 0 0 0 8 0 2 0 0 0 7 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 7 0 0 0 0 0 8 0 0 0 0 0 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 7 0 3 0 3 0 8 0 3 0 4 0 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 2
+265 146 10 0
+226 231 11 0
+
+layer // layer 1
+name noname
+offset 15 15
+cells_offset 160 80
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 20
+height 11
+shadow
+no_cells
+sprite_cells
+12 0 0 0 12 0 0 0 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 0 12 0 0 0 12 0 0 0 12 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14 0 0 0 0 0 15 0 0 0 0 0 0 0 15 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 0 15 0 17 0 12 0 0 0 
+16 0 18 0 19 0 20 0 12 0 0 0 12 0 0 0 12 0 0 0 12 0 0 0 12 0 0 0 16 0 0 0 16 0 0 0 0 0 0 0 
+13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 12 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 0
+
+layer // layer 2
+name Main
+offset 0 0
+cells_offset 120 -40
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 23
+height 16
+cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 2 2 2 2 2 2 2 2 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 2 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 
+0 0 0 0 0 0 2 0 0 0 0 0 0 2 2 2 0 0 0 0 0 0 2 
+0 0 0 0 0 0 2 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 2 
+0 0 0 0 0 0 2 0 0 0 0 0 0 2 2 2 2 0 0 2 2 0 2 
+0 2 2 2 2 2 2 0 0 2 2 0 0 2 2 2 2 2 0 0 0 0 2 
+0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 0 0 0 2 2 
+0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 0 
+0 2 2 2 2 2 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 0 0 
+0 0 0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 2 2 2 2 2 2 2 2 2 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 0 22 0 0 0 0 0 21 0 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+21 0 23 0 23 0 23 0 23 0 23 0 23 0 24 0 24 0 23 0 23 0 24 0 24 0 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+25 0 16 0 26 0 16 0 27 0 26 0 16 0 25 0 25 0 12 0 0 0 25 0 25 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 0 12 0 0 0 29 0 12 0 0 0 12 0 0 0 27 0 
+25 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 13 0 
+31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29 0 32 0 13 0 0 0 0 0 29 0 29 0 0 0 29 0 
+25 0 29 0 18 0 19 0 20 0 16 0 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 0 0 0 0 0 29 0 0 0 0 0 0 0 0 0 13 0 
+31 0 13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 0 33 0 0 0 0 0 0 0 29 0 0 0 
+25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34 0 0 0 13 0 
+25 0 29 0 16 0 12 0 0 0 29 0 0 0 35 0 0 0 0 0 35 0 0 0 0 0 16 0 36 0 37 0 38 0 39 0 36 0 38 0 0 0 0 0 0 0 
+25 0 26 0 0 0 0 0 40 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+41 0 23 0 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 25 0 0 0 26 0 42 0 43 0 42 0 25 0 42 0 25 0 42 0 43 0 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 41 0 23 0 23 0 23 0 23 0 23 0 44 0 23 0 45 0 0 0 0 0 46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 2
+660 459 47 0
+300 458 47 0
+
+layer // layer 3
+name noname
+offset 0 0
+cells_offset 160 80
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 22
+height 6
+no_cells
+sprite_cells
+48 0 49 0 49 0 49 0 50 0 51 0 0 0 51 0 0 0 51 0 0 0 51 0 0 0 48 0 49 0 49 0 49 0 49 0 49 0 49 0 49 0 50 0 
+52 0 0 0 0 0 0 0 0 0 14 0 53 0 53 0 54 0 0 0 53 0 53 0 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+52 0 0 0 0 0 0 0 0 0 0 0 53 0 53 0 0 0 0 0 53 0 53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+52 0 0 0 0 0 0 0 0 0 14 0 53 0 53 0 54 0 0 0 53 0 53 0 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+52 0 0 0 0 0 0 0 0 0 0 0 53 0 53 0 0 0 0 0 53 0 53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 55 0 53 0 53 0 51 0 0 0 53 0 53 0 55 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 22
+400 314 56 0
+440 314 56 0
+560 314 56 0
+600 314 56 0
+560 219 56 0
+600 219 56 0
+400 219 56 0
+440 219 56 0
+499 217 57 0
+400 78 58 0
+441 79 58 0
+558 79 58 0
+601 79 58 0
+502 140 59 0
+400 270 60 0
+418 232 61 0
+679 239 61 0
+799 280 62 0
+599 272 62 0
+579 233 63 0
+898 239 63 0
+960 319 60 0
+
+} // layers
+
+entities { 
+Crate 9 {
+position_in_layer 500 180
+layer_index 2
+}
+Crate 10 {
+position_in_layer 440 180
+layer_index 2
+}
+Crate 11 {
+position_in_layer 440 220
+layer_index 2
+}
+Crate 12 {
+position_in_layer 540 180
+layer_index 2
+}
+Crate 13 {
+position_in_layer 600 180
+layer_index 2
+}
+Crate 14 {
+position_in_layer 600 220
+layer_index 2
+}
+hero/Skater 15 {
+position_in_layer 720 360
+layer_index 2
+}
+Break/Bridge 19 {
+broken false
+position_in_layer 440 240
+layer_index 2
+}
+Break/Bridge 20 {
+broken false
+position_in_layer 560 240
+layer_index 2
+}
+Break/Bridge 21 {
+broken false
+position_in_layer 520 200
+layer_index 2
+}
+Break/Bridge 22 {
+broken false
+position_in_layer 480 200
+layer_index 2
+}
+Device/Lever_N 25 {
+on_signal_enabled false
+on_switch_on_target 41
+on_switch_on_action run
+position_in_layer 800 240
+layer_index 2
+}
+Device/Lever_N 26 {
+on_signal_enabled false
+on_switch_on_target 40
+on_switch_on_action run
+position_in_layer 680 200
+layer_index 2
+}
+Device/Lever_N 27 {
+on_signal_enabled false
+on_switch_on_target 42
+on_switch_on_action run
+position_in_layer 900 200
+layer_index 2
+}
+Device/Lever_N 28 {
+on_signal_enabled false
+on_switch_on_target 43
+on_switch_on_action run
+position_in_layer 960 280
+layer_index 2
+}
+Device/Teleport 29 {
+target 32
+flash_in_sound none
+flash_out_sound none
+looping_sound none
+position_in_layer 520 240
+layer_index 2
+}
+Device/Teleport 30 {
+target 31
+flash_in_sound none
+flash_out_sound none
+looping_sound none
+position_in_layer 480 240
+layer_index 2
+}
+Device/Teleport 31 {
+flash_in_sound none
+flash_out_sound none
+looping_sound none
+position_in_layer 400 240
+layer_index 2
+}
+Device/Teleport 32 {
+flash_in_sound none
+flash_out_sound none
+looping_sound none
+position_in_layer 600 240
+layer_index 2
+}
+Device/Teleport 33 {
+target 34
+position_in_layer 800 360
+layer_index 2
+}
+Device/Teleport 34 {
+position_in_layer 720 200
+layer_index 2
+}
+AcidPool 36 {
+size 7 3
+position_in_layer 360 400
+layer_index 2
+}
+Spec/LevelExit 37 {
+position_in_layer 240 360
+layer_index 2
+}
+Spec/LevelBoundary 38 {
+position_in_layer 920 400
+layer_index 2
+}
+Spec/LevelBoundary 39 {
+position_in_layer 240 160
+layer_index 2
+}
+Spec/Actions/Camera 40 {
+a1_target 19
+a2_delay 100
+a2_target 19
+a2_action signal0
+a3_delay 3000
+position_in_layer 704 32
+layer_index 2
+}
+Spec/Actions/Camera 41 {
+a1_target 21
+a2_delay 100
+a2_target 21
+a2_action signal0
+a3_delay 3000
+position_in_layer 791 36
+layer_index 2
+}
+Spec/Actions/Camera 42 {
+a1_target 20
+a2_delay 100
+a2_target 20
+a2_action signal0
+a3_delay 3000
+position_in_layer 873 34
+layer_index 2
+}
+Spec/Actions/Camera 43 {
+a1_target 22
+a2_delay 100
+a2_target 22
+a2_action signal0
+a3_delay 3000
+position_in_layer 943 40
+layer_index 2
+}
+} // entities

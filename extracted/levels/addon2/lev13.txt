@@ -1,0 +1,371 @@
+sprite_table {
+ bgr/okr_14 1
+ bgr/okr_01 2
+ bgr/okr_05 3
+ bgr/okr_06 4
+ bluetech_01 5
+ bluetech_14 6
+ bluetech_02 7
+ bluetech_12 8
+ bgr/okr_12 9
+ bluetech_15 10
+ bgr/okr_09 11
+ bgr/okr_13 12
+ bluetech_08 13
+ bluetech_03 14
+ bluetech_09 15
+ bluetech_13 16
+ bgr/mix_tech05 17
+ bluetech_10 18
+ bgr/okr_10 19
+ bgr/okr_07 20
+ bgr/okr_02 21
+ bgr/okr_04 22
+ bgr/okr_03 23
+ bgr/mix_arrow01 24
+ bgr/mix_arrow02 25
+ bgr/okr_08 26
+ bgr/okr_11 27
+ wall_stoneA_05 28
+ wall_stoneA_02 29
+ shadow_fix_01 30
+ wall_arc_01 31
+ wall_arc_02 32
+ wall_arc_03 33
+ wall_tech_19 34
+ shadow_fix_02 35
+ wall_tech_20 36
+ wall_stoneA_14 37
+ wall_stoneA_04 38
+ wall_tech_18 39
+ wall_tech_38 40
+ wall_tech_32 41
+ tile/deathray_S 42
+ zabradli 43
+ wall_tech_21 44
+ wall_tech_26 45
+ wall_tech_22 46
+ wall_stoneA_06 47
+ wall_stoneA_07 48
+ wall_stoneA_08 49
+ wall_tech_25 50
+ metal_pipeend 51
+ wall_tech_14 52
+ wall_tech_27 53
+ wall_tech_28 54
+ wall_tech_23 55
+ wall_stoneA_03 56
+ wall_tech_11 57
+ wall_tech_07 58
+ wall_tech_12 59
+ metal_fatpipe_10 60
+ metal_fatpipe_01 61
+ metal_fatpipe_09 62
+ brownpipe1 63
+ wall_tech_13 64
+ wall_tech_37 65
+ teleOUT_dn 66
+ wall_tech_16 67
+ wall_tech_03 68
+ columnA_top 69
+ metal_pipejoint_02 70
+ metal_grate 71
+ columnA_middle 72
+ wall_tech_34 73
+ wall_tech_36 74
+ columnA_bottom 75
+ wall_tech_06 76
+ teleOUT_up 77
+ wall_tech_29 78
+ mandi 79
+ wall_stoneA_01 80
+ wall_stoneA_11 81
+ wall_stoneA_12 82
+ wall_stoneA_13 83
+ wall_green_25a 84
+ metal_ring3 85
+} // sprite_table
+
+layers {
+clear_screen true
+layer // layer 0
+name noname
+offset 0 0
+cells_offset 40 -40
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 30
+height 12
+no_cells
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 2 0 3 0 3 0 3 0 3 0 3 0 3 0 4 0 3 0 3 0 3 0 4 0 3 0 3 0 3 0 4 0 3 0 3 0 3 0 4 0 1 0 3 0 1 0 3 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 3 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 3 0 1 0 1 0 
+0 0 0 0 0 0 0 0 3 0 3 0 0 0 5 0 6 0 7 0 3 0 3 0 7 0 8 0 5 0 7 0 9 0 0 0 7 0 10 0 5 0 11 0 3 0 0 0 0 0 1 0 3 0 1 0 1 0 0 0 
+0 0 0 0 0 0 3 0 12 0 3 0 0 0 0 0 0 0 5 0 11 0 3 0 7 0 13 0 8 0 0 0 9 0 0 0 7 0 10 0 0 0 0 0 3 0 0 0 1 0 3 0 1 0 0 0 0 0 0 0 
+0 0 0 0 3 0 12 0 3 0 0 0 0 0 5 0 0 0 0 0 0 0 3 0 7 0 14 0 15 0 16 0 9 0 0 0 7 0 10 0 5 0 0 0 3 0 1 0 3 0 1 0 0 0 0 0 0 0 0 0 
+0 0 4 0 3 0 3 0 0 0 3 0 0 0 17 0 17 0 5 0 17 0 3 0 7 0 7 0 18 0 7 0 9 0 0 0 7 0 10 0 0 0 19 0 3 0 0 0 1 0 3 0 1 0 0 0 0 0 0 0 
+3 0 4 0 3 0 0 0 3 0 3 0 0 0 5 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 3 0 1 0 0 0 0 0 
+0 0 4 0 3 0 3 0 3 0 3 0 4 0 0 0 0 0 5 0 0 0 0 0 12 0 0 0 0 0 12 0 0 0 0 0 12 0 0 0 0 0 12 0 0 0 0 0 0 0 0 0 1 0 3 0 4 0 20 0 
+0 0 0 0 3 0 3 0 12 0 12 0 4 0 5 0 0 0 19 0 20 0 20 0 2 0 21 0 22 0 2 0 21 0 23 0 2 0 21 0 22 0 2 0 21 0 23 0 22 0 22 0 0 0 1 0 4 0 0 0 
+0 0 0 0 0 0 3 0 12 0 12 0 4 0 0 0 19 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 4 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 0 0 0 0 0 12 0 0 0 0 0 12 0 0 0 0 0 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 13
+169 369 24 0
+170 329 24 0
+609 11 25 0
+520 80 26 0
+520 200 27 0
+400 200 17 0
+400 80 11 0
+766 12 25 0
+926 12 25 0
+760 200 27 0
+760 80 26 0
+640 80 11 0
+640 200 19 0
+
+layer // layer 1
+name noname
+offset 15 15
+cells_offset 0 -80
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 31
+height 13
+shadow
+no_cells
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 28 0 0 0 28 0 0 0 28 0 0 0 28 0 0 0 28 0 0 0 28 0 0 0 28 0 0 0 28 0 0 0 28 0 0 0 28 0 0 0 28 0 0 0 28 0 0 0 28 0 0 0 
+0 0 0 0 0 0 0 0 0 0 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 29 0 0 0 0 0 28 0 0 0 31 0 32 0 33 0 29 0 28 0 0 0 28 0 0 0 28 0 0 0 28 0 0 0 28 0 0 0 0 0 0 0 28 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 29 0 0 0 0 0 0 0 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 29 0 0 0 0 0 0 0 0 0 34 0 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29 0 30 0 0 0 35 0 36 0 0 0 0 0 0 0 
+29 0 0 0 0 0 0 0 0 0 34 0 37 0 0 0 0 0 0 0 0 0 0 0 38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39 0 30 0 0 0 35 0 36 0 0 0 0 0 
+0 0 30 0 0 0 35 0 34 0 37 0 37 0 28 0 0 0 0 0 0 0 0 0 29 0 38 0 40 0 0 0 38 0 40 0 0 0 38 0 40 0 0 0 38 0 0 0 0 0 39 0 30 0 0 0 35 0 36 0 36 0 
+0 0 41 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35 0 38 0 0 0 42 0 0 0 0 0 42 0 0 0 0 0 42 0 0 0 0 0 42 0 38 0 28 0 0 0 39 0 30 0 0 0 0 0 0 0 
+0 0 0 0 41 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35 0 39 0 30 0 0 0 0 0 
+0 0 0 0 0 0 41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 0 0 30 0 0 0 0 0 30 0 0 0 0 0 30 0 0 0 0 0 0 0 0 0 0 0 0 0 39 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38 0 0 0 0 0 38 0 0 0 0 0 38 0 0 0 0 0 38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+decorations 5
+919 353 43 0
+959 353 43 0
+999 353 43 0
+1039 353 43 0
+1079 353 43 0
+
+layer // layer 2
+name Main
+offset 0 0
+cells_offset 0 -120
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 33
+height 15
+cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 12290 12290 12290 12290 12290 2 0 
+0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 
+0 0 0 0 0 2 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 2 2 0 
+0 0 0 0 2 0 0 2 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 2 2 13826 0 0 0 2 2 0 0 
+0 0 0 2 0 0 0 2 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 2 13826 0 0 0 2 2 0 0 0 
+0 0 2 0 0 0 2 2 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 2 0 0 0 0 
+0 2 0 0 0 2 2 2 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 2 2 0 0 0 2 2 0 0 0 
+2 0 0 0 2 2 2 2 2 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 2 2 2 0 
+0 2 0 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 0 2 0 
+0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 
+0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 2 0 
+0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 
+0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 
+sprite_cells
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 0 45 0 45 0 45 0 45 0 45 0 45 0 46 0 
+44 0 45 0 45 0 45 0 46 0 29 0 28 0 0 0 28 0 0 0 28 0 0 0 38 0 29 0 28 0 0 0 38 0 29 0 47 0 48 0 49 0 29 0 38 0 28 0 0 0 50 0 51 0 52 0 52 0 52 0 52 0 51 0 53 0 
+50 0 54 0 54 0 54 0 55 0 0 0 56 0 57 0 58 0 58 0 58 0 58 0 59 0 0 0 58 0 56 0 58 0 0 0 58 0 38 0 58 0 0 0 58 0 56 0 58 0 56 0 60 0 61 0 61 0 61 0 61 0 62 0 53 0 
+63 0 0 0 63 0 0 0 63 0 29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 0 53 0 
+40 0 0 0 65 0 65 0 57 0 0 0 0 0 29 0 66 0 31 0 32 0 33 0 56 0 66 0 67 0 67 0 66 0 67 0 67 0 66 0 67 0 67 0 66 0 56 0 56 0 28 0 0 0 0 0 0 0 0 0 65 0 65 0 53 0 
+0 0 0 0 65 0 57 0 68 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69 0 70 0 71 0 0 0 0 0 0 0 65 0 40 0 0 0 53 0 
+65 0 65 0 57 0 68 0 0 0 0 0 0 0 56 0 0 0 0 0 0 0 0 0 72 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72 0 51 0 0 0 0 0 0 0 36 0 67 0 0 0 0 0 53 0 
+65 0 57 0 68 0 0 0 0 0 0 0 34 0 29 0 0 0 0 0 0 0 0 0 72 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72 0 0 0 0 0 0 0 36 0 36 0 67 0 73 0 74 0 41 0 
+57 0 68 0 0 0 0 0 0 0 34 0 37 0 0 0 0 0 0 0 0 0 0 0 75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75 0 39 0 0 0 0 0 0 0 36 0 67 0 40 0 0 0 53 0 
+76 0 0 0 0 0 0 0 34 0 37 0 37 0 73 0 41 0 0 0 0 0 77 0 29 0 38 0 40 0 0 0 38 0 40 0 0 0 56 0 40 0 0 0 56 0 29 0 52 0 39 0 0 0 0 0 0 0 65 0 0 0 0 0 53 0 
+44 0 46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52 0 52 0 39 0 0 0 0 0 0 0 0 0 64 0 53 0 
+78 0 53 0 41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39 0 0 0 0 0 0 0 64 0 53 0 
+36 0 36 0 74 0 41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79 0 0 0 0 0 39 0 0 0 0 0 64 0 53 0 
+78 0 53 0 80 0 0 0 56 0 28 0 0 0 38 0 28 0 0 0 28 0 0 0 38 0 0 0 40 0 0 0 0 0 40 0 0 0 0 0 40 0 0 0 0 0 81 0 82 0 82 0 82 0 83 0 56 0 81 0 82 0 83 0 55 0 
+50 0 55 0 0 0 0 0 38 0 38 0 56 0 47 0 48 0 48 0 48 0 49 0 56 0 84 0 0 0 0 0 84 0 0 0 0 0 84 0 0 0 0 0 84 0 56 0 56 0 56 0 56 0 56 0 56 0 56 0 0 0 0 0 0 0 
+decorations 6
+2 0 85 0
+1 34 85 0
+81 0 85 0
+80 33 85 0
+160 -1 85 0
+160 33 85 0
+
+layer // layer 3
+name noname
+offset 0 0
+cells_offset 920 360
+scroll_scale_factor_1 1 1
+scroll_scale_factor_2 1 1
+cell_size 40 40
+width 5
+height 1
+no_cells
+sprite_cells
+43 0 43 0 43 0 43 0 43 0 
+decorations 0
+
+} // layers
+
+entities { 
+hero/Magneto 1 {
+position_in_layer 1180 360
+layer_index 2
+}
+DeathRayV 3 {
+size 4
+operate 40
+looping_sound none
+position_in_layer 520 280
+layer_index 2
+}
+Device/FloorButton 6 {
+on_signal 0
+off_signal 1
+on_switch_on_target 3
+on_switch_on_action toggle
+position_in_layer 520 240
+layer_index 2
+}
+Device/FloorButton 7 {
+on_signal 0
+off_signal 1
+on_switch_on_target 10
+on_switch_on_action toggle
+position_in_layer 640 240
+layer_index 2
+}
+Device/FloorButton 8 {
+on_signal 0
+off_signal 1
+on_switch_on_target 11
+on_switch_on_action toggle
+position_in_layer 760 240
+layer_index 2
+}
+Device/FloorButton 9 {
+on_signal 0
+off_signal 1
+on_switch_on_target 12
+on_switch_on_action toggle
+position_in_layer 880 240
+layer_index 2
+}
+DeathRayV 10 {
+on false
+size 4
+operate 40
+looping_sound none
+position_in_layer 640 280
+layer_index 2
+}
+DeathRayV 11 {
+size 4
+operate 40
+looping_sound none
+position_in_layer 760 280
+layer_index 2
+}
+DeathRayV 12 {
+on false
+size 4
+operate 40
+looping_sound none
+position_in_layer 880 280
+layer_index 2
+}
+Device/Teleport 15 {
+target 16
+position_in_layer 520 200
+layer_index 2
+}
+Device/Teleport 16 {
+position_in_layer 640 80
+layer_index 2
+}
+Device/Teleport 17 {
+target 18
+position_in_layer 640 200
+layer_index 2
+}
+Device/Teleport 18 {
+position_in_layer 760 80
+layer_index 2
+}
+Device/Teleport 19 {
+target 20
+position_in_layer 760 200
+layer_index 2
+}
+Device/Teleport 20 {
+position_in_layer 880 80
+layer_index 2
+}
+Device/Teleport 21 {
+target 22
+position_in_layer 880 200
+layer_index 2
+}
+Device/Teleport 22 {
+position_in_layer 320 80
+layer_index 2
+}
+Crate 28 {
+position_in_layer 340 100
+layer_index 2
+}
+Device/Teleport 34 {
+target 35
+position_in_layer 440 200
+layer_index 2
+}
+Device/Teleport 35 {
+position_in_layer 520 80
+layer_index 2
+}
+Spec/LevelExit 36 {
+closed_sprite none
+opened_sprite none
+position_in_layer 1000 360
+layer_index 2
+}
+Device/Respawn 37 {
+position_in_layer 220 360
+layer_index 2
+}
+Spec/LevelBoundary 38 {
+position_in_layer 1200 360
+layer_index 2
+}
+Spec/LevelBoundary 39 {
+position_in_layer 80 0
+layer_index 2
+}
+Spec/SignalCombiner 40 {
+threshold 1
+operate 42
+position_in_layer 661 566
+layer_index 2
+}
+SoundDeathRay 42 {
+size 380 100
+position_in_layer 529 310
+layer_index 2
+}
+} // entities

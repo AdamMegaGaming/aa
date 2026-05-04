@@ -1,0 +1,377 @@
+
+// chapter titles, DO NOT CHANGE, hardcoded
+// 
+//  title skater		chapter 1 brainiac's mansion
+//  title bubble		chapter 2 more of hints
+//  title m_begin		chapter 3 loaded runner
+//  title m_easy		chapter 4 night with the tentacles
+//  title profa			chapter 5 better fly like condor
+//  title m_medium		chapter 6 fall in
+//  title m_hard		chapter 7 ascent
+//  title final			the great exit
+//
+//  title addon1		The Great Cleanup I
+//  title addon2		The Great Cleanup II
+//  title addon3		The Great Cleanup III
+//  title addon4		The Control Room
+//  title addon_fun1		Just for Fun I
+//  title addon_fun2		Just for Fun II
+
+intro {
+  title intro2
+  sprite levelset0
+  button_text replay_intro
+}
+
+// chapter 1 brainiac's mansion
+map {
+  //skater
+  title skater
+  sprite levelset1
+  level levels/set1/skater01.txt
+  level levels/set1/skater02.txt
+  level levels/set1/skater03.txt
+  level levels/set1/skater04.txt
+  level levels/set1/skater05.txt
+  
+  level levels/set1/skater06.txt
+  level levels/set1/skater07.txt
+  level levels/set1/skater08.txt
+  level levels/set1/skater09.txt
+  level levels/set1/skater10.txt
+  
+  level levels/set1/skater11.txt
+  level levels/set1/skater12.txt
+  level levels/set1/skater13.txt
+  level levels/set1/skater14.txt
+  level levels/set1/skater15.txt
+
+  level levels/set1/skater16.txt
+}
+
+// chapter 2 more of hints
+map {
+  //skater'n'bubble
+  title bubble
+  sprite levelset2
+  level levels/set2/lev01.txt
+  level levels/set2/lev02.txt
+  level levels/set2/lev03.txt
+  level levels/set2/lev04.txt
+  level levels/set2/lev05.txt
+  
+  level levels/set2/lev06.txt
+  level levels/set2/lev07.txt
+  level levels/set2/lev08.txt
+  level levels/set2/lev09.txt
+  level levels/set2/lev10.txt
+  
+  level levels/set2/lev11.txt
+  level levels/set2/lev12.txt
+  level levels/set2/lev13.txt
+  level levels/set2/lev14.txt
+
+  level levels/set2/bonus1.txt
+  level levels/set2/bonus2.txt
+  bonus 2
+}
+
+// chapter 3 loaded runner
+map {
+  //magneto - begginer
+  title m_begin
+  sprite levelset3
+  level levels/set3/lev01.txt
+  level levels/set3/lev02.txt
+  level levels/set3/lev03.txt
+  level levels/set3/lev04.txt
+  level levels/set3/lev05.txt
+
+  level levels/set3/lev06.txt
+  level levels/set3/lev07.txt
+  level levels/set3/lev08.txt
+  level levels/set3/lev09.txt
+  level levels/set3/lev10.txt
+
+  level levels/set3/lev11.txt
+  level levels/set3/lev12.txt
+  level levels/set3/lev13.txt
+  level levels/set3/lev14.txt
+
+  level levels/set3/bonus1.txt
+  level levels/set3/bonus2.txt
+  bonus 2
+}
+
+// chapter 4 night with the tentacles
+map {
+  //easy
+  title m_easy
+  sprite levelset4
+  level levels/set4/lev01.txt
+  level levels/set4/lev02.txt
+  level levels/set4/lev03.txt
+  level levels/set4/lev04.txt
+  level levels/set4/lev05.txt
+
+  level levels/set4/lev06.txt 
+  level levels/set4/lev07.txt
+  level levels/set4/lev08.txt
+  level levels/set4/lev09.txt
+  level levels/set4/lev10.txt
+
+  level levels/set4/lev11.txt
+  level levels/set4/lev12.txt
+  level levels/set4/lev13.txt  
+  level levels/set4/lev14.txt
+
+  level levels/set4/bonus1.txt
+  level levels/set4/bonus2.txt
+  bonus 2
+}
+
+// chapter 5 better fly like condor
+map {
+  //profa na jetpacku
+  title profa
+  sprite levelset_profa
+  level levels/profa/lev01.txt
+  level levels/profa/lev02.txt
+  level levels/profa/lev03.txt
+  level levels/profa/lev04.txt
+  level levels/profa/lev05.txt
+
+  level levels/profa/lev06.txt
+  level levels/profa/lev07.txt
+  level levels/profa/lev08.txt
+  level levels/profa/lev09.txt
+  level levels/profa/lev10.txt
+
+  level levels/profa/lev11.txt
+  level levels/profa/lev12.txt
+  level levels/profa/lev13.txt
+  level levels/profa/lev14.txt
+
+  level levels/profa/bonus1.txt
+  level levels/profa/bonus2.txt
+  bonus 2
+}
+
+// chapter 6 fall in
+map {
+  //medium
+  title m_medium
+  sprite levelset5
+  level levels/set5/lev01.txt
+  level levels/set5/lev02.txt
+  level levels/set5/lev03.txt
+  level levels/set5/lev04.txt
+  level levels/set5/lev05.txt
+
+  level levels/set5/lev06.txt
+  level levels/set5/lev07.txt
+  level levels/set5/lev08.txt
+  level levels/set5/lev09.txt
+  level levels/set5/lev10.txt
+
+  level levels/set5/lev11.txt
+  level levels/set5/lev12.txt
+  level levels/set5/lev13.txt
+  level levels/set5/lev14.txt
+
+  level levels/set5/bonus1.txt
+  level levels/set5/bonus2.txt
+  bonus 2
+}
+
+// chapter 7 ascent
+map {
+  //hard
+  title m_hard
+  sprite levelset6
+  level levels/set6/lev01.txt
+  level levels/set6/lev02.txt
+  level levels/set6/lev03.txt
+  level levels/set6/lev04.txt
+  level levels/set6/lev05.txt
+
+  level levels/set6/lev06.txt
+  level levels/set6/lev07.txt
+  level levels/set6/lev08.txt
+  level levels/set6/lev09.txt
+  level levels/set6/lev10.txt
+
+  level levels/set6/lev11.txt
+  level levels/set6/lev12.txt
+  level levels/set6/lev13.txt
+  level levels/set6/lev14.txt
+
+  level levels/set6/bonus1.txt
+  level levels/set6/bonus2.txt
+  bonus 2
+}
+
+// the great exit
+map {
+  final
+  title final
+  sprite levelset7
+  button_text final_level
+  button_text_locked final_level_locked
+  level levels/set7/final.txt
+  level levels/set7/final2.txt
+  bonus 0
+}
+
+//===================================
+// GREAT CLEAN UP
+//===================================
+
+
+map {
+  title addon1
+  sprite addon
+
+level levels/addon1/lev01.txt
+level levels/addon1/lev02.txt
+level levels/addon1/lev03.txt
+level levels/addon1/lev04.txt
+level levels/addon1/lev05.txt
+
+level levels/addon1/lev06.txt
+level levels/addon1/lev07.txt
+level levels/addon1/lev08.txt
+level levels/addon1/lev09.txt
+level levels/addon1/lev10.txt
+
+level levels/addon1/lev11.txt
+level levels/addon1/lev12.txt
+level levels/addon1/lev13.txt
+level levels/addon1/lev14.txt
+
+level levels/addon1/lev15.txt
+level levels/addon1/lev16.txt
+
+  bonus 2
+}
+
+map {
+  title addon2
+  sprite addon
+
+level levels/addon2/lev01.txt
+level levels/addon2/lev02.txt
+level levels/addon2/lev03.txt
+level levels/addon2/lev04.txt
+level levels/addon2/lev05.txt
+
+level levels/addon2/lev06.txt
+level levels/addon2/lev07.txt
+level levels/addon2/lev08.txt
+level levels/addon2/lev09.txt
+level levels/addon2/lev10.txt
+
+level levels/addon2/lev11.txt
+level levels/addon2/lev12.txt
+level levels/addon2/lev13.txt
+level levels/addon2/lev14.txt
+
+level levels/addon2/lev15.txt
+level levels/addon2/lev16.txt
+
+  bonus 2
+}
+
+map {
+  title addon3
+  sprite addon
+
+level levels/addon3/lev01.txt
+level levels/addon3/lev02.txt
+level levels/addon3/lev03.txt
+level levels/addon3/lev04.txt
+level levels/addon3/lev05.txt
+
+level levels/addon3/lev06.txt
+level levels/addon3/lev07.txt
+level levels/addon3/lev08.txt
+level levels/addon3/lev09.txt
+level levels/addon3/lev10.txt
+
+level levels/addon3/lev11.txt
+level levels/addon3/lev12.txt
+level levels/addon3/lev13.txt
+level levels/addon3/lev14.txt
+
+level levels/addon3/lev15.txt
+level levels/addon3/lev16.txt
+
+  bonus 2
+}
+
+map {
+  title addon4
+  sprite levelset7
+
+  final
+  button_text final_level
+  button_text_locked final_level_locked
+
+level levels/addon4/addon_final.txt
+  bonus 0
+}
+
+
+//===================================
+// JUST FOR FUN
+//===================================
+
+map {
+  title addon_fun1
+  sprite addon_fun1
+
+level levels/addon5/lev01.txt
+level levels/addon5/lev02.txt
+level levels/addon5/lev03.txt
+level levels/addon5/lev04.txt
+level levels/addon5/lev05.txt
+
+level levels/addon5/lev06.txt
+level levels/addon5/lev07.txt
+level levels/addon5/lev08.txt
+level levels/addon5/lev09.txt
+level levels/addon5/lev10.txt
+
+level levels/addon5/lev11.txt
+level levels/addon5/lev12.txt
+level levels/addon5/lev13.txt
+level levels/addon5/lev14.txt
+
+level levels/addon5/bumper.txt
+level levels/addon5/lev16.txt
+
+  bonus 2
+}
+
+map {
+  title addon_fun2
+  sprite addon_fun1
+
+level levels/addon6/lev01.txt
+level levels/addon6/lev02.txt
+level levels/addon6/lev03.txt
+level levels/addon6/lev04.txt
+level levels/addon6/lev05.txt
+
+level levels/addon6/lev06.txt
+level levels/addon6/lev07.txt
+level levels/addon6/lev08.txt
+level levels/addon6/lev09.txt
+level levels/addon6/lev10.txt
+
+level levels/addon6/lev11.txt
+level levels/addon6/lev12.txt
+}
+
+
+// EOF //
