@@ -7,8 +7,10 @@ import { BACKUP_DIR, resolveDataPath } from "@/lib/server/paths"
 export const dynamic = "force-dynamic"
 
 function levelPath(segments: string[]) {
-  const rel = segments.join("/")
-  if (!rel.startsWith("levels/") || !rel.endsWith(".txt")) return null
+  // This route lives under /api/levels/, so the "levels" segment is already consumed.
+  const joined = segments.map((s) => decodeURIComponent(s)).join("/")
+  const rel = joined.startsWith("levels/") ? joined : `levels/${joined}`
+  if (!rel.endsWith(".txt")) return null
   const full = resolveDataPath(rel)
   return full ? { rel, full } : null
 }

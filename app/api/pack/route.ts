@@ -17,6 +17,29 @@ function run(cmd: string, args: string[]): Promise<{ code: number; out: string }
   })
 }
 
+/**
+ * Find a working Python 3 interpreter. Each candidate is actually executed, so
+ * broken shims (e.g. a leftover alias pointing at an uninstalled Python 3.12)
+ * are skipped instead of being used. Set PYTHON in .env.local to force one.
+ */
+async function findPython(): Promise<{ cmd: string[] | null; log: string }> {
+  const candidates: string[][] = []
+  if (process.env.PYTHON) candidates.push([process.env.PYTHON])
+  if (process.platform === "win32") candidates.push(["py", "-3"], ["python"], ["python3"])
+  else candidates.push(["python3"], ["python"])
+
+  const tried: string[] = []
+  for (const c of candidates) {
+    const probe = await run(c[0], [...c.slice(1), "-c", "import sys; assert sys.version_info >= (3, 8); print(sys.executable)"])
+    if (probe.code === 0) return { cmd: c, log: "" }
+    tried.push(`${c.join(" ")} -> ${probe.out.trim() || `exit ${probe.code}`}`)
+  }
+  return {
+    cmd: null,
+    log: `No working Python 3 found. Tried:\n${tried.join("\n")}\n\nSet PYTHON in .env.local to the full path of python.exe and restart the dev server.`,
+  }
+}
+
 export async function GET() {
   return NextResponse.json({
     installDir: process.env.GAME_INSTALL_DIR ?? null,
@@ -30,13 +53,12 @@ export async function POST(req: Request) {
   const out = path.join(BUILD_DIR, "data.pdb")
   const args = [path.join(PROJECT_ROOT, "pack.py"), TEMPLATE_PDB, DATA_DIR, out]
 
-  const pythons = process.env.PYTHON ? [process.env.PYTHON] : ["python3", "python", "py"]
-  let result = { code: -1, out: "No Python interpreter found" }
-  for (const py of pythons) {
-    result = await run(py, args)
-    if (result.code !== -1) break
+  const python = await findPython()
+  if (!python.cmd) return NextResponse.json({ ok: false, log: python.log }, { status: 500 })
+  const result = await run(python.cmd[0], [...python.cmd.slice(1), ...args])
+  if (result.code !== 0) {
+    return NextResponse.json({ ok: false, log: `Using: ${python.cmd.join(" ")}\n${result.out}` }, { status: 500 })
   }
-  if (result.code !== 0) return NextResponse.json({ ok: false, log: result.out }, { status: 500 })
 
   const log = [result.out.trim()]
   const installDir = process.env.GAME_INSTALL_DIR
